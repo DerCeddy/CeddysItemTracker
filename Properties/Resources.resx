@@ -1,0 +1,931 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="OoT3D_Iron_Boots_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Iron_Boots_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fairy_Bow_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fairy_Bow_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keyGTG_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyGTG_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Mirror_Shield_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Mirror_Shield_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Water_Medallion_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Water_Medallion_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="50-gold-skulltula_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\50-gold-skulltula_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bullet_Bag_30_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bullet_Bag_30_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keyForest_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyForest_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fire_Arrow_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fire_Arrow_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Broken_Giant's_Knife_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Broken_Giant's_Knife_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bomb_Bag_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bomb_Bag_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Zelda's_Letter_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Zelda's_Letter_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pg_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pg_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Light_Medallion_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Light_Medallion_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Kokiri_Tunic_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Kokiri_Tunic_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Pocket_Cucco_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Pocket_Cucco_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Longshot_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Longshot_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Kokiri_Boots_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Kokiri_Boots_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Goron_Bracelet_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Goron_Bracelet_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Zora_Mask_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Zora_Mask_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bug_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bug_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Farore's_Wind_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Farore's_Wind_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Forest_Medallion_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Forest_Medallion_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Small_Key_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Small_Key_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Big_Poe_Soul_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Big_Poe_Soul_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Hylian_Shield_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Hylian_Shield_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bombchu_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bombchu_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="song-of-time_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\song-of-time_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Biggest_Bomb_Bag_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Biggest_Bomb_Bag_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Kokiri_Sword_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Kokiri_Sword_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Zora_Mask_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Zora_Mask_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Mirror_Shield_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Mirror_Shield_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zeldas-lullaby_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zeldas-lullaby_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Token_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Token_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Spiritual_Stone_of_the_Forest_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Spiritual_Stone_of_the_Forest_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Poacher's_Saw_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Poacher's_Saw_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Green_Potion_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Green_Potion_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Adult's_Wallet_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Adult's_Wallet_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fairy_Slingshot_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fairy_Slingshot_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Biggest_Bomb_Bag_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Biggest_Bomb_Bag_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Gerudo_Token_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Gerudo_Token_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fairy_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fairy_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Spirit_Medallion_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Spirit_Medallion_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Iron_Boots_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Iron_Boots_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="go-mode-bw_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go-mode-bw_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Goron_Mask_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Goron_Mask_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Keaton_Mask_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Keaton_Mask_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Broken_Goron's_Sword_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Broken_Goron's_Sword_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Dungeon_Map_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Dungeon_Map_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Master_Sword_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Master_Sword_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Green_Potion_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Green_Potion_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bunny_Hood_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bunny_Hood_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Half_Goron_Tunic_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Half_Goron_Tunic_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Spiritual_Stone_of_Water_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Spiritual_Stone_of_Water_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Light_Arrow_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Light_Arrow_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bomb_Bag_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bomb_Bag_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Biggoron's_Sword_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Biggoron's_Sword_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\key_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="biggoron_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\biggoron_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Goron_Zora_Tunic_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Goron_Zora_Tunic_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Odd_Poultice_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Odd_Poultice_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT_Stone_of_Agony_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT_Stone_of_Agony_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Longshot_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Longshot_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Master_Sword_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Master_Sword_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Silver_Scale_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Silver_Scale_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Magic_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Magic_BW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="epona-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\epona-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Deku_Nut_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Deku_Nut_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Din's_Fire_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Din's_Fire_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Mask_of_Truth_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Mask_of_Truth_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Small_Key_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Small_Key_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bullet_Bag_30_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bullet_Bag_30_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="suns-song-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\suns-song-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Keaton_Mask_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Keaton_Mask_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bottle_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bottle_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Deku_Shield_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Deku_Shield_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barinade_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barinade_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Deku_Shield_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Deku_Shield_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Cucco_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Cucco_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Poacher's_Saw_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Poacher's_Saw_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Golden_Gauntlets_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Golden_Gauntlets_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Magic_Bean_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Magic_Bean_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Magic2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Magic2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Mask_of_Truth_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Mask_of_Truth_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Poe_Soul_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Poe_Soul_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bug_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bug_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Skull_Mask_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Skull_Mask_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nocturne_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nocturne_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fish_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fish_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Farore's_Wind_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Farore's_Wind_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Milk_(1%uFF0F2)_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Milk_(1%uFF0F2)_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Token_Icon_forLabel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Token_Icon_forLabel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keyFire_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyFire_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Eyeball_Frog_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Eyeball_Frog_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Zora_Tunic_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Zora_Tunic_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Deku_Nut_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Deku_Nut_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keyShadow_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyShadow_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Milk_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Milk_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Silver_Gauntlets_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Silver_Gauntlets_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Dungeon_Map_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Dungeon_Map_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Shard_of_Agony_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Shard_of_Agony_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Hookshot_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Hookshot_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Deku_Stick_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Deku_Stick_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Big_Poe_Soul_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Big_Poe_Soul_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Water_Medallion_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Water_Medallion_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Golden_Scale_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Golden_Scale_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Giant's_Wallet_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Giant's_Wallet_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Cucco_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Cucco_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="serenade-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\serenade-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Big_Quiver_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Big_Quiver_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Blue_Potion_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Blue_Potion_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Quiver_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Quiver_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bombchu_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bombchu_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fairy_Slingshot_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fairy_Slingshot_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Light_Medallion_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Light_Medallion_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Silver_Scale_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Silver_Scale_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fairy_Bow_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fairy_Bow_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Blue_Fire_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Blue_Fire_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="song-of-time-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\song-of-time-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unknown_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unknown_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frogs_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frogs_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Broken_Giant's_Knife_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Broken_Giant's_Knife_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Lens_of_Truth_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Lens_of_Truth_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Quiver_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Quiver_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bongo_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bongo_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="40-gold-skulltula_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\40-gold-skulltula_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Golden_Gauntlets_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Golden_Gauntlets_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Blue_Potion_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Blue_Potion_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="go-mode_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go-mode_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Token_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Token_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Megaton_Hammer_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Megaton_Hammer_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Boomerang_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Boomerang_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Zelda's_Letter_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Zelda's_Letter_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prelude_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prelude_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Boss_Key_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Boss_Key_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ItemLayout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Silver_Gauntlets_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Silver_Gauntlets_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZeldaOoTHyrule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZeldaOoTHyrule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Biggest_Quiver_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Biggest_Quiver_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Half_Zora_Tunic_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Half_Zora_Tunic_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Ice_Arrow_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Ice_Arrow_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Giant's_Wallet_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Giant's_Wallet_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Shadow_Medallion_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Shadow_Medallion_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Spirit_Medallion_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Spirit_Medallion_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Prescription_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Prescription_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FireMed24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FireMed24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT_Stone_of_Agony_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT_Stone_of_Agony_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Megaton_Hammer_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Megaton_Hammer_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Pocket_Cucco_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Pocket_Cucco_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Eyeball_Frog_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Eyeball_Frog_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bomb_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bomb_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="song-of-storms_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\song-of-storms_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gohma_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gohma_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fairy_Ocarina_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fairy_Ocarina_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fish_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fish_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nocturne_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nocturne_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saria_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saria_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="morpha_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\morpha_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Ocarina_of_Time_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Ocarina_of_Time_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Ice_Arrow_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Ice_Arrow_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Compass_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Compass_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fire_Medallion_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fire_Medallion_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keyWater_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyWater_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Odd_Poultice_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Odd_Poultice_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Claim_Check_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Claim_Check_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bolero-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bolero-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keySpirit_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keySpirit_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Spiritual_Stone_of_the_Forest_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Spiritual_Stone_of_the_Forest_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Milk_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Milk_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Magic_Bean_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Magic_Bean_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Weird_Egg_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Weird_Egg_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minuet-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minuet-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Odd_Mushroom_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Odd_Mushroom_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="suns-song_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\suns-song_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_World's_Finest_Eyedrops_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_World's_Finest_Eyedrops_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Blue_Fire_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Blue_Fire_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Weird_Egg_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Weird_Egg_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saria-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saria-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Adult's_Wallet_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Adult's_Wallet_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bullet_Bag_50_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bullet_Bag_50_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="song-of-storms-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\song-of-storms-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Gerudo_Mask_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Gerudo_Mask_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Gerudo_Mask_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Gerudo_Mask_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Prescription_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Prescription_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Poe_Soul_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Poe_Soul_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Goron_Zora_Tunic_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Goron_Zora_Tunic_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Goron_Tunic_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Goron_Tunic_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Big_Bomb_Bag_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Big_Bomb_Bag_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Kokiri_Tunic_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Kokiri_Tunic_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_World's_Finest_Eyedrops_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_World's_Finest_Eyedrops_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nocturne-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nocturne-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Hover_Boots_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Hover_Boots_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Adult's_Wallet_Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Adult's_Wallet_Icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Spiritual_Stone_of_Fire_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Spiritual_Stone_of_Fire_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bolero_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bolero_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minuet_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minuet_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="twinrova_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\twinrova_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Cojiro_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Cojiro_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Adult's_Wallet_Icon_bw1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Adult's_Wallet_Icon_bw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Goron_Mask_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Goron_Mask_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keyBotW_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyBotW_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bullet_Bag_40_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bullet_Bag_40_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bullet_Bag_50_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bullet_Bag_50_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Gerudo_Token_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Gerudo_Token_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="30-gold-skulltula_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\30-gold-skulltula_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bomb_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bomb_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Golden_Scale_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Golden_Scale_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Shadow_Medallion_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Shadow_Medallion_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fire_Arrow_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fire_Arrow_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gossip-stone-bw_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gossip-stone-bw_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Red_Potion_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Red_Potion_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Big_Bomb_Bag_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Big_Bomb_Bag_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prelude-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prelude-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Spiritual_Stone_of_Fire_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Spiritual_Stone_of_Fire_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fairy_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fairy_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Cojiro_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Cojiro_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Magic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Magic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Odd_Mushroom_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Odd_Mushroom_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Big_Quiver_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Big_Quiver_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Zora_Tunic_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Zora_Tunic_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Milk_(1%uFF0F2)_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Milk_(1%uFF0F2)_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Hookshot_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Hookshot_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Heart_Container_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Heart_Container_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Heart_Container_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Heart_Container_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Shard_of_Agony_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Shard_of_Agony_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Claim_Check_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Claim_Check_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bunny_Hood_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bunny_Hood_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Ocarina_of_Time_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Ocarina_of_Time_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Piece_of_Heart_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Piece_of_Heart_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Skull_Mask_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Skull_Mask_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Lens_of_Truth_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Lens_of_Truth_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Ruto's_Letter_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Ruto's_Letter_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dodongo_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dodongo_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Boss_Key_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Boss_Key_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Spiritual_Stone_of_Water_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Spiritual_Stone_of_Water_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Broken_Goron's_Sword_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Broken_Goron's_Sword_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Light_Arrow_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Light_Arrow_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Token_Icon_forLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Token_Icon_forLabel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Nayru's_Love_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Nayru's_Love_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Soldout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Soldout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fairy_Ocarina_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fairy_Ocarina_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Biggest_Quiver_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Biggest_Quiver_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="serenade_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\serenade_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Din's_Fire_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Din's_Fire_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volvagia_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volvagia_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Piece_of_Heart_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Piece_of_Heart_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Ruto's_Letter_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Ruto's_Letter_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Red_Potion_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Red_Potion_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="requiem-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\requiem-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="requiem_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\requiem_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Hylian_Shield_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Hylian_Shield_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Hover_Boots_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Hover_Boots_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Spooky_Mask_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Spooky_Mask_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Deku_Stick_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Deku_Stick_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Kokiri_Boots_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Kokiri_Boots_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Fire_Medallion_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Fire_Medallion_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Goron_Tunic_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Goron_Tunic_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bottle_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bottle_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="epona_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\epona_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Kokiri_Sword_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Kokiri_Sword_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Forest_Medallion_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Forest_Medallion_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zeldas-lullaby-bw_32x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zeldas-lullaby-bw_32x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Goron_Bracelet_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Goron_Bracelet_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Compass_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Compass_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Nayru's_Love_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Nayru's_Love_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Bullet_Bag_40_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Bullet_Bag_40_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Boomerang_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Boomerang_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Spooky_Mask_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Spooky_Mask_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OoT3D_Biggoron's_Sword_Icon_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OoT3D_Biggoron's_Sword_Icon_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrowdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrowdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
