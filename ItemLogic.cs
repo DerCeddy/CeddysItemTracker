@@ -227,7 +227,7 @@ namespace CeddysItemTracker
                 has_or_can_get_gerudocard = false;
             }
             //Has Bottle
-            if (Has(Bottle2) || Has(Bottle3) || Has(Bottle4))
+            if ((Has(RutoLetter) && (Has(Scales) || (Has(Bomb) && Has(ZeldasLullaby)))) || Has(Bottle2) || Has(Bottle3) || Has(Bottle4))
             {
                 has_bottle = true;
             }
