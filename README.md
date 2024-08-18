@@ -36,7 +36,13 @@ Here you can see how many checks you have done, how many are remaining and how m
 
 You can also start a timer to show how many checks you did per hour.
 
+### Customization
 
+You can customize the various parts of the tracker and enable/disable shuffle settings in the config.json file, if you prefer a different layout or play with different settings.
 
+## Bugs/Missing features
 
-
+- Reset tracker doesn't reset gossip stones to default state
+- Reset tracker doesn't reset textboxes to default state
+- Various shuffle settings are missing
+- Skulltula count isn't 100% accurate. I missed some skulltulas and need to check every single one again :(
