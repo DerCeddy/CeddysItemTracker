@@ -163,7 +163,7 @@ namespace CeddysItemTracker
         {
             InitializeComponent();         
             List <List<string>> Regions = [LonLonRanch, HyruleField, KokiriForest, LostWoods, SacredForestMeadow,DekuTree,ForestTemple,LakeHylia,GerudoValley,GerudoFortress,GerudosTrainingGrounds,HauntedWasteland, DesertColossus, SpiritTemple, ZoraRiver, ZoraDomain, ZoraFountain, JabuJabusBelly, IceCavern, Kakariko, BottomOfTheWell, Graveyard, ShadowTemple, DeathMountainTrail, DodongosCavern, GoronCity, DeathMountainCrater, FireTemple, WaterTemple, Market, TempleOfTime, Castles, GanonsCastle];         
-            StreamReader r = new("file.json");
+            StreamReader r = new("config.json");
             string json = r.ReadToEnd();
             Settings Konfig = JsonConvert.DeserializeObject<Settings>(json);
             ScrubShuffle = Konfig.shuffleSettings.ScrubShuffle;

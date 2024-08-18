@@ -36,6 +36,9 @@ namespace CeddysItemTracker
         //Reset Tracker
         private void ResetTracker(List<Item> ListItems)
         {
+            timer1.Stop();
+            time = 0;
+            cph_label.Text = "0 cph";
             foreach(Item i in ListItems)
             {
                 i.State = 0;
