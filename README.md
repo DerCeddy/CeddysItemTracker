@@ -1,5 +1,5 @@
 # Ceddy's Item Tracker
-Maptracker combined with features known from the [Gossip Stone Tracker]([url](https://github.com/Draeko/ootr_gst/tree/ladder_version)) made for competitive play
+Maptracker combined with features known from the [Gossip Stone Tracker](https://github.com/Draeko/ootr_gst/tree/ladder_version) made for competitive play
 ## Features
 ### Maptracker
 ![grafik](https://github.com/user-attachments/assets/3feeeb45-f9ae-4b90-86d9-6de370c18ba2)
@@ -26,7 +26,7 @@ The main difference is the way how you "write" into the textboxes. Normally you 
 
 - Rightclick on a check to put the name into the topmost textbox in the sometimes hint panel.
 
-To delete a wrong input just leftclick the textbox
+To delete a wrong input just leftclick the textbox.
 
 ### Stats
 
