@@ -1,5 +1,5 @@
 # Ceddy's Item Tracker
-Maptracker combined with features known from the Gossip Stone Tracker made for competitive play
+Maptracker combined with features known from the [Gossip Stone Tracker]([url](https://github.com/Draeko/ootr_gst/tree/ladder_version)) made for competitive play
 ## Features
 ### Maptracker
 ![grafik](https://github.com/user-attachments/assets/3feeeb45-f9ae-4b90-86d9-6de370c18ba2)
