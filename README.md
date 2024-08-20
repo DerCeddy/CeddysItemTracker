@@ -45,4 +45,4 @@ You can customize the various parts of the tracker and enable/disable shuffle se
 - Reset tracker doesn't reset gossip stones to default state
 - Reset tracker doesn't reset textboxes to default state
 - Various shuffle settings are missing
-- Skulltula count isn't 100% accurate. I missed some skulltulas and need to check every single one again :(
+
