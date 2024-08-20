@@ -93,8 +93,7 @@ namespace CeddysItemTracker
         public void ItemLogic()
         {
             Panel maptracker_Panel = maptracker;
-            tokensAvailable = 12;         
-                               
+            tokensAvailable = 13;                                   
             #region Entrance Helper
             if (has_or_can_get_gerudocard && Has(Lens) && Has(Magic) && (Has(HoverBoots) || has_longshot))
             {
@@ -339,7 +338,7 @@ namespace CeddysItemTracker
             {
                 Pb("Forest Temple", "First Room Chest", maptracker_Panel).ForeColor = System.Drawing.Color.Lime;
                 Pb("Forest Temple", "First Stalfos Chest", maptracker_Panel).ForeColor = System.Drawing.Color.Lime;
-                tokensAvailable++;
+                tokensAvailable += 2;
             }
             else
             {
@@ -352,7 +351,7 @@ namespace CeddysItemTracker
                 Pb("Forest Temple", "Map Chest", maptracker_Panel).ForeColor = System.Drawing.Color.Lime;
                 Pb("Forest Temple", "Raised Island Courtyard Chest", maptracker_Panel).ForeColor = System.Drawing.Color.Lime;
                 Pb("Forest Temple", "Well Chest", maptracker_Panel).ForeColor = System.Drawing.Color.Lime;
-                tokensAvailable += 2;
+                tokensAvailable ++;
             }
             else
             {
@@ -377,10 +376,12 @@ namespace CeddysItemTracker
             if ((Has(SariasSong) || Has(Minuet)) && Has(Hookshot) && ((Has(Strength) && forest_keys >= 2 && Has(Bow)) || (Has(HoverBoots) && forest_keys >= 1)))
             {
                 Pb("Forest Temple", "Floormaster Chest", maptracker_Panel).ForeColor = Available;
+                tokensAvailable++;
             }
             else if ((Has(SariasSong) || Has(Minuet)) && Has(Hookshot) && ((Has(Strength) && Has(Bow)) || (Has(HoverBoots))))
             {
                 Pb("Forest Temple", "Floormaster Chest", maptracker_Panel).ForeColor = coulddo;
+                tokensAvailable++;
             }
             else
             {
@@ -460,7 +461,7 @@ namespace CeddysItemTracker
                 Pb("Deku Tree", "Slingshot Room Side Chest", maptracker_Panel).ForeColor = System.Drawing.Color.Lime;
                 Pb("Deku Tree", "Slingshot Chest", maptracker_Panel).ForeColor = Color.Lime;
                 Pb("Deku Tree", "Compass Room Side Chest", maptracker_Panel).ForeColor = Color.Lime;
-                tokensAvailable += 3;
+                tokensAvailable += 2;
             }
             else
             {
@@ -481,6 +482,10 @@ namespace CeddysItemTracker
                 Pb("Deku Tree", "Gohma Heart", maptracker_Panel).ForeColor = red;
             }
             //Skulltula
+            if ((Has(Slingshot) || Has(Boomerang)) || (Has(Magic) && Has(Dins)))
+            {
+                tokensAvailable++;
+            }
             if (Has(Bomb) && Has(Boomerang) && Has(KokiriSword))
             {
                 tokensAvailable++;
@@ -697,7 +702,7 @@ namespace CeddysItemTracker
                 Pb("Shadow Temple", "Invisible Blades Left Chest", maptracker_Panel).ForeColor = Color.Lime;
                 Pb("Shadow Temple", "Invisible Blades Right Chest", maptracker_Panel).ForeColor = Color.Lime;
                 Pb("Shadow Temple", "Falling Spikes Lower Chest", maptracker_Panel).ForeColor = Color.Lime;
-                tokensAvailable++;
+                tokensAvailable += 2;
                 
             }
             else if (Has(Dins) && Has(Nocturne) && Has(Magic) && Has(HoverBoots) && Bomb.State == 1)
@@ -705,7 +710,7 @@ namespace CeddysItemTracker
                 Pb("Shadow Temple", "Invisible Blades Left Chest", maptracker_Panel).ForeColor = coulddo;
                 Pb("Shadow Temple", "Invisible Blades Right Chest", maptracker_Panel).ForeColor = coulddo;
                 Pb("Shadow Temple", "Falling Spikes Lower Chest", maptracker_Panel).ForeColor = coulddo;              
-                tokensAvailable++;
+                tokensAvailable += 2;
             }
             else
             {
@@ -734,11 +739,13 @@ namespace CeddysItemTracker
             {
                 Pb("Shadow Temple", "Invisible Spikes Chest", maptracker_Panel).ForeColor = Available;
                 Pb("Shadow Temple", "Shadow Pot", maptracker_Panel).ForeColor = Available;
+                tokensAvailable++;
             }
             else if (Has(Dins) && Has(Nocturne) && Has(Magic) && Has(HoverBoots) && Has(Bomb))
             {
                 Pb("Shadow Temple", "Invisible Spikes Chest", maptracker_Panel).ForeColor = coulddo;
                 Pb("Shadow Temple", "Shadow Pot", maptracker_Panel).ForeColor = coulddo;
+                tokensAvailable++;
             }
             else
             {
@@ -748,21 +755,16 @@ namespace CeddysItemTracker
             //Shadow Beyond Spikes
             if (Has(Dins) && Has(Nocturne) && Has(Magic) && Has(HoverBoots) && Has(Bomb) && Has(Hookshot) && shadow_keys >= 3)
             {
-
                 Pb("Shadow Temple", "Wind Hint Chest", maptracker_Panel).ForeColor = Color.Lime;
                 Pb("Shadow Temple", "After Wind Enemy Chest", maptracker_Panel).ForeColor = Color.Lime;
-                Pb("Shadow Temple", "After Wind Hidden Chest", maptracker_Panel).ForeColor = Color.Lime;
-                tokensAvailable++;
-
+                Pb("Shadow Temple", "After Wind Hidden Chest", maptracker_Panel).ForeColor = Color.Lime;               
             }
             else if (Has(Dins) && Has(Nocturne) && Has(Magic) && Has(HoverBoots) && Has(Bomb) && Has(Hookshot))
             {
 
                 Pb("Shadow Temple", "Wind Hint Chest", maptracker_Panel).ForeColor = coulddo;
                 Pb("Shadow Temple", "After Wind Enemy Chest", maptracker_Panel).ForeColor = coulddo;
-                Pb("Shadow Temple", "After Wind Hidden Chest", maptracker_Panel).ForeColor = coulddo;
-                tokensAvailable++;
-
+                Pb("Shadow Temple", "After Wind Hidden Chest", maptracker_Panel).ForeColor = coulddo;               
             }
             else
             {
@@ -805,11 +807,7 @@ namespace CeddysItemTracker
             {
                 Pb("Shadow Temple", "Bongo Bongo Heart", maptracker_Panel).ForeColor = red;
             }
-            //Skulltula
-            if (Has(Dins) && Has(Nocturne) && Has(Magic) && Has(HoverBoots) && Bomb.State == 1)
-            {
-                tokensAvailable++;
-            }
+            //Skulltula          
             if (Has(Dins) && Has(Nocturne) && Has(Magic) && Has(HoverBoots) && Has(Bomb) && has_longshot)
             {
                 tokensAvailable++;
@@ -1273,13 +1271,11 @@ namespace CeddysItemTracker
             //Longshot Chest
             if (Has(Hookshot) && Has(IronBoots) && Has(ZeldasLullaby) && water_keys >= 5)
             {
-                Pb("Water Temple", "Longshot Chest", maptracker_Panel).ForeColor = Color.Lime;
-                tokensAvailable++;
+                Pb("Water Temple", "Longshot Chest", maptracker_Panel).ForeColor = Color.Lime;              
             }
             else if (Has(Hookshot) && Has(IronBoots) && Has(ZeldasLullaby))
             {
-                Pb("Water Temple", "Longshot Chest", maptracker_Panel).ForeColor = coulddo;
-                tokensAvailable++;
+                Pb("Water Temple", "Longshot Chest", maptracker_Panel).ForeColor = coulddo;              
             }
             else
             {
@@ -1347,6 +1343,10 @@ namespace CeddysItemTracker
                 Pb("Water Temple", "Morpha Heart", maptracker_Panel).ForeColor = red;
             }
             //Skulltula
+            if (has_longshot && Has(IronBoots) && water_keys >= 5)
+            {
+                tokensAvailable++;
+            }
             if (has_longshot && Has(IronBoots) && Has(ZeldasLullaby) && Has(ZoraTunic) && (Has(Bow) || (Has(Dins) && Has(Magic))))
             {
                 tokensAvailable++;
@@ -1369,11 +1369,7 @@ namespace CeddysItemTracker
             if (Has(Hookshot) && (Has(EponasSong) || has_longshot))
             {
                 tokensAvailable += 2;
-            }
-            if(Has(Boomerang))
-            {
-                tokensAvailable++;
-            }
+            }        
             #endregion
             #region Gerudo Fortress
             try
@@ -1413,7 +1409,7 @@ namespace CeddysItemTracker
             //Skulltula
             if ((Has(EponasSong) || has_longshot) && Has(Hookshot))
             {
-                tokensAvailable++;
+                tokensAvailable += 2;
             }
             #endregion
             #region Wasteland
@@ -1464,7 +1460,7 @@ namespace CeddysItemTracker
             {
                 tokensAvailable++;
             }
-            if (desertaccess == 1 && has_longshot || can_get_beans)
+            if (desertaccess == 1 && (has_longshot || can_get_beans))
             {
                 tokensAvailable++;
             }
@@ -1768,7 +1764,7 @@ namespace CeddysItemTracker
             }
             #endregion
             #region Ice Cavern
-            if (Has(RutoLetter) && Has(ZeldasLullaby) && (Bomb.State == 1 || Has(Scales)))
+            if (Has(RutoLetter) && Has(ZeldasLullaby) && (Has(Bomb) || Has(Scales)))
             {
                 Pb("Ice Cavern", "Map Chest", maptracker_Panel).ForeColor = Color.Lime;
                 Pb("Ice Cavern", "Compass Chest", maptracker_Panel).ForeColor = Color.Lime;
@@ -1784,7 +1780,7 @@ namespace CeddysItemTracker
                 Pb("Ice Cavern", "Freestanding PoH", maptracker_Panel).ForeColor = red;
                 Pb("Ice Cavern", "Shiek at Ice Cavern", maptracker_Panel).ForeColor = red;
             }
-            if (Has(RutoLetter) && Has(ZeldasLullaby) && (Bomb.State == 1 || Has(Scales)) && Has(Hookshot))
+            if (Has(RutoLetter) && Has(ZeldasLullaby) && (Has(Bomb) || Has(Scales)) && Has(Hookshot))
             {
                 tokensAvailable += 3;
             }
@@ -1838,7 +1834,7 @@ namespace CeddysItemTracker
                 Pb("Zora Domain", "King Zora Thawed", maptracker_Panel).ForeColor = red;
             }
             //Skulltula
-            if(Has(Hookshot))
+            if(Has(Hookshot) && Has(ZeldasLullaby))
             {
                 tokensAvailable++;
             }
@@ -1848,8 +1844,7 @@ namespace CeddysItemTracker
             if (Bomb.State == 1 || Has(Strength) || Has(Hammer))
             {
                 Pb("Dodongos Cavern", "Compass Chest", maptracker_Panel).ForeColor = System.Drawing.Color.Lime;
-                Pb("Dodongos Cavern", "Map Chest", maptracker_Panel).ForeColor = System.Drawing.Color.Lime;
-                
+                Pb("Dodongos Cavern", "Map Chest", maptracker_Panel).ForeColor = System.Drawing.Color.Lime;               
                 tokensAvailable++;
             }
             else
@@ -1891,11 +1886,15 @@ namespace CeddysItemTracker
                 Pb("Dodongos Cavern", "Boss Room Chest", maptracker_Panel).ForeColor = red;
                 Pb("Dodongos Cavern", "King Dodongo Heart", maptracker_Panel).ForeColor = red;
             }
-            if ((Bomb.State == 1 || Has(Strength)) && Has(Hookshot))
+            //Skulltula
+            if ((Bomb.State == 1 || Has(Strength)) && (Has(Hookshot) || Has(Boomerang)))
+            {
+                tokensAvailable++;
+            }    
+            if ((Has(Bomb) || Has(Strength)) && Has(Hookshot))
             {
                 tokensAvailable++;
             }
-            //Skulls
             #endregion
             #region GTG            
             //LobbyChests
