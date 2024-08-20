@@ -46,6 +46,7 @@ namespace CeddysItemTracker
                 {
                     PictureBox gossipstone = new();
                     GossipStone(new Point((j * 30) + 134, (i * 30) + 20), gossipstone);
+                    gossipstone.Name = "sometimesStone" + i;
                     panel.Controls.Add(gossipstone);
                 }
             }

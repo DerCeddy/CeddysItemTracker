@@ -56,14 +56,14 @@ namespace CeddysItemTracker
                 panel.Controls.Add(textBox);
                 textBox.MouseDown += (sender,e) => DeleteWOTHText(textBox);
                 goal.MouseDown += (sender,e) => GoalClick(e, goal, formId);
-                goal.MouseWheel += (sender, e) => GoalScroll(e,goal,formId);
-                
+                goal.MouseWheel += (sender, e) => GoalScroll(e,goal,formId);             
                 textBox.Name = "pathHint" + i;
                 goal.Name = "Goal" + i;                             
                 for (int j = 0; j < 4; j++)
                 {
                     PictureBox gossipstone = new();
-                    GossipStone(new Point((j * 30) + 154, (i * 30) + 20),gossipstone);                                                               
+                    GossipStone(new Point((j * 30) + 154, (i * 30) + 20),gossipstone);
+                    gossipstone.Name = "pathHintStone" + i;
                     panel.Controls.Add(gossipstone);                      
                 }
             }   
