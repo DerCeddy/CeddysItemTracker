@@ -263,6 +263,16 @@ namespace CeddysItemTracker.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap key_Boss {
+            get {
+                object obj = ResourceManager.GetObject("key-Boss", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap keyBotW_32x32 {
             get {
                 object obj = ResourceManager.GetObject("keyBotW_32x32", resourceCulture);

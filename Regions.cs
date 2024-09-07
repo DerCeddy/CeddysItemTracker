@@ -58,11 +58,37 @@ namespace CeddysItemTracker
         }     
         private void RegionCompletion(Control p)
         {
+            int ChecksChecked = 0;
+            int MaxChecks = 0;
             foreach (Control c in p.Controls)
             {
                 if (c is CheckBox cb)
                 {
-                    cb.Checked = true;
+                    MaxChecks++;
+                    if (cb.Checked)
+                    {
+                        ChecksChecked++;
+                    }
+                }              
+            }
+            if (MaxChecks > ChecksChecked)
+            {
+                foreach (Control c in p.Controls)
+                {
+                    if (c is CheckBox cb)
+                    {
+                        cb.Checked = true;
+                    }
+                }
+            }
+            else
+            {
+                foreach (Control c in p.Controls)
+                {
+                    if (c is CheckBox cb)
+                    {
+                        cb.Checked = false;
+                    }
                 }
             }
             UpdateAllCountersOnClick();

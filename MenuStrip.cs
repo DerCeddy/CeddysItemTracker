@@ -41,6 +41,27 @@ namespace CeddysItemTracker
             timer1.Stop();
             time = 0;
             cph_label.Text = "0 cph";
+            forest_keys = 0;
+            fire_keys = 0;
+            water_keys = 0;
+            shadow_keys = 0;
+            spirit_keys = 0;
+            botw_keys = 0;
+            gtg_keys = 0;
+            forest_keyLabel.Text = "0";
+            forest_keyLabel.ForeColor = Color.White;
+            fire_keyLabel.Text = "0";
+            fire_keyLabel.ForeColor = Color.White;
+            water_keyLabel.Text = "0";
+            water_keyLabel.ForeColor = Color.White;
+            shadow_keyLabel.Text = "0";
+            shadow_keyLabel.ForeColor = Color.White;
+            spirit_keyLabel.Text = "0";
+            spirit_keyLabel.ForeColor = Color.White;
+            botw_keyLabel.Text = "0";
+            botw_keyLabel.ForeColor = Color.White;
+            gtg_keyLabel.Text = "0";
+            gtg_keyLabel.ForeColor = Color.White;
             for (int i = 0; i < goal123.Count; i++)
             {
                 goal123[i] = 0;

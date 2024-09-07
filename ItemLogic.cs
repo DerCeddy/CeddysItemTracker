@@ -431,24 +431,36 @@ namespace CeddysItemTracker
             }
             //ForestRest
             if ((Has(SariasSong) || Has(Minuet)) && Has(Hookshot) && Has(Bow) && Has(Strength) && forest_keys == 5)
-            {
-                Pb("Forest Temple", "Phantom Ganon Heart", maptracker_Panel).ForeColor = System.Drawing.Color.Lime;
+            {               
                 Pb("Forest Temple", "Falling Ceilling Room Chest", maptracker_Panel).ForeColor = Color.Lime;
                 Pb("Forest Temple", "Basement Chest", maptracker_Panel).ForeColor = Color.Lime;
                 tokensAvailable++;
             }
             else if ((Has(SariasSong) || Has(Minuet)) && Has(Hookshot) && Has(Bow) && Has(Strength))
-            {
-                Pb("Forest Temple", "Phantom Ganon Heart", maptracker_Panel).ForeColor = coulddo;
+            {              
                 Pb("Forest Temple", "Falling Ceilling Room Chest", maptracker_Panel).ForeColor = coulddo;
                 Pb("Forest Temple", "Basement Chest", maptracker_Panel).ForeColor = coulddo;
                 tokensAvailable++;
             }
             else
-            {
-                Pb("Forest Temple", "Phantom Ganon Heart", maptracker_Panel).ForeColor = red;
+            {               
                 Pb("Forest Temple", "Falling Ceilling Room Chest", maptracker_Panel).ForeColor = red;
                 Pb("Forest Temple", "Basement Chest", maptracker_Panel).ForeColor = red;
+            }
+            //Boss
+            if ((Has(SariasSong) || Has(Minuet)) && Has(Hookshot) && Has(Bow) && Has(Strength) && forest_keys == 5 && Has(ForestBossKey))
+            {
+                Pb("Forest Temple", "Phantom Ganon Heart", maptracker_Panel).ForeColor = System.Drawing.Color.Lime;
+                
+            }
+            else if ((Has(SariasSong) || Has(Minuet)) && Has(Hookshot) && Has(Bow) && Has(Strength))
+            {
+                Pb("Forest Temple", "Phantom Ganon Heart", maptracker_Panel).ForeColor = coulddo;
+                
+            }
+            else
+            {
+                Pb("Forest Temple", "Phantom Ganon Heart", maptracker_Panel).ForeColor = red;               
             }
             #endregion
             #region Deku Tree
@@ -509,11 +521,11 @@ namespace CeddysItemTracker
             //Diving Grotto
             if ((Has(Bomb) || Has(Hammer)) && (Scales.State == 2 || Has(IronBoots)))
             {
-                Pb("Hyrule Field", "Diving HP", maptracker_Panel).ForeColor = Color.Lime;
+                Pb("Hyrule Field", "Tektite Grotto Freestanding PoH", maptracker_Panel).ForeColor = Color.Lime;
             }
             else
             {
-                Pb("Hyrule Field", "Diving HP", maptracker_Panel).ForeColor = red;
+                Pb("Hyrule Field", "Tektite Grotto Freestanding PoH", maptracker_Panel).ForeColor = red;
             }
             //Song of Time
             if (Has(KokiriStone) && Has(GoronStone) && Has(ZoraStone))
@@ -795,7 +807,7 @@ namespace CeddysItemTracker
                 Pb("Shadow Temple", "Boss Key Chest", maptracker_Panel).ForeColor = red;
             }
             //Shadow Bongo 
-            if (Has(ZeldasLullaby) && Has(Dins) && Has(Nocturne) && Has(Magic) && Has(HoverBoots) && Has(Bomb) && (has_longshot || Has(Bow)) && shadow_keys == 5)
+            if (Has(ZeldasLullaby) && Has(Dins) && Has(Nocturne) && Has(Magic) && Has(HoverBoots) && Has(Bomb) && (has_longshot || Has(Bow)) && shadow_keys == 5 && Has(ShadowBossKey))
             {
                 Pb("Shadow Temple", "Bongo Bongo Heart", maptracker_Panel).ForeColor = Color.Lime;
             }
@@ -1141,7 +1153,7 @@ namespace CeddysItemTracker
                 Pb("Fire Temple", "Megaton Hammer Chest", maptracker_Panel).ForeColor = red;
             }
             //Volvo defeat
-            if (Has(Hammer) && has_or_can_red_tunic == 1 && craterplatformaccess == 1 && (Has(HoverBoots) || fire_keys >= 7))
+            if (Has(Hammer) && has_or_can_red_tunic == 1 && craterplatformaccess == 1 && (Has(HoverBoots) || fire_keys >= 7) && Has(FireBossKey))
             {
                 Pb("Fire Temple", "Volvagia Heart", maptracker_Panel).ForeColor = Color.Lime;
             }
@@ -1334,9 +1346,13 @@ namespace CeddysItemTracker
                 Pb("Water Temple", "River Chest", maptracker_Panel).ForeColor = red;
             }
             //Morpha Heart
-            if (has_longshot && Has(IronBoots))
+            if (has_longshot && Has(IronBoots) && Has(WaterBossKey))
             {
                 Pb("Water Temple", "Morpha Heart", maptracker_Panel).ForeColor = Color.Lime;
+            }
+            else if (has_longshot && Has(IronBoots))
+            {
+                Pb("Water Temple", "Morpha Heart", maptracker_Panel).ForeColor = coulddo;
             }
             else
             {
@@ -1657,7 +1673,7 @@ namespace CeddysItemTracker
 
             }
             //Twinrova Heart
-            if (desertaccess == 1 && Strength.State >= 2 && Has(MirrorShield) && spirit_keys == 5 && (Has(Hookshot) || Has(Bow)) && ((has_longshot || Bomb.State == 1) || ((Bomb.State == 1 || (Has(Dins) && Has(Magic)) || Has(Nuts)) && (Has(Bow) || Has(Hookshot) || Has(Hammer)))))
+            if (desertaccess == 1 && Strength.State >= 2 && Has(MirrorShield) && Has(SpiritBossKey) && spirit_keys == 5 && (Has(Hookshot) || Has(Bow)) && ((has_longshot || Bomb.State == 1) || ((Bomb.State == 1 || (Has(Dins) && Has(Magic)) || Has(Nuts)) && (Has(Bow) || Has(Hookshot) || Has(Hammer)))))
             {
                 Pb("Spirit Temple", "Twinrova Heart", maptracker_Panel).ForeColor = Color.Lime;
             }

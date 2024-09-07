@@ -73,6 +73,11 @@ namespace CeddysItemTracker
             Agony.ItemPictureBox = agony_Picturebox;
             DoubleDefense.ItemPictureBox = doubleDefense_PictureBox;
             GoMode.ItemPictureBox = go_PictureBox;
+            ForestBossKey.ItemPictureBox = forestBossKey_PictureBox;
+            FireBossKey.ItemPictureBox = fireBossKey_PictureBox;
+            WaterBossKey.ItemPictureBox = waterBossKey_PictureBox;
+            ShadowBossKey.ItemPictureBox = shadowBossKey_PictureBox;
+            SpiritBossKey.ItemPictureBox = spiritBossKey_PictureBox;
         }
     }
 }

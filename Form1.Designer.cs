@@ -124,6 +124,11 @@ namespace CeddysItemTracker
             gtg_keyLabel = new Label();
             botw_keyLabel = new Label();
             keysPanel = new Panel();
+            waterBossKey_PictureBox = new PictureBox();
+            shadowBossKey_PictureBox = new PictureBox();
+            spiritBossKey_PictureBox = new PictureBox();
+            fireBossKey_PictureBox = new PictureBox();
+            forestBossKey_PictureBox = new PictureBox();
             forest_keyLabel = new Label();
             fire_keyLabel = new Label();
             water_keyLabel = new Label();
@@ -256,6 +261,11 @@ namespace CeddysItemTracker
             ((System.ComponentModel.ISupportInitialize)requiem_PictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nocturne_PictureBox).BeginInit();
             keysPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)waterBossKey_PictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)shadowBossKey_PictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)spiritBossKey_PictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)fireBossKey_PictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)forestBossKey_PictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)botw_keyPicturebox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)spiritkey_Picturebox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gtg_keyPictureBox).BeginInit();
@@ -734,121 +744,120 @@ namespace CeddysItemTracker
             // 
             // forestLabel
             // 
-            forestLabel.AutoSize = true;
             forestLabel.BackColor = Color.Transparent;
-            forestLabel.Font = new Font("Segoe Fluent Icons", 9.75F, FontStyle.Bold);
+            forestLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
             forestLabel.ForeColor = Color.White;
-            forestLabel.Location = new Point(7, 485);
+            forestLabel.Location = new Point(2, 485);
             forestLabel.Margin = new Padding(4, 0, 4, 0);
             forestLabel.Name = "forestLabel";
-            forestLabel.Size = new Size(36, 13);
+            forestLabel.Size = new Size(54, 21);
             forestLabel.TabIndex = 56;
             forestLabel.Text = "FREE";
-            forestLabel.TextAlign = ContentAlignment.MiddleCenter;
+            forestLabel.TextAlign = ContentAlignment.TopCenter;
             forestLabel.MouseWheel += ForestLabel_Scroll;
             // 
             // fireLabel
             // 
-            fireLabel.AutoSize = true;
-            fireLabel.Font = new Font("Segoe Fluent Icons", 9.75F, FontStyle.Bold);
+            fireLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
             fireLabel.ForeColor = Color.White;
-            fireLabel.Location = new Point(62, 485);
+            fireLabel.Location = new Point(54, 485);
             fireLabel.Margin = new Padding(4, 0, 4, 0);
             fireLabel.Name = "fireLabel";
-            fireLabel.Size = new Size(36, 13);
+            fireLabel.Size = new Size(54, 21);
             fireLabel.TabIndex = 57;
             fireLabel.Text = "FREE";
+            fireLabel.TextAlign = ContentAlignment.TopCenter;
             fireLabel.MouseWheel += FireLabel_Scroll;
             // 
             // waterLabel
             // 
-            waterLabel.AutoSize = true;
-            waterLabel.Font = new Font("Segoe Fluent Icons", 9.75F, FontStyle.Bold);
+            waterLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
             waterLabel.ForeColor = Color.White;
-            waterLabel.Location = new Point(113, 485);
+            waterLabel.Location = new Point(106, 485);
             waterLabel.Margin = new Padding(4, 0, 4, 0);
             waterLabel.Name = "waterLabel";
-            waterLabel.Size = new Size(36, 13);
+            waterLabel.Size = new Size(54, 21);
             waterLabel.TabIndex = 58;
             waterLabel.Text = "FREE";
+            waterLabel.TextAlign = ContentAlignment.TopCenter;
             waterLabel.MouseWheel += WaterLabel_Scroll;
             // 
             // shadowLabel
             // 
-            shadowLabel.AutoSize = true;
-            shadowLabel.Font = new Font("Segoe Fluent Icons", 9.75F, FontStyle.Bold);
+            shadowLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
             shadowLabel.ForeColor = Color.White;
-            shadowLabel.Location = new Point(165, 485);
+            shadowLabel.Location = new Point(156, 485);
             shadowLabel.Margin = new Padding(4, 0, 4, 0);
             shadowLabel.Name = "shadowLabel";
-            shadowLabel.Size = new Size(36, 13);
+            shadowLabel.Size = new Size(54, 21);
             shadowLabel.TabIndex = 59;
             shadowLabel.Text = "FREE";
+            shadowLabel.TextAlign = ContentAlignment.TopCenter;
             shadowLabel.MouseWheel += ShadowLabel_Scroll;
             // 
             // spiritLabel
             // 
-            spiritLabel.AutoSize = true;
-            spiritLabel.Font = new Font("Segoe Fluent Icons", 9.75F, FontStyle.Bold);
+            spiritLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
             spiritLabel.ForeColor = Color.White;
-            spiritLabel.Location = new Point(216, 485);
+            spiritLabel.Location = new Point(208, 485);
             spiritLabel.Margin = new Padding(4, 0, 4, 0);
             spiritLabel.Name = "spiritLabel";
-            spiritLabel.Size = new Size(36, 13);
+            spiritLabel.Size = new Size(54, 21);
             spiritLabel.TabIndex = 60;
             spiritLabel.Text = "FREE";
+            spiritLabel.TextAlign = ContentAlignment.TopCenter;
             spiritLabel.MouseWheel += SpiritLabel_Scroll;
             // 
             // lightLabel
             // 
-            lightLabel.AutoSize = true;
-            lightLabel.Font = new Font("Segoe Fluent Icons", 9.75F, FontStyle.Bold);
+            lightLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
             lightLabel.ForeColor = Color.White;
-            lightLabel.Location = new Point(267, 485);
+            lightLabel.Location = new Point(260, 485);
             lightLabel.Margin = new Padding(4, 0, 4, 0);
             lightLabel.Name = "lightLabel";
-            lightLabel.Size = new Size(36, 13);
+            lightLabel.Size = new Size(54, 21);
             lightLabel.TabIndex = 61;
             lightLabel.Text = "FREE";
+            lightLabel.TextAlign = ContentAlignment.TopCenter;
             lightLabel.MouseWheel += LightLabel_Scroll;
             // 
             // kStoneLabel
             // 
-            kStoneLabel.AutoSize = true;
-            kStoneLabel.Font = new Font("Segoe Fluent Icons", 9.75F, FontStyle.Bold);
+            kStoneLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
             kStoneLabel.ForeColor = Color.White;
-            kStoneLabel.Location = new Point(164, 422);
+            kStoneLabel.Location = new Point(156, 420);
             kStoneLabel.Margin = new Padding(4, 0, 4, 0);
             kStoneLabel.Name = "kStoneLabel";
-            kStoneLabel.Size = new Size(36, 13);
+            kStoneLabel.Size = new Size(54, 21);
             kStoneLabel.TabIndex = 62;
             kStoneLabel.Text = "FREE";
+            kStoneLabel.TextAlign = ContentAlignment.TopCenter;
             kStoneLabel.MouseWheel += KStoneLabel_Scroll;
             // 
             // gStoneLabel
             // 
-            gStoneLabel.AutoSize = true;
-            gStoneLabel.Font = new Font("Segoe Fluent Icons", 9.75F, FontStyle.Bold);
+            gStoneLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
             gStoneLabel.ForeColor = Color.White;
-            gStoneLabel.Location = new Point(214, 422);
+            gStoneLabel.Location = new Point(208, 420);
             gStoneLabel.Margin = new Padding(4, 0, 4, 0);
             gStoneLabel.Name = "gStoneLabel";
-            gStoneLabel.Size = new Size(36, 13);
+            gStoneLabel.Size = new Size(54, 21);
             gStoneLabel.TabIndex = 63;
             gStoneLabel.Text = "FREE";
+            gStoneLabel.TextAlign = ContentAlignment.TopCenter;
             gStoneLabel.MouseWheel += GStoneLabel_Scroll;
             // 
             // zStoneLabel
             // 
-            zStoneLabel.AutoSize = true;
-            zStoneLabel.Font = new Font("Segoe Fluent Icons", 9.75F, FontStyle.Bold);
+            zStoneLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
             zStoneLabel.ForeColor = Color.White;
-            zStoneLabel.Location = new Point(267, 422);
+            zStoneLabel.Location = new Point(260, 420);
             zStoneLabel.Margin = new Padding(4, 0, 4, 0);
             zStoneLabel.Name = "zStoneLabel";
-            zStoneLabel.Size = new Size(36, 13);
+            zStoneLabel.Size = new Size(54, 21);
             zStoneLabel.TabIndex = 64;
             zStoneLabel.Text = "FREE";
+            zStoneLabel.TextAlign = ContentAlignment.TopCenter;
             zStoneLabel.MouseWheel += ZStoneLabel_Scroll;
             // 
             // tokenCounter
@@ -866,7 +875,7 @@ namespace CeddysItemTracker
             tokenCounterDisplay.AutoSize = true;
             tokenCounterDisplay.BackColor = Color.Transparent;
             tokenCounterDisplay.Font = new Font("Microsoft Sans Serif", 13F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tokenCounterDisplay.Location = new Point(275, 213);
+            tokenCounterDisplay.Location = new Point(274, 213);
             tokenCounterDisplay.Margin = new Padding(4, 0, 4, 0);
             tokenCounterDisplay.Name = "tokenCounterDisplay";
             tokenCounterDisplay.Size = new Size(20, 22);
@@ -1433,7 +1442,7 @@ namespace CeddysItemTracker
             // gtg_keyLabel
             // 
             gtg_keyLabel.AutoSize = true;
-            gtg_keyLabel.Location = new Point(40, 241);
+            gtg_keyLabel.Location = new Point(65, 241);
             gtg_keyLabel.Margin = new Padding(4, 0, 4, 0);
             gtg_keyLabel.Name = "gtg_keyLabel";
             gtg_keyLabel.Size = new Size(13, 15);
@@ -1443,7 +1452,7 @@ namespace CeddysItemTracker
             // botw_keyLabel
             // 
             botw_keyLabel.AutoSize = true;
-            botw_keyLabel.Location = new Point(40, 283);
+            botw_keyLabel.Location = new Point(65, 283);
             botw_keyLabel.Margin = new Padding(4, 0, 4, 0);
             botw_keyLabel.Name = "botw_keyLabel";
             botw_keyLabel.Size = new Size(13, 15);
@@ -1452,6 +1461,11 @@ namespace CeddysItemTracker
             // 
             // keysPanel
             // 
+            keysPanel.Controls.Add(waterBossKey_PictureBox);
+            keysPanel.Controls.Add(shadowBossKey_PictureBox);
+            keysPanel.Controls.Add(spiritBossKey_PictureBox);
+            keysPanel.Controls.Add(fireBossKey_PictureBox);
+            keysPanel.Controls.Add(forestBossKey_PictureBox);
             keysPanel.Controls.Add(forest_keyLabel);
             keysPanel.Controls.Add(fire_keyLabel);
             keysPanel.Controls.Add(water_keyLabel);
@@ -1466,16 +1480,71 @@ namespace CeddysItemTracker
             keysPanel.Controls.Add(waterkey_Picturebox);
             keysPanel.Controls.Add(firekey_Picturebox);
             keysPanel.Controls.Add(forestkey_Picturebox);
-            keysPanel.Location = new Point(6, 161);
+            keysPanel.Location = new Point(0, 161);
             keysPanel.Margin = new Padding(4, 3, 4, 3);
             keysPanel.Name = "keysPanel";
-            keysPanel.Size = new Size(68, 317);
+            keysPanel.Size = new Size(89, 317);
             keysPanel.TabIndex = 146;
+            // 
+            // waterBossKey_PictureBox
+            // 
+            waterBossKey_PictureBox.Image = Properties.Resources.key_Boss;
+            waterBossKey_PictureBox.Location = new Point(0, 108);
+            waterBossKey_PictureBox.Margin = new Padding(4, 3, 4, 3);
+            waterBossKey_PictureBox.Name = "waterBossKey_PictureBox";
+            waterBossKey_PictureBox.Size = new Size(24, 24);
+            waterBossKey_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            waterBossKey_PictureBox.TabIndex = 162;
+            waterBossKey_PictureBox.TabStop = false;
+            // 
+            // shadowBossKey_PictureBox
+            // 
+            shadowBossKey_PictureBox.Image = Properties.Resources.key_Boss;
+            shadowBossKey_PictureBox.Location = new Point(0, 152);
+            shadowBossKey_PictureBox.Margin = new Padding(4, 3, 4, 3);
+            shadowBossKey_PictureBox.Name = "shadowBossKey_PictureBox";
+            shadowBossKey_PictureBox.Size = new Size(24, 24);
+            shadowBossKey_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            shadowBossKey_PictureBox.TabIndex = 161;
+            shadowBossKey_PictureBox.TabStop = false;
+            // 
+            // spiritBossKey_PictureBox
+            // 
+            spiritBossKey_PictureBox.Image = Properties.Resources.key_Boss;
+            spiritBossKey_PictureBox.Location = new Point(0, 195);
+            spiritBossKey_PictureBox.Margin = new Padding(4, 3, 4, 3);
+            spiritBossKey_PictureBox.Name = "spiritBossKey_PictureBox";
+            spiritBossKey_PictureBox.Size = new Size(24, 24);
+            spiritBossKey_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            spiritBossKey_PictureBox.TabIndex = 160;
+            spiritBossKey_PictureBox.TabStop = false;
+            // 
+            // fireBossKey_PictureBox
+            // 
+            fireBossKey_PictureBox.Image = Properties.Resources.key_Boss;
+            fireBossKey_PictureBox.Location = new Point(0, 64);
+            fireBossKey_PictureBox.Margin = new Padding(4, 3, 4, 3);
+            fireBossKey_PictureBox.Name = "fireBossKey_PictureBox";
+            fireBossKey_PictureBox.Size = new Size(24, 24);
+            fireBossKey_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            fireBossKey_PictureBox.TabIndex = 159;
+            fireBossKey_PictureBox.TabStop = false;
+            // 
+            // forestBossKey_PictureBox
+            // 
+            forestBossKey_PictureBox.Image = Properties.Resources.key_Boss;
+            forestBossKey_PictureBox.Location = new Point(0, 20);
+            forestBossKey_PictureBox.Margin = new Padding(4, 3, 4, 3);
+            forestBossKey_PictureBox.Name = "forestBossKey_PictureBox";
+            forestBossKey_PictureBox.Size = new Size(24, 24);
+            forestBossKey_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            forestBossKey_PictureBox.TabIndex = 158;
+            forestBossKey_PictureBox.TabStop = false;
             // 
             // forest_keyLabel
             // 
             forest_keyLabel.AutoSize = true;
-            forest_keyLabel.Location = new Point(38, 21);
+            forest_keyLabel.Location = new Point(63, 21);
             forest_keyLabel.Margin = new Padding(4, 0, 4, 0);
             forest_keyLabel.Name = "forest_keyLabel";
             forest_keyLabel.Size = new Size(13, 15);
@@ -1485,7 +1554,7 @@ namespace CeddysItemTracker
             // fire_keyLabel
             // 
             fire_keyLabel.AutoSize = true;
-            fire_keyLabel.Location = new Point(38, 66);
+            fire_keyLabel.Location = new Point(63, 66);
             fire_keyLabel.Margin = new Padding(4, 0, 4, 0);
             fire_keyLabel.Name = "fire_keyLabel";
             fire_keyLabel.Size = new Size(13, 15);
@@ -1495,7 +1564,7 @@ namespace CeddysItemTracker
             // water_keyLabel
             // 
             water_keyLabel.AutoSize = true;
-            water_keyLabel.Location = new Point(38, 110);
+            water_keyLabel.Location = new Point(63, 110);
             water_keyLabel.Margin = new Padding(4, 0, 4, 0);
             water_keyLabel.Name = "water_keyLabel";
             water_keyLabel.Size = new Size(13, 15);
@@ -1505,7 +1574,7 @@ namespace CeddysItemTracker
             // shadow_keyLabel
             // 
             shadow_keyLabel.AutoSize = true;
-            shadow_keyLabel.Location = new Point(38, 149);
+            shadow_keyLabel.Location = new Point(63, 149);
             shadow_keyLabel.Margin = new Padding(4, 0, 4, 0);
             shadow_keyLabel.Name = "shadow_keyLabel";
             shadow_keyLabel.Size = new Size(13, 15);
@@ -1515,7 +1584,7 @@ namespace CeddysItemTracker
             // spirit_keyLabel
             // 
             spirit_keyLabel.AutoSize = true;
-            spirit_keyLabel.Location = new Point(38, 193);
+            spirit_keyLabel.Location = new Point(63, 193);
             spirit_keyLabel.Margin = new Padding(4, 0, 4, 0);
             spirit_keyLabel.Name = "spirit_keyLabel";
             spirit_keyLabel.Size = new Size(13, 15);
@@ -1525,7 +1594,7 @@ namespace CeddysItemTracker
             // botw_keyPicturebox
             // 
             botw_keyPicturebox.Image = Properties.Resources.keyBotW_32x32;
-            botw_keyPicturebox.Location = new Point(0, 270);
+            botw_keyPicturebox.Location = new Point(25, 270);
             botw_keyPicturebox.Margin = new Padding(4, 3, 4, 3);
             botw_keyPicturebox.Name = "botw_keyPicturebox";
             botw_keyPicturebox.Size = new Size(37, 37);
@@ -1536,7 +1605,7 @@ namespace CeddysItemTracker
             // spiritkey_Picturebox
             // 
             spiritkey_Picturebox.Image = Properties.Resources.keySpirit_32x32;
-            spiritkey_Picturebox.Location = new Point(0, 182);
+            spiritkey_Picturebox.Location = new Point(25, 182);
             spiritkey_Picturebox.Margin = new Padding(4, 3, 4, 3);
             spiritkey_Picturebox.Name = "spiritkey_Picturebox";
             spiritkey_Picturebox.Size = new Size(37, 37);
@@ -1547,7 +1616,7 @@ namespace CeddysItemTracker
             // gtg_keyPictureBox
             // 
             gtg_keyPictureBox.Image = Properties.Resources.keyGTG_32x32;
-            gtg_keyPictureBox.Location = new Point(0, 226);
+            gtg_keyPictureBox.Location = new Point(25, 226);
             gtg_keyPictureBox.Margin = new Padding(4, 3, 4, 3);
             gtg_keyPictureBox.Name = "gtg_keyPictureBox";
             gtg_keyPictureBox.Size = new Size(37, 37);
@@ -1558,7 +1627,7 @@ namespace CeddysItemTracker
             // shadowkey_Picturebox
             // 
             shadowkey_Picturebox.Image = Properties.Resources.keyShadow_32x32;
-            shadowkey_Picturebox.Location = new Point(0, 139);
+            shadowkey_Picturebox.Location = new Point(25, 139);
             shadowkey_Picturebox.Margin = new Padding(4, 3, 4, 3);
             shadowkey_Picturebox.Name = "shadowkey_Picturebox";
             shadowkey_Picturebox.Size = new Size(37, 37);
@@ -1569,7 +1638,7 @@ namespace CeddysItemTracker
             // waterkey_Picturebox
             // 
             waterkey_Picturebox.Image = Properties.Resources.keyWater_32x32;
-            waterkey_Picturebox.Location = new Point(0, 95);
+            waterkey_Picturebox.Location = new Point(25, 95);
             waterkey_Picturebox.Margin = new Padding(4, 3, 4, 3);
             waterkey_Picturebox.Name = "waterkey_Picturebox";
             waterkey_Picturebox.Size = new Size(37, 37);
@@ -1580,7 +1649,7 @@ namespace CeddysItemTracker
             // firekey_Picturebox
             // 
             firekey_Picturebox.Image = Properties.Resources.keyFire_32x32;
-            firekey_Picturebox.Location = new Point(0, 51);
+            firekey_Picturebox.Location = new Point(25, 51);
             firekey_Picturebox.Margin = new Padding(4, 3, 4, 3);
             firekey_Picturebox.Name = "firekey_Picturebox";
             firekey_Picturebox.Size = new Size(37, 37);
@@ -1591,7 +1660,7 @@ namespace CeddysItemTracker
             // forestkey_Picturebox
             // 
             forestkey_Picturebox.Image = Properties.Resources.keyForest_32x32;
-            forestkey_Picturebox.Location = new Point(0, 7);
+            forestkey_Picturebox.Location = new Point(25, 7);
             forestkey_Picturebox.Margin = new Padding(4, 3, 4, 3);
             forestkey_Picturebox.Name = "forestkey_Picturebox";
             forestkey_Picturebox.Size = new Size(37, 37);
@@ -1602,7 +1671,7 @@ namespace CeddysItemTracker
             // token_PictureBox
             // 
             token_PictureBox.Image = Properties.Resources.OoT3D_Token_Icon_forLabel;
-            token_PictureBox.Location = new Point(267, 215);
+            token_PictureBox.Location = new Point(266, 215);
             token_PictureBox.Margin = new Padding(4, 3, 4, 3);
             token_PictureBox.Name = "token_PictureBox";
             token_PictureBox.Size = new Size(42, 61);
@@ -1614,7 +1683,7 @@ namespace CeddysItemTracker
             // zoraTunic_PictureBox
             // 
             zoraTunic_PictureBox.Image = Properties.Resources.OoT3D_Zora_Tunic_Icon_bw;
-            zoraTunic_PictureBox.Location = new Point(113, 328);
+            zoraTunic_PictureBox.Location = new Point(112, 328);
             zoraTunic_PictureBox.Margin = new Padding(4, 3, 4, 3);
             zoraTunic_PictureBox.Name = "zoraTunic_PictureBox";
             zoraTunic_PictureBox.Size = new Size(42, 42);
@@ -1624,7 +1693,7 @@ namespace CeddysItemTracker
             // mirrorShield_PictureBox
             // 
             mirrorShield_PictureBox.Image = Properties.Resources.OoT3D_Mirror_Shield_Icon_bw;
-            mirrorShield_PictureBox.Location = new Point(113, 276);
+            mirrorShield_PictureBox.Location = new Point(112, 276);
             mirrorShield_PictureBox.Margin = new Padding(4, 3, 4, 3);
             mirrorShield_PictureBox.Name = "mirrorShield_PictureBox";
             mirrorShield_PictureBox.Size = new Size(42, 42);
@@ -1634,7 +1703,7 @@ namespace CeddysItemTracker
             // nuts_PictureBox
             // 
             nuts_PictureBox.Image = Properties.Resources.OoT3D_Deku_Nut_Icon_bw;
-            nuts_PictureBox.Location = new Point(62, 9);
+            nuts_PictureBox.Location = new Point(61, 9);
             nuts_PictureBox.Margin = new Padding(4, 3, 4, 3);
             nuts_PictureBox.Name = "nuts_PictureBox";
             nuts_PictureBox.Size = new Size(42, 42);
@@ -1645,7 +1714,7 @@ namespace CeddysItemTracker
             // 
             magic_PictureBox.BackColor = Color.Transparent;
             magic_PictureBox.Image = Properties.Resources.Magic_BW;
-            magic_PictureBox.Location = new Point(267, 328);
+            magic_PictureBox.Location = new Point(266, 328);
             magic_PictureBox.Margin = new Padding(4, 3, 4, 3);
             magic_PictureBox.Name = "magic_PictureBox";
             magic_PictureBox.Size = new Size(42, 42);
@@ -1655,7 +1724,7 @@ namespace CeddysItemTracker
             // zoraStone_PictureBox
             // 
             zoraStone_PictureBox.Image = Properties.Resources.OoT3D_Spiritual_Stone_of_Water_Icon_bw;
-            zoraStone_PictureBox.Location = new Point(267, 380);
+            zoraStone_PictureBox.Location = new Point(266, 380);
             zoraStone_PictureBox.Margin = new Padding(4, 3, 4, 3);
             zoraStone_PictureBox.Name = "zoraStone_PictureBox";
             zoraStone_PictureBox.Size = new Size(42, 42);
@@ -1666,7 +1735,7 @@ namespace CeddysItemTracker
             // goronStone_PictureBox
             // 
             goronStone_PictureBox.Image = Properties.Resources.OoT3D_Spiritual_Stone_of_Fire_Icon_bw;
-            goronStone_PictureBox.Location = new Point(216, 380);
+            goronStone_PictureBox.Location = new Point(215, 380);
             goronStone_PictureBox.Margin = new Padding(4, 3, 4, 3);
             goronStone_PictureBox.Name = "goronStone_PictureBox";
             goronStone_PictureBox.Size = new Size(42, 42);
@@ -1677,7 +1746,7 @@ namespace CeddysItemTracker
             // kokiriStone_PictureBox
             // 
             kokiriStone_PictureBox.Image = Properties.Resources.OoT3D_Spiritual_Stone_of_the_Forest_Icon_bw;
-            kokiriStone_PictureBox.Location = new Point(164, 380);
+            kokiriStone_PictureBox.Location = new Point(163, 380);
             kokiriStone_PictureBox.Margin = new Padding(4, 3, 4, 3);
             kokiriStone_PictureBox.Name = "kokiriStone_PictureBox";
             kokiriStone_PictureBox.Size = new Size(42, 42);
@@ -1688,7 +1757,7 @@ namespace CeddysItemTracker
             // lightMedPictureBox
             // 
             lightMedPictureBox.Image = Properties.Resources.OoT3D_Light_Medallion_Icon_bw;
-            lightMedPictureBox.Location = new Point(267, 442);
+            lightMedPictureBox.Location = new Point(266, 442);
             lightMedPictureBox.Margin = new Padding(4, 3, 4, 3);
             lightMedPictureBox.Name = "lightMedPictureBox";
             lightMedPictureBox.Size = new Size(42, 42);
@@ -1699,7 +1768,7 @@ namespace CeddysItemTracker
             // shadowMedPictureBox
             // 
             shadowMedPictureBox.Image = Properties.Resources.OoT3D_Shadow_Medallion_Icon_bw;
-            shadowMedPictureBox.Location = new Point(164, 442);
+            shadowMedPictureBox.Location = new Point(163, 442);
             shadowMedPictureBox.Margin = new Padding(4, 3, 4, 3);
             shadowMedPictureBox.Name = "shadowMedPictureBox";
             shadowMedPictureBox.Size = new Size(42, 42);
@@ -1710,7 +1779,7 @@ namespace CeddysItemTracker
             // spiritMed_PictureBox
             // 
             spiritMed_PictureBox.Image = Properties.Resources.OoT3D_Spirit_Medallion_Icon_bw;
-            spiritMed_PictureBox.Location = new Point(216, 442);
+            spiritMed_PictureBox.Location = new Point(215, 442);
             spiritMed_PictureBox.Margin = new Padding(4, 3, 4, 3);
             spiritMed_PictureBox.Name = "spiritMed_PictureBox";
             spiritMed_PictureBox.Size = new Size(42, 42);
@@ -1722,7 +1791,7 @@ namespace CeddysItemTracker
             // 
             fireMed_PictureBox.BackColor = Color.Transparent;
             fireMed_PictureBox.Image = Properties.Resources.OoT3D_Fire_Medallion_Icon_bw;
-            fireMed_PictureBox.Location = new Point(62, 442);
+            fireMed_PictureBox.Location = new Point(61, 442);
             fireMed_PictureBox.Margin = new Padding(4, 3, 4, 3);
             fireMed_PictureBox.Name = "fireMed_PictureBox";
             fireMed_PictureBox.Size = new Size(42, 42);
@@ -1734,7 +1803,7 @@ namespace CeddysItemTracker
             // 
             forestMed_PictureBox.BackColor = Color.Transparent;
             forestMed_PictureBox.Image = Properties.Resources.OoT3D_Forest_Medallion_Icon_bw;
-            forestMed_PictureBox.Location = new Point(10, 442);
+            forestMed_PictureBox.Location = new Point(9, 442);
             forestMed_PictureBox.Margin = new Padding(4, 3, 4, 3);
             forestMed_PictureBox.Name = "forestMed_PictureBox";
             forestMed_PictureBox.Size = new Size(42, 42);
@@ -1745,7 +1814,7 @@ namespace CeddysItemTracker
             // waterMed_PictureBox
             // 
             waterMed_PictureBox.Image = Properties.Resources.OoT3D_Water_Medallion_Icon_bw;
-            waterMed_PictureBox.Location = new Point(113, 442);
+            waterMed_PictureBox.Location = new Point(112, 442);
             waterMed_PictureBox.Margin = new Padding(4, 3, 4, 3);
             waterMed_PictureBox.Name = "waterMed_PictureBox";
             waterMed_PictureBox.Size = new Size(42, 42);
@@ -1756,7 +1825,7 @@ namespace CeddysItemTracker
             // dins_PictureBox
             // 
             dins_PictureBox.Image = Properties.Resources.OoT3D_Din_s_Fire_Icon_bw;
-            dins_PictureBox.Location = new Point(267, 9);
+            dins_PictureBox.Location = new Point(266, 9);
             dins_PictureBox.Margin = new Padding(4, 3, 4, 3);
             dins_PictureBox.Name = "dins_PictureBox";
             dins_PictureBox.Size = new Size(42, 42);
@@ -1766,7 +1835,7 @@ namespace CeddysItemTracker
             // dekuSticks_PictureBox
             // 
             dekuSticks_PictureBox.Image = Properties.Resources.OoT3D_Deku_Stick_Icon_bw;
-            dekuSticks_PictureBox.Location = new Point(10, 9);
+            dekuSticks_PictureBox.Location = new Point(9, 9);
             dekuSticks_PictureBox.Margin = new Padding(4, 3, 4, 3);
             dekuSticks_PictureBox.Name = "dekuSticks_PictureBox";
             dekuSticks_PictureBox.Size = new Size(42, 42);
@@ -1776,7 +1845,7 @@ namespace CeddysItemTracker
             // dekuShield_PictureBox
             // 
             dekuShield_PictureBox.Image = Properties.Resources.OoT3D_Deku_Shield_Icon_bw;
-            dekuShield_PictureBox.Location = new Point(10, 276);
+            dekuShield_PictureBox.Location = new Point(9, 276);
             dekuShield_PictureBox.Margin = new Padding(4, 3, 4, 3);
             dekuShield_PictureBox.Name = "dekuShield_PictureBox";
             dekuShield_PictureBox.Size = new Size(42, 42);
@@ -1786,7 +1855,7 @@ namespace CeddysItemTracker
             // bottle1_PictureBox
             // 
             bottle1_PictureBox.Image = Properties.Resources.OoT3D_Bottle_Icon_bw;
-            bottle1_PictureBox.Location = new Point(62, 165);
+            bottle1_PictureBox.Location = new Point(61, 165);
             bottle1_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bottle1_PictureBox.Name = "bottle1_PictureBox";
             bottle1_PictureBox.Size = new Size(42, 42);
@@ -1796,7 +1865,7 @@ namespace CeddysItemTracker
             // bottle3_PictureBox
             // 
             bottle3_PictureBox.Image = Properties.Resources.OoT3D_Bottle_Icon_bw;
-            bottle3_PictureBox.Location = new Point(164, 165);
+            bottle3_PictureBox.Location = new Point(163, 165);
             bottle3_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bottle3_PictureBox.Name = "bottle3_PictureBox";
             bottle3_PictureBox.Size = new Size(42, 42);
@@ -1806,7 +1875,7 @@ namespace CeddysItemTracker
             // bottle2_PictureBox
             // 
             bottle2_PictureBox.Image = Properties.Resources.OoT3D_Bottle_Icon_bw;
-            bottle2_PictureBox.Location = new Point(113, 165);
+            bottle2_PictureBox.Location = new Point(112, 165);
             bottle2_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bottle2_PictureBox.Name = "bottle2_PictureBox";
             bottle2_PictureBox.Size = new Size(42, 42);
@@ -1816,7 +1885,7 @@ namespace CeddysItemTracker
             // boomerang_PictureBox
             // 
             boomerang_PictureBox.Image = Properties.Resources.OoT3D_Boomerang_Icon_bw;
-            boomerang_PictureBox.Location = new Point(10, 113);
+            boomerang_PictureBox.Location = new Point(9, 113);
             boomerang_PictureBox.Margin = new Padding(4, 3, 4, 3);
             boomerang_PictureBox.Name = "boomerang_PictureBox";
             boomerang_PictureBox.Size = new Size(42, 42);
@@ -1826,7 +1895,7 @@ namespace CeddysItemTracker
             // bombchu_PictureBox
             // 
             bombchu_PictureBox.Image = Properties.Resources.OoT3D_Bombchu_Icon_bw;
-            bombchu_PictureBox.Location = new Point(113, 61);
+            bombchu_PictureBox.Location = new Point(112, 61);
             bombchu_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bombchu_PictureBox.Name = "bombchu_PictureBox";
             bombchu_PictureBox.Size = new Size(42, 42);
@@ -1836,7 +1905,7 @@ namespace CeddysItemTracker
             // letter_PictureBox
             // 
             letter_PictureBox.Image = Properties.Resources.OoT3D_Ruto_s_Letter_Icon_bw;
-            letter_PictureBox.Location = new Point(10, 165);
+            letter_PictureBox.Location = new Point(9, 165);
             letter_PictureBox.Margin = new Padding(4, 3, 4, 3);
             letter_PictureBox.Name = "letter_PictureBox";
             letter_PictureBox.Size = new Size(42, 42);
@@ -1846,7 +1915,7 @@ namespace CeddysItemTracker
             // adultTrade_PictureBox
             // 
             adultTrade_PictureBox.Image = Properties.Resources.OoT3D_Prescription_Icon_bw;
-            adultTrade_PictureBox.Location = new Point(216, 165);
+            adultTrade_PictureBox.Location = new Point(215, 165);
             adultTrade_PictureBox.Margin = new Padding(4, 3, 4, 3);
             adultTrade_PictureBox.Name = "adultTrade_PictureBox";
             adultTrade_PictureBox.Size = new Size(42, 42);
@@ -1856,7 +1925,7 @@ namespace CeddysItemTracker
             // nayruLove_PictureBox
             // 
             nayruLove_PictureBox.Image = Properties.Resources.OoT3D_Nayru_s_Love_Icon_bw;
-            nayruLove_PictureBox.Location = new Point(267, 113);
+            nayruLove_PictureBox.Location = new Point(266, 113);
             nayruLove_PictureBox.Margin = new Padding(4, 3, 4, 3);
             nayruLove_PictureBox.Name = "nayruLove_PictureBox";
             nayruLove_PictureBox.Size = new Size(42, 42);
@@ -1866,7 +1935,7 @@ namespace CeddysItemTracker
             // masterSword_PictureBox
             // 
             masterSword_PictureBox.Image = Properties.Resources.OoT3D_Master_Sword_Icon_bw;
-            masterSword_PictureBox.Location = new Point(62, 224);
+            masterSword_PictureBox.Location = new Point(61, 224);
             masterSword_PictureBox.Margin = new Padding(4, 3, 4, 3);
             masterSword_PictureBox.Name = "masterSword_PictureBox";
             masterSword_PictureBox.Size = new Size(42, 42);
@@ -1876,7 +1945,7 @@ namespace CeddysItemTracker
             // magicBean_PictureBox
             // 
             magicBean_PictureBox.Image = Properties.Resources.OoT3D_Magic_Bean_Icon_bw;
-            magicBean_PictureBox.Location = new Point(62, 113);
+            magicBean_PictureBox.Location = new Point(61, 113);
             magicBean_PictureBox.Margin = new Padding(4, 3, 4, 3);
             magicBean_PictureBox.Name = "magicBean_PictureBox";
             magicBean_PictureBox.Size = new Size(42, 42);
@@ -1886,7 +1955,7 @@ namespace CeddysItemTracker
             // lightArrow_PictureBox
             // 
             lightArrow_PictureBox.Image = Properties.Resources.OoT3D_Light_Arrow_Icon_bw;
-            lightArrow_PictureBox.Location = new Point(216, 113);
+            lightArrow_PictureBox.Location = new Point(215, 113);
             lightArrow_PictureBox.Margin = new Padding(4, 3, 4, 3);
             lightArrow_PictureBox.Name = "lightArrow_PictureBox";
             lightArrow_PictureBox.Size = new Size(42, 42);
@@ -1896,7 +1965,7 @@ namespace CeddysItemTracker
             // kokiriTunic_PictureBox
             // 
             kokiriTunic_PictureBox.Image = Properties.Resources.OoT3D_Kokiri_Tunic_Icon;
-            kokiriTunic_PictureBox.Location = new Point(10, 328);
+            kokiriTunic_PictureBox.Location = new Point(9, 328);
             kokiriTunic_PictureBox.Margin = new Padding(4, 3, 4, 3);
             kokiriTunic_PictureBox.Name = "kokiriTunic_PictureBox";
             kokiriTunic_PictureBox.Size = new Size(42, 42);
@@ -1906,7 +1975,7 @@ namespace CeddysItemTracker
             // kokiriSword_PictureBox
             // 
             kokiriSword_PictureBox.Image = Properties.Resources.OoT3D_Kokiri_Sword_Icon_bw;
-            kokiriSword_PictureBox.Location = new Point(10, 224);
+            kokiriSword_PictureBox.Location = new Point(9, 224);
             kokiriSword_PictureBox.Margin = new Padding(4, 3, 4, 3);
             kokiriSword_PictureBox.Name = "kokiriSword_PictureBox";
             kokiriSword_PictureBox.Size = new Size(42, 42);
@@ -1916,7 +1985,7 @@ namespace CeddysItemTracker
             // kokiriBoots_PictureBox
             // 
             kokiriBoots_PictureBox.Image = Properties.Resources.OoT3D_Kokiri_Boots_Icon;
-            kokiriBoots_PictureBox.Location = new Point(10, 380);
+            kokiriBoots_PictureBox.Location = new Point(9, 380);
             kokiriBoots_PictureBox.Margin = new Padding(4, 3, 4, 3);
             kokiriBoots_PictureBox.Name = "kokiriBoots_PictureBox";
             kokiriBoots_PictureBox.Size = new Size(42, 42);
@@ -1926,7 +1995,7 @@ namespace CeddysItemTracker
             // childTrade_PictureBix
             // 
             childTrade_PictureBix.Image = Properties.Resources.OoT3D_Keaton_Mask_Icon_bw;
-            childTrade_PictureBix.Location = new Point(267, 165);
+            childTrade_PictureBix.Location = new Point(266, 165);
             childTrade_PictureBix.Margin = new Padding(4, 3, 4, 3);
             childTrade_PictureBix.Name = "childTrade_PictureBix";
             childTrade_PictureBix.Size = new Size(42, 42);
@@ -1936,7 +2005,7 @@ namespace CeddysItemTracker
             // ironBoots_PictureBox
             // 
             ironBoots_PictureBox.Image = Properties.Resources.OoT3D_Iron_Boots_Icon_bw;
-            ironBoots_PictureBox.Location = new Point(62, 380);
+            ironBoots_PictureBox.Location = new Point(61, 380);
             ironBoots_PictureBox.Margin = new Padding(4, 3, 4, 3);
             ironBoots_PictureBox.Name = "ironBoots_PictureBox";
             ironBoots_PictureBox.Size = new Size(42, 42);
@@ -1946,7 +2015,7 @@ namespace CeddysItemTracker
             // iceArrow_PictureBox
             // 
             iceArrow_PictureBox.Image = Properties.Resources.OoT3D_Ice_Arrow_Icon_bw;
-            iceArrow_PictureBox.Location = new Point(216, 61);
+            iceArrow_PictureBox.Location = new Point(215, 61);
             iceArrow_PictureBox.Margin = new Padding(4, 3, 4, 3);
             iceArrow_PictureBox.Name = "iceArrow_PictureBox";
             iceArrow_PictureBox.Size = new Size(42, 42);
@@ -1956,7 +2025,7 @@ namespace CeddysItemTracker
             // hylianShield_PictureBox
             // 
             hylianShield_PictureBox.Image = Properties.Resources.OoT3D_Hylian_Shield_Icon_bw;
-            hylianShield_PictureBox.Location = new Point(62, 276);
+            hylianShield_PictureBox.Location = new Point(61, 276);
             hylianShield_PictureBox.Margin = new Padding(4, 3, 4, 3);
             hylianShield_PictureBox.Name = "hylianShield_PictureBox";
             hylianShield_PictureBox.Size = new Size(42, 42);
@@ -1966,7 +2035,7 @@ namespace CeddysItemTracker
             // hoverBoots_PictureBox
             // 
             hoverBoots_PictureBox.Image = Properties.Resources.OoT3D_Hover_Boots_Icon_bw;
-            hoverBoots_PictureBox.Location = new Point(113, 380);
+            hoverBoots_PictureBox.Location = new Point(112, 380);
             hoverBoots_PictureBox.Margin = new Padding(4, 3, 4, 3);
             hoverBoots_PictureBox.Name = "hoverBoots_PictureBox";
             hoverBoots_PictureBox.Size = new Size(42, 42);
@@ -1976,7 +2045,7 @@ namespace CeddysItemTracker
             // goronTunic_PictureBox
             // 
             goronTunic_PictureBox.Image = Properties.Resources.OoT3D_Goron_Tunic_Icon_bw;
-            goronTunic_PictureBox.Location = new Point(62, 328);
+            goronTunic_PictureBox.Location = new Point(61, 328);
             goronTunic_PictureBox.Margin = new Padding(4, 3, 4, 3);
             goronTunic_PictureBox.Name = "goronTunic_PictureBox";
             goronTunic_PictureBox.Size = new Size(42, 42);
@@ -1986,7 +2055,7 @@ namespace CeddysItemTracker
             // bigGoronSword_PictureBox
             // 
             bigGoronSword_PictureBox.Image = Properties.Resources.OoT3D_Biggoron_s_Sword_Icon_bw;
-            bigGoronSword_PictureBox.Location = new Point(113, 224);
+            bigGoronSword_PictureBox.Location = new Point(112, 224);
             bigGoronSword_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bigGoronSword_PictureBox.Name = "bigGoronSword_PictureBox";
             bigGoronSword_PictureBox.Size = new Size(42, 42);
@@ -1996,7 +2065,7 @@ namespace CeddysItemTracker
             // wallet_PictureBox
             // 
             wallet_PictureBox.Image = Properties.Resources.OoT3D_Adult_s_Wallet_Icon_bw;
-            wallet_PictureBox.Location = new Point(267, 276);
+            wallet_PictureBox.Location = new Point(266, 276);
             wallet_PictureBox.Margin = new Padding(4, 3, 4, 3);
             wallet_PictureBox.Name = "wallet_PictureBox";
             wallet_PictureBox.Size = new Size(42, 42);
@@ -2006,7 +2075,7 @@ namespace CeddysItemTracker
             // fw_PictureBox
             // 
             fw_PictureBox.Image = Properties.Resources.OoT3D_Farore_s_Wind_Icon_bw;
-            fw_PictureBox.Location = new Point(267, 61);
+            fw_PictureBox.Location = new Point(266, 61);
             fw_PictureBox.Margin = new Padding(4, 3, 4, 3);
             fw_PictureBox.Name = "fw_PictureBox";
             fw_PictureBox.Size = new Size(42, 42);
@@ -2016,7 +2085,7 @@ namespace CeddysItemTracker
             // ocarina_PictureBox
             // 
             ocarina_PictureBox.Image = Properties.Resources.OoT3D_Fairy_Ocarina_Icon_bw;
-            ocarina_PictureBox.Location = new Point(62, 61);
+            ocarina_PictureBox.Location = new Point(61, 61);
             ocarina_PictureBox.Margin = new Padding(4, 3, 4, 3);
             ocarina_PictureBox.Name = "ocarina_PictureBox";
             ocarina_PictureBox.Size = new Size(42, 42);
@@ -2026,7 +2095,7 @@ namespace CeddysItemTracker
             // scale_PictureBox
             // 
             scale_PictureBox.Image = Properties.Resources.OoT3D_Silver_Scale_Icon_bw;
-            scale_PictureBox.Location = new Point(216, 276);
+            scale_PictureBox.Location = new Point(215, 276);
             scale_PictureBox.Margin = new Padding(4, 3, 4, 3);
             scale_PictureBox.Name = "scale_PictureBox";
             scale_PictureBox.Size = new Size(42, 42);
@@ -2036,7 +2105,7 @@ namespace CeddysItemTracker
             // hookshot_PictureBox
             // 
             hookshot_PictureBox.Image = Properties.Resources.OoT3D_Hookshot_Icon_bw;
-            hookshot_PictureBox.Location = new Point(164, 61);
+            hookshot_PictureBox.Location = new Point(163, 61);
             hookshot_PictureBox.Margin = new Padding(4, 3, 4, 3);
             hookshot_PictureBox.Name = "hookshot_PictureBox";
             hookshot_PictureBox.Size = new Size(42, 42);
@@ -2046,7 +2115,7 @@ namespace CeddysItemTracker
             // lens_PictureBox
             // 
             lens_PictureBox.Image = Properties.Resources.OoT3D_Lens_of_Truth_Icon_bw;
-            lens_PictureBox.Location = new Point(113, 113);
+            lens_PictureBox.Location = new Point(112, 113);
             lens_PictureBox.Margin = new Padding(4, 3, 4, 3);
             lens_PictureBox.Name = "lens_PictureBox";
             lens_PictureBox.Size = new Size(42, 42);
@@ -2057,7 +2126,7 @@ namespace CeddysItemTracker
             // 
             slingshot_PictureBox.BackColor = Color.Transparent;
             slingshot_PictureBox.Image = Properties.Resources.OoT3D_Fairy_Slingshot_Icon_bw;
-            slingshot_PictureBox.Location = new Point(10, 61);
+            slingshot_PictureBox.Location = new Point(9, 61);
             slingshot_PictureBox.Margin = new Padding(4, 3, 4, 3);
             slingshot_PictureBox.Name = "slingshot_PictureBox";
             slingshot_PictureBox.Size = new Size(42, 42);
@@ -2067,7 +2136,7 @@ namespace CeddysItemTracker
             // gerudoToken_PictureBox
             // 
             gerudoToken_PictureBox.Image = Properties.Resources.OoT3D_Gerudo_Token_Icon_bw;
-            gerudoToken_PictureBox.Location = new Point(216, 224);
+            gerudoToken_PictureBox.Location = new Point(215, 224);
             gerudoToken_PictureBox.Margin = new Padding(4, 3, 4, 3);
             gerudoToken_PictureBox.Name = "gerudoToken_PictureBox";
             gerudoToken_PictureBox.Size = new Size(42, 42);
@@ -2077,7 +2146,7 @@ namespace CeddysItemTracker
             // fireArrow_PictureBox
             // 
             fireArrow_PictureBox.Image = Properties.Resources.OoT3D_Fire_Arrow_Icon_bw;
-            fireArrow_PictureBox.Location = new Point(216, 9);
+            fireArrow_PictureBox.Location = new Point(215, 9);
             fireArrow_PictureBox.Margin = new Padding(4, 3, 4, 3);
             fireArrow_PictureBox.Name = "fireArrow_PictureBox";
             fireArrow_PictureBox.Size = new Size(42, 42);
@@ -2087,7 +2156,7 @@ namespace CeddysItemTracker
             // bow_PictureBox
             // 
             bow_PictureBox.Image = Properties.Resources.OoT3D_Fairy_Bow_Icon_bw;
-            bow_PictureBox.Location = new Point(164, 9);
+            bow_PictureBox.Location = new Point(163, 9);
             bow_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bow_PictureBox.Name = "bow_PictureBox";
             bow_PictureBox.Size = new Size(42, 42);
@@ -2098,7 +2167,7 @@ namespace CeddysItemTracker
             // 
             strength_PictureBox.BackColor = Color.Transparent;
             strength_PictureBox.Image = Properties.Resources.OoT3D_Goron_Bracelet_Icon_bw;
-            strength_PictureBox.Location = new Point(164, 276);
+            strength_PictureBox.Location = new Point(163, 276);
             strength_PictureBox.Margin = new Padding(4, 3, 4, 3);
             strength_PictureBox.Name = "strength_PictureBox";
             strength_PictureBox.Size = new Size(42, 42);
@@ -2109,7 +2178,7 @@ namespace CeddysItemTracker
             // 
             hammer_PictureBox.BackColor = Color.Transparent;
             hammer_PictureBox.Image = Properties.Resources.OoT3D_Megaton_Hammer_Icon_bw;
-            hammer_PictureBox.Location = new Point(164, 113);
+            hammer_PictureBox.Location = new Point(163, 113);
             hammer_PictureBox.Margin = new Padding(4, 3, 4, 3);
             hammer_PictureBox.Name = "hammer_PictureBox";
             hammer_PictureBox.Size = new Size(42, 42);
@@ -2131,7 +2200,7 @@ namespace CeddysItemTracker
             // 
             bomb_PictureBox.BackColor = Color.Transparent;
             bomb_PictureBox.Image = Properties.Resources.OoT3D_Bomb_Icon_bw;
-            bomb_PictureBox.Location = new Point(113, 9);
+            bomb_PictureBox.Location = new Point(112, 9);
             bomb_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bomb_PictureBox.Name = "bomb_PictureBox";
             bomb_PictureBox.Size = new Size(42, 42);
@@ -2142,7 +2211,7 @@ namespace CeddysItemTracker
             // 
             pictureBox1.BackColor = Color.Black;
             pictureBox1.Image = Properties.Resources.ItemLayout;
-            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Location = new Point(-1, 0);
             pictureBox1.Margin = new Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(317, 506);
@@ -2166,7 +2235,7 @@ namespace CeddysItemTracker
             // 
             doubleDefense_PictureBox.BackColor = Color.Transparent;
             doubleDefense_PictureBox.Image = Properties.Resources.OoT3D_Heart_Container_Icon_bw;
-            doubleDefense_PictureBox.Location = new Point(216, 328);
+            doubleDefense_PictureBox.Location = new Point(215, 328);
             doubleDefense_PictureBox.Margin = new Padding(4, 3, 4, 3);
             doubleDefense_PictureBox.Name = "doubleDefense_PictureBox";
             doubleDefense_PictureBox.Size = new Size(42, 42);
@@ -2177,7 +2246,7 @@ namespace CeddysItemTracker
             // 
             agony_Picturebox.BackColor = Color.Transparent;
             agony_Picturebox.Image = Properties.Resources.OoT3D_Shard_of_Agony_Icon_bw;
-            agony_Picturebox.Location = new Point(164, 224);
+            agony_Picturebox.Location = new Point(163, 224);
             agony_Picturebox.Margin = new Padding(4, 3, 4, 3);
             agony_Picturebox.Name = "agony_Picturebox";
             agony_Picturebox.Size = new Size(42, 42);
@@ -2188,7 +2257,7 @@ namespace CeddysItemTracker
             // 
             go_PictureBox.BackColor = Color.Transparent;
             go_PictureBox.Image = Properties.Resources.go_mode_bw_32x32;
-            go_PictureBox.Location = new Point(171, 332);
+            go_PictureBox.Location = new Point(170, 332);
             go_PictureBox.Margin = new Padding(4, 3, 4, 3);
             go_PictureBox.Name = "go_PictureBox";
             go_PictureBox.Size = new Size(42, 42);
@@ -2529,6 +2598,11 @@ namespace CeddysItemTracker
             ((System.ComponentModel.ISupportInitialize)nocturne_PictureBox).EndInit();
             keysPanel.ResumeLayout(false);
             keysPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)waterBossKey_PictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)shadowBossKey_PictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)spiritBossKey_PictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)fireBossKey_PictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)forestBossKey_PictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)botw_keyPicturebox).EndInit();
             ((System.ComponentModel.ISupportInitialize)spiritkey_Picturebox).EndInit();
             ((System.ComponentModel.ISupportInitialize)gtg_keyPictureBox).EndInit();
@@ -2785,6 +2859,11 @@ namespace CeddysItemTracker
         private Label label2;
         private Label label1;
         private Panel equip_panel;
+        private PictureBox forestBossKey_PictureBox;
+        private PictureBox waterBossKey_PictureBox;
+        private PictureBox shadowBossKey_PictureBox;
+        private PictureBox spiritBossKey_PictureBox;
+        private PictureBox fireBossKey_PictureBox;
     }
 }
 

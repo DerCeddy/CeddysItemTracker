@@ -86,6 +86,10 @@ namespace CeddysItemTracker
         public Item Agony = new() { ItemPicture = Resources.OoT3D_Shard_of_Agony_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Shard_of_Agony_Icon_bw };
         public Item DoubleDefense = new() { ItemPicture = Resources.OoT3D_Heart_Container_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Heart_Container_Icon_bw };
         public Item GoMode = new() { ItemPicture = Resources.go_mode_32x32, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.go_mode_bw_32x32 };
-        
+        public Item ForestBossKey = new() {ItemPicture = Resources.OoT3D_Boss_Key_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Boss_Key_Icon_bw, };
+        public Item FireBossKey = new() { ItemPicture = Resources.OoT3D_Boss_Key_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Boss_Key_Icon_bw, };
+        public Item WaterBossKey = new() { ItemPicture = Resources.OoT3D_Boss_Key_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Boss_Key_Icon_bw, };
+        public Item ShadowBossKey = new() { ItemPicture = Resources.OoT3D_Boss_Key_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Boss_Key_Icon_bw, };
+        public Item SpiritBossKey = new() { ItemPicture = Resources.OoT3D_Boss_Key_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Boss_Key_Icon_bw, };
     }
 }

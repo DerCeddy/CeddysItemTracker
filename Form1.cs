@@ -55,7 +55,7 @@ namespace CeddysItemTracker
         public bool enableStats;
         public Point stats_location;
         List<string> LonLonRanch = ["Lon-Lon-Ranch", "Talon Minigame", "Malon Song", "LLR HP"];
-        List<string> HyruleField = ["Hyrule Field", "Open Grotto", "Southeast Grotto", "Salesman", "North Grotto", "Diving HP", "Song of Time"];
+        List<string> HyruleField = ["Hyrule Field", "Open Grotto", "Southeast Grotto", "Salesman", "North Grotto", "Tektite Grotto Freestanding PoH", "Song of Time"];
         List<string> KokiriForest = ["Kokiri Forest", "Mido Top Left", "Mido Top Right", "Mido Bottom Left", "Mido Bottom Right", "Kokiri Sword Chest", "Storms Grotto"];
         List<string> LostWoods = ["Lost Woods", "Ocarina Memory Game", "Target in the Woods", "Near Shortcuts Grotto Chest", "Skull Kid", "Deku Scrub Near Bridge", "Deku Scrub Grotto Front", "Skull Mask"];
         List<string> SacredForestMeadow = ["Sacred Forest Meadow", "Wolfo Grotto", "Sarias Song", "Shiek in Forest"];
@@ -299,7 +299,12 @@ namespace CeddysItemTracker
                 ZoraStone,
                 DoubleDefense,
                 Agony,
-                GoMode
+                GoMode,
+                ForestBossKey,
+                FireBossKey,
+                WaterBossKey,
+                ShadowBossKey,
+                SpiritBossKey
             ];
             resetTracker.MouseDown += (sender, e) => ResetTracker(Items);
             //Mouse Interactions with Items
