@@ -1,5 +1,9 @@
 # Ceddy's Item Tracker
-Maptracker combined with features known from the [Gossip Stone Tracker](https://github.com/Draeko/ootr_gst/tree/ladder_version) made for competitive play
+Maptracker combined with features known from the [Gossip Stone Tracker](https://github.com/Draeko/ootr_gst/tree/ladder_version) made for competitive play.
+
+Item layout is modeled after [Barinade's Item Tracker](https://wiki.ootrandomizer.com/index.php/Trackers#Barinade's_Item_Tracker)
+
+Map Tracker is inspired from the [ALTTP Community Tracker](https://alttprtracker.dunka.net/)
 ## Features
 ### Maptracker
 ![grafik](https://github.com/user-attachments/assets/3feeeb45-f9ae-4b90-86d9-6de370c18ba2)
