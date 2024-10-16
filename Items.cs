@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CeddysItemTracker
 {
-    public class Item
+    public class Item : PictureBox
     {
         public int State;
         public PictureBox? ItemPictureBox;
@@ -17,7 +18,7 @@ namespace CeddysItemTracker
         public Bitmap? ItemPicture1;
         public Bitmap? ItemPicture2;
         public Bitmap? ItemPicture3;
-        public Bitmap? ItemPicture_bw;
+        public Bitmap? ItemPicture_bw;     
     }
     public partial class Form1 : Form
     {

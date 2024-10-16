@@ -9,24 +9,24 @@ namespace CeddysItemTracker
 {
     public partial class Form1 : Form
     {
-        private static void PathStone_Click(MouseEventArgs e, PictureBox PathStone)
+        private static void GossipStone_Click(MouseEventArgs e, PictureBox PathStone)
         {
             if (e.Button == MouseButtons.Right)
             {
-                PathStone.Image = Resources.gossip_stone_bw_32x32;
+                PathStone.Image = Resources.gossip_stone_bw_32x32;              
             }
             if (e.Button == MouseButtons.Left)
             {
-                PathStone.Image = Resources.Soldout;
-            }
+                PathStone.Image = Resources.Soldout;             
+            }         
         }
-        public void PictureBox2_DragEnter(object sender, DragEventArgs e)
+        public void GossipStone_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
                 e.Effect = DragDropEffects.Move;
         }
 
-        static void PictureBox2_DragDrop(DragEventArgs e, PictureBox PathStone)
+        static void GossipStone_DragDrop(DragEventArgs e, PictureBox PathStone)
         {
             Bitmap bmp = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
             PathStone.Image = bmp;

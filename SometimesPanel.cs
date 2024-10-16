@@ -50,14 +50,6 @@ namespace CeddysItemTracker
                     panel.Controls.Add(gossipstone);
                 }
             }
-        }
-        public void CheckBoxClick(CheckBox Check)
-        {           
-            if (MouseButtons == MouseButtons.Right)
-            {
-                RightClickToTextboxes(Check.Text, Controls.Find("sometimesPanel", true).First());
-            }
-        }
-        
+        }              
     }
 }

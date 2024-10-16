@@ -17,3 +17,6 @@ dotnet_diagnostic.IDE0060.severity = none
 
 # CA1822: Member als statisch markieren
 dotnet_diagnostic.CA1822.severity = none
+
+# CA1861: Konstantenmatrizen als Argumente vermeiden
+dotnet_diagnostic.CA1861.severity = none

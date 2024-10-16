@@ -208,7 +208,7 @@ namespace CeddysItemTracker
             resetTracker = new ToolStripMenuItem();
             sphere_panel = new Panel();
             maptracker = new Panel();
-            timer1 = new System.Windows.Forms.Timer(components);
+            timer = new System.Windows.Forms.Timer(components);
             stat_panel = new Panel();
             label3 = new Label();
             label2 = new Label();
@@ -338,8 +338,9 @@ namespace CeddysItemTracker
             // LLR
             // 
             LLR.BackColor = Color.Lime;
-            LLR.FlatAppearance.BorderColor = Color.FromArgb(0, 192, 0);
-            LLR.FlatAppearance.BorderSize = 0;
+            LLR.FlatAppearance.BorderColor = Color.Black;
+            LLR.FlatAppearance.BorderSize = 2;
+            LLR.FlatStyle = FlatStyle.Flat;
             LLR.ForeColor = Color.Black;
             LLR.Location = new Point(470, 187);
             LLR.Margin = new Padding(4, 3, 4, 3);
@@ -352,6 +353,9 @@ namespace CeddysItemTracker
             // 
             // hf
             // 
+            hf.FlatAppearance.BorderColor = Color.Black;
+            hf.FlatAppearance.BorderSize = 2;
+            hf.FlatStyle = FlatStyle.Flat;
             hf.ForeColor = Color.Black;
             hf.Location = new Point(526, 155);
             hf.Margin = new Padding(4, 3, 4, 3);
@@ -372,6 +376,9 @@ namespace CeddysItemTracker
             // 
             // kf
             // 
+            kf.FlatAppearance.BorderColor = Color.Black;
+            kf.FlatAppearance.BorderSize = 2;
+            kf.FlatStyle = FlatStyle.Flat;
             kf.ForeColor = Color.Black;
             kf.Location = new Point(731, 280);
             kf.Margin = new Padding(4, 3, 4, 3);
@@ -384,6 +391,9 @@ namespace CeddysItemTracker
             // 
             // dekuTreeButton
             // 
+            dekuTreeButton.FlatAppearance.BorderColor = Color.Black;
+            dekuTreeButton.FlatAppearance.BorderSize = 2;
+            dekuTreeButton.FlatStyle = FlatStyle.Flat;
             dekuTreeButton.ForeColor = Color.Black;
             dekuTreeButton.Location = new Point(809, 252);
             dekuTreeButton.Margin = new Padding(4, 3, 4, 3);
@@ -396,6 +406,9 @@ namespace CeddysItemTracker
             // 
             // lwButton
             // 
+            lwButton.FlatAppearance.BorderColor = Color.Black;
+            lwButton.FlatAppearance.BorderSize = 2;
+            lwButton.FlatStyle = FlatStyle.Flat;
             lwButton.ForeColor = Color.Black;
             lwButton.Location = new Point(716, 230);
             lwButton.Margin = new Padding(4, 3, 4, 3);
@@ -408,6 +421,9 @@ namespace CeddysItemTracker
             // 
             // sfwButton
             // 
+            sfwButton.FlatAppearance.BorderColor = Color.Black;
+            sfwButton.FlatAppearance.BorderSize = 2;
+            sfwButton.FlatStyle = FlatStyle.Flat;
             sfwButton.ForeColor = Color.Black;
             sfwButton.Location = new Point(742, 203);
             sfwButton.Margin = new Padding(4, 3, 4, 3);
@@ -420,6 +436,9 @@ namespace CeddysItemTracker
             // 
             // forestButton
             // 
+            forestButton.FlatAppearance.BorderColor = Color.Black;
+            forestButton.FlatAppearance.BorderSize = 2;
+            forestButton.FlatStyle = FlatStyle.Flat;
             forestButton.ForeColor = Color.Black;
             forestButton.Location = new Point(719, 167);
             forestButton.Margin = new Padding(4, 3, 4, 3);
@@ -432,6 +451,9 @@ namespace CeddysItemTracker
             // 
             // waterTemple
             // 
+            waterTemple.FlatAppearance.BorderColor = Color.Black;
+            waterTemple.FlatAppearance.BorderSize = 2;
+            waterTemple.FlatStyle = FlatStyle.Flat;
             waterTemple.ForeColor = Color.Black;
             waterTemple.Location = new Point(379, 411);
             waterTemple.Margin = new Padding(4, 3, 4, 3);
@@ -444,6 +466,9 @@ namespace CeddysItemTracker
             // 
             // kakariko
             // 
+            kakariko.FlatAppearance.BorderColor = Color.Black;
+            kakariko.FlatAppearance.BorderSize = 2;
+            kakariko.FlatStyle = FlatStyle.Flat;
             kakariko.ForeColor = Color.Black;
             kakariko.Location = new Point(626, 104);
             kakariko.Margin = new Padding(4, 3, 4, 3);
@@ -456,6 +481,9 @@ namespace CeddysItemTracker
             // 
             // lake
             // 
+            lake.FlatAppearance.BorderColor = Color.Black;
+            lake.FlatAppearance.BorderSize = 2;
+            lake.FlatStyle = FlatStyle.Flat;
             lake.ForeColor = Color.Black;
             lake.Location = new Point(393, 365);
             lake.Margin = new Padding(4, 3, 4, 3);
@@ -468,9 +496,11 @@ namespace CeddysItemTracker
             // 
             // gerudoValley
             // 
+            gerudoValley.FlatAppearance.BorderColor = Color.Black;
+            gerudoValley.FlatAppearance.BorderSize = 2;
+            gerudoValley.FlatStyle = FlatStyle.Flat;
             gerudoValley.ForeColor = Color.Black;
             gerudoValley.Location = new Point(281, 163);
-            gerudoValley.Margin = new Padding(4, 3, 4, 3);
             gerudoValley.Name = "gerudoValley";
             gerudoValley.Size = new Size(28, 28);
             gerudoValley.TabIndex = 86;
@@ -480,9 +510,11 @@ namespace CeddysItemTracker
             // 
             // gerudoFortress
             // 
+            gerudoFortress.FlatAppearance.BorderColor = Color.Black;
+            gerudoFortress.FlatAppearance.BorderSize = 2;
+            gerudoFortress.FlatStyle = FlatStyle.Flat;
             gerudoFortress.ForeColor = Color.Black;
             gerudoFortress.Location = new Point(262, 102);
-            gerudoFortress.Margin = new Padding(4, 3, 4, 3);
             gerudoFortress.Name = "gerudoFortress";
             gerudoFortress.Size = new Size(28, 28);
             gerudoFortress.TabIndex = 87;
@@ -492,6 +524,9 @@ namespace CeddysItemTracker
             // 
             // wasteland
             // 
+            wasteland.FlatAppearance.BorderColor = Color.Black;
+            wasteland.FlatAppearance.BorderSize = 2;
+            wasteland.FlatStyle = FlatStyle.Flat;
             wasteland.ForeColor = Color.Black;
             wasteland.Location = new Point(196, 104);
             wasteland.Margin = new Padding(4, 3, 4, 3);
@@ -504,6 +539,9 @@ namespace CeddysItemTracker
             // 
             // market
             // 
+            market.FlatAppearance.BorderColor = Color.Black;
+            market.FlatAppearance.BorderSize = 2;
+            market.FlatStyle = FlatStyle.Flat;
             market.ForeColor = Color.Black;
             market.Location = new Point(509, 102);
             market.Margin = new Padding(4, 3, 4, 3);
@@ -516,6 +554,9 @@ namespace CeddysItemTracker
             // 
             // outsideCastle
             // 
+            outsideCastle.FlatAppearance.BorderColor = Color.Black;
+            outsideCastle.FlatAppearance.BorderSize = 2;
+            outsideCastle.FlatStyle = FlatStyle.Flat;
             outsideCastle.ForeColor = Color.Black;
             outsideCastle.Location = new Point(512, 62);
             outsideCastle.Margin = new Padding(4, 3, 4, 3);
@@ -528,6 +569,9 @@ namespace CeddysItemTracker
             // 
             // ganonCastle
             // 
+            ganonCastle.FlatAppearance.BorderColor = Color.Black;
+            ganonCastle.FlatAppearance.BorderSize = 2;
+            ganonCastle.FlatStyle = FlatStyle.Flat;
             ganonCastle.ForeColor = Color.Black;
             ganonCastle.Location = new Point(511, 27);
             ganonCastle.Margin = new Padding(4, 3, 4, 3);
@@ -540,6 +584,9 @@ namespace CeddysItemTracker
             // 
             // graveyard
             // 
+            graveyard.FlatAppearance.BorderColor = Color.Black;
+            graveyard.FlatAppearance.BorderSize = 2;
+            graveyard.FlatStyle = FlatStyle.Flat;
             graveyard.ForeColor = Color.Black;
             graveyard.Location = new Point(696, 101);
             graveyard.Margin = new Padding(4, 3, 4, 3);
@@ -552,6 +599,9 @@ namespace CeddysItemTracker
             // 
             // shadowTemple
             // 
+            shadowTemple.FlatAppearance.BorderColor = Color.Black;
+            shadowTemple.FlatAppearance.BorderSize = 2;
+            shadowTemple.FlatStyle = FlatStyle.Flat;
             shadowTemple.ForeColor = Color.Black;
             shadowTemple.Location = new Point(726, 84);
             shadowTemple.Margin = new Padding(4, 3, 4, 3);
@@ -564,6 +614,9 @@ namespace CeddysItemTracker
             // 
             // zoraDomain
             // 
+            zoraDomain.FlatAppearance.BorderColor = Color.Black;
+            zoraDomain.FlatAppearance.BorderSize = 2;
+            zoraDomain.FlatStyle = FlatStyle.Flat;
             zoraDomain.ForeColor = Color.Black;
             zoraDomain.Location = new Point(853, 134);
             zoraDomain.Margin = new Padding(4, 3, 4, 3);
@@ -576,6 +629,9 @@ namespace CeddysItemTracker
             // 
             // dmt
             // 
+            dmt.FlatAppearance.BorderColor = Color.Black;
+            dmt.FlatAppearance.BorderSize = 2;
+            dmt.FlatStyle = FlatStyle.Flat;
             dmt.ForeColor = Color.Black;
             dmt.Location = new Point(622, 72);
             dmt.Margin = new Padding(4, 3, 4, 3);
@@ -588,6 +644,9 @@ namespace CeddysItemTracker
             // 
             // goronCity
             // 
+            goronCity.FlatAppearance.BorderColor = Color.Black;
+            goronCity.FlatAppearance.BorderSize = 2;
+            goronCity.FlatStyle = FlatStyle.Flat;
             goronCity.ForeColor = Color.Black;
             goronCity.Location = new Point(578, 19);
             goronCity.Margin = new Padding(4, 3, 4, 3);
@@ -600,6 +659,9 @@ namespace CeddysItemTracker
             // 
             // dmc
             // 
+            dmc.FlatAppearance.BorderColor = Color.Black;
+            dmc.FlatAppearance.BorderSize = 2;
+            dmc.FlatStyle = FlatStyle.Flat;
             dmc.ForeColor = Color.Black;
             dmc.Location = new Point(623, 3);
             dmc.Margin = new Padding(4, 3, 4, 3);
@@ -612,6 +674,9 @@ namespace CeddysItemTracker
             // 
             // fireTemple
             // 
+            fireTemple.FlatAppearance.BorderColor = Color.Black;
+            fireTemple.FlatAppearance.BorderSize = 2;
+            fireTemple.FlatStyle = FlatStyle.Flat;
             fireTemple.ForeColor = Color.Black;
             fireTemple.Location = new Point(626, 36);
             fireTemple.Margin = new Padding(4, 3, 4, 3);
@@ -624,6 +689,9 @@ namespace CeddysItemTracker
             // 
             // dodongoCavernButton
             // 
+            dodongoCavernButton.FlatAppearance.BorderColor = Color.Black;
+            dodongoCavernButton.FlatAppearance.BorderSize = 2;
+            dodongoCavernButton.FlatStyle = FlatStyle.Flat;
             dodongoCavernButton.ForeColor = Color.Black;
             dodongoCavernButton.Location = new Point(584, 53);
             dodongoCavernButton.Margin = new Padding(4, 3, 4, 3);
@@ -636,9 +704,11 @@ namespace CeddysItemTracker
             // 
             // gtg_button
             // 
+            gtg_button.FlatAppearance.BorderColor = Color.Black;
+            gtg_button.FlatAppearance.BorderSize = 2;
+            gtg_button.FlatStyle = FlatStyle.Flat;
             gtg_button.ForeColor = Color.Black;
             gtg_button.Location = new Point(229, 122);
-            gtg_button.Margin = new Padding(4, 3, 4, 3);
             gtg_button.Name = "gtg_button";
             gtg_button.Size = new Size(34, 34);
             gtg_button.TabIndex = 140;
@@ -648,6 +718,9 @@ namespace CeddysItemTracker
             // 
             // botw_Button
             // 
+            botw_Button.FlatAppearance.BorderColor = Color.Black;
+            botw_Button.FlatAppearance.BorderSize = 2;
+            botw_Button.FlatStyle = FlatStyle.Flat;
             botw_Button.ForeColor = Color.Black;
             botw_Button.Location = new Point(656, 101);
             botw_Button.Margin = new Padding(0);
@@ -660,6 +733,9 @@ namespace CeddysItemTracker
             // 
             // tot_Button
             // 
+            tot_Button.FlatAppearance.BorderColor = Color.Black;
+            tot_Button.FlatAppearance.BorderSize = 2;
+            tot_Button.FlatStyle = FlatStyle.Flat;
             tot_Button.ForeColor = Color.Black;
             tot_Button.Location = new Point(548, 76);
             tot_Button.Margin = new Padding(4, 3, 4, 3);
@@ -672,6 +748,9 @@ namespace CeddysItemTracker
             // 
             // desertCollossus
             // 
+            desertCollossus.FlatAppearance.BorderColor = Color.Black;
+            desertCollossus.FlatAppearance.BorderSize = 2;
+            desertCollossus.FlatStyle = FlatStyle.Flat;
             desertCollossus.ForeColor = Color.Black;
             desertCollossus.Location = new Point(140, 100);
             desertCollossus.Margin = new Padding(4, 3, 4, 3);
@@ -684,6 +763,9 @@ namespace CeddysItemTracker
             // 
             // spiritTemple
             // 
+            spiritTemple.FlatAppearance.BorderColor = Color.Black;
+            spiritTemple.FlatAppearance.BorderSize = 2;
+            spiritTemple.FlatStyle = FlatStyle.Flat;
             spiritTemple.ForeColor = Color.Black;
             spiritTemple.Location = new Point(99, 65);
             spiritTemple.Margin = new Padding(4, 3, 4, 3);
@@ -696,6 +778,9 @@ namespace CeddysItemTracker
             // 
             // zoraRiver
             // 
+            zoraRiver.FlatAppearance.BorderColor = Color.Black;
+            zoraRiver.FlatAppearance.BorderSize = 2;
+            zoraRiver.FlatStyle = FlatStyle.Flat;
             zoraRiver.ForeColor = Color.Black;
             zoraRiver.Location = new Point(686, 147);
             zoraRiver.Margin = new Padding(4, 3, 4, 3);
@@ -708,6 +793,9 @@ namespace CeddysItemTracker
             // 
             // zoraFountain
             // 
+            zoraFountain.FlatAppearance.BorderColor = Color.Black;
+            zoraFountain.FlatAppearance.BorderSize = 2;
+            zoraFountain.FlatStyle = FlatStyle.Flat;
             zoraFountain.ForeColor = Color.Black;
             zoraFountain.Location = new Point(864, 84);
             zoraFountain.Margin = new Padding(4, 3, 4, 3);
@@ -720,6 +808,9 @@ namespace CeddysItemTracker
             // 
             // iceCavern
             // 
+            iceCavern.FlatAppearance.BorderColor = Color.Black;
+            iceCavern.FlatAppearance.BorderSize = 2;
+            iceCavern.FlatStyle = FlatStyle.Flat;
             iceCavern.ForeColor = Color.Black;
             iceCavern.Location = new Point(823, 51);
             iceCavern.Margin = new Padding(4, 3, 4, 3);
@@ -732,6 +823,9 @@ namespace CeddysItemTracker
             // 
             // jjButton
             // 
+            jjButton.FlatAppearance.BorderColor = Color.Black;
+            jjButton.FlatAppearance.BorderSize = 2;
+            jjButton.FlatStyle = FlatStyle.Flat;
             jjButton.ForeColor = Color.Black;
             jjButton.Location = new Point(826, 88);
             jjButton.Margin = new Padding(4, 3, 4, 3);
@@ -872,13 +966,12 @@ namespace CeddysItemTracker
             // 
             // tokenCounterDisplay
             // 
-            tokenCounterDisplay.AutoSize = true;
             tokenCounterDisplay.BackColor = Color.Transparent;
             tokenCounterDisplay.Font = new Font("Microsoft Sans Serif", 13F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tokenCounterDisplay.Location = new Point(274, 213);
+            tokenCounterDisplay.Location = new Point(266, 213);
             tokenCounterDisplay.Margin = new Padding(4, 0, 4, 0);
             tokenCounterDisplay.Name = "tokenCounterDisplay";
-            tokenCounterDisplay.Size = new Size(20, 22);
+            tokenCounterDisplay.Size = new Size(43, 22);
             tokenCounterDisplay.TabIndex = 136;
             tokenCounterDisplay.Text = "0";
             tokenCounterDisplay.TextAlign = ContentAlignment.MiddleCenter;
@@ -1488,7 +1581,7 @@ namespace CeddysItemTracker
             // 
             // waterBossKey_PictureBox
             // 
-            waterBossKey_PictureBox.Image = Properties.Resources.key_Boss;
+            waterBossKey_PictureBox.Image = Properties.Resources.OoT3D_Boss_Key_Icon_bw;
             waterBossKey_PictureBox.Location = new Point(0, 108);
             waterBossKey_PictureBox.Margin = new Padding(4, 3, 4, 3);
             waterBossKey_PictureBox.Name = "waterBossKey_PictureBox";
@@ -1499,7 +1592,7 @@ namespace CeddysItemTracker
             // 
             // shadowBossKey_PictureBox
             // 
-            shadowBossKey_PictureBox.Image = Properties.Resources.key_Boss;
+            shadowBossKey_PictureBox.Image = Properties.Resources.OoT3D_Boss_Key_Icon_bw;
             shadowBossKey_PictureBox.Location = new Point(0, 152);
             shadowBossKey_PictureBox.Margin = new Padding(4, 3, 4, 3);
             shadowBossKey_PictureBox.Name = "shadowBossKey_PictureBox";
@@ -1510,7 +1603,7 @@ namespace CeddysItemTracker
             // 
             // spiritBossKey_PictureBox
             // 
-            spiritBossKey_PictureBox.Image = Properties.Resources.key_Boss;
+            spiritBossKey_PictureBox.Image = Properties.Resources.OoT3D_Boss_Key_Icon_bw;
             spiritBossKey_PictureBox.Location = new Point(0, 195);
             spiritBossKey_PictureBox.Margin = new Padding(4, 3, 4, 3);
             spiritBossKey_PictureBox.Name = "spiritBossKey_PictureBox";
@@ -1521,7 +1614,7 @@ namespace CeddysItemTracker
             // 
             // fireBossKey_PictureBox
             // 
-            fireBossKey_PictureBox.Image = Properties.Resources.key_Boss;
+            fireBossKey_PictureBox.Image = Properties.Resources.OoT3D_Boss_Key_Icon_bw;
             fireBossKey_PictureBox.Location = new Point(0, 64);
             fireBossKey_PictureBox.Margin = new Padding(4, 3, 4, 3);
             fireBossKey_PictureBox.Name = "fireBossKey_PictureBox";
@@ -1532,7 +1625,7 @@ namespace CeddysItemTracker
             // 
             // forestBossKey_PictureBox
             // 
-            forestBossKey_PictureBox.Image = Properties.Resources.key_Boss;
+            forestBossKey_PictureBox.Image = Properties.Resources.OoT3D_Boss_Key_Icon_bw;
             forestBossKey_PictureBox.Location = new Point(0, 20);
             forestBossKey_PictureBox.Margin = new Padding(4, 3, 4, 3);
             forestBossKey_PictureBox.Name = "forestBossKey_PictureBox";
@@ -2371,10 +2464,10 @@ namespace CeddysItemTracker
             maptracker.Size = new Size(992, 487);
             maptracker.TabIndex = 156;
             // 
-            // timer1
+            // timer
             // 
-            timer1.Enabled = true;
-            timer1.Interval = 1000;
+            timer.Enabled = true;
+            timer.Interval = 1000;
             // 
             // stat_panel
             // 
@@ -2452,7 +2545,7 @@ namespace CeddysItemTracker
             starttimer_button.TabIndex = 151;
             starttimer_button.Text = "Start Timer";
             starttimer_button.UseVisualStyleBackColor = false;
-            starttimer_button.Click += starttimer_button_Click;
+            starttimer_button.Click += Starttimer_button_Click;
             // 
             // cph_label
             // 
@@ -2672,7 +2765,6 @@ namespace CeddysItemTracker
             stat_panel.ResumeLayout(false);
             stat_panel.PerformLayout();
             equip_panel.ResumeLayout(false);
-            equip_panel.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -2849,7 +2941,7 @@ namespace CeddysItemTracker
         public Panel alwayshintsPanel;
         public Panel sphere_panel;
         private Panel maptracker;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer;
         private Panel stat_panel;
         private Label cph_label;
         private Button starttimer_button;

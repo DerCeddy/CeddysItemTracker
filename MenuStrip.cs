@@ -38,7 +38,7 @@ namespace CeddysItemTracker
         //Reset Tracker
         private void ResetTracker(List<Item> ListItems)
         {
-            timer1.Stop();
+            timer.Stop();
             time = 0;
             cph_label.Text = "0 cph";
             forest_keys = 0;
@@ -62,9 +62,9 @@ namespace CeddysItemTracker
             botw_keyLabel.ForeColor = Color.White;
             gtg_keyLabel.Text = "0";
             gtg_keyLabel.ForeColor = Color.White;
-            for (int i = 0; i < goal123.Count; i++)
+            for (int i = 0; i < Goals.Count; i++)
             {
-                goal123[i] = 0;
+                Goals[i] = 0;
             }
             foreach(Item i in ListItems)
             {

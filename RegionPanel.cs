@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CeddysItemTracker
 {
     public partial class Form1 : Form
-    {    
+    {          
         public void DrawRegionPanel(Panel forminstance, List<string> Region)
         {
             Panel panel = new()
@@ -29,21 +29,41 @@ namespace CeddysItemTracker
             panel.Controls.Add(label);
             panel.BringToFront();
             for(int i = 1; i < Region.Count; i++)
-            {
+            {                
                 CheckBox cb = new()
                 {
                     Text = Region[i],
-                    Location = new Point(0, i * 30),
-                    Size = new Size(210, 20),
+                    Location = new Point(0, i * 30),                 
                     ForeColor = Color.White,
-                    Name = $"{Region[i]}"
-
-                };
+                    Name = $"{Region[i]}",
+                    AutoSize = true,
+                };                 
+                PictureBox gossipstone = new ();              
+                cb.AutoCheck = false;
                 panel.Controls.Add(cb);
+                GossipStone(new Point(cb.Size.Width, cb.Location.Y - 3), gossipstone);
+                panel.Controls.Add(gossipstone);
                 cb.MouseDown += (sender, e) => CheckBoxClick(cb);
                 cb.MouseClick += (sender, e) => UpdateAllCountersOnClick();
             }
-
-        }              
+        }
+        public void CheckBoxClick(CheckBox Check)
+        {
+            if (MouseButtons == MouseButtons.Left)
+            {
+                if (Check.Checked)
+                {
+                    Check.Checked = false;
+                }
+                else
+                {
+                    Check.Checked = true;
+                }               
+            }
+            if (MouseButtons == MouseButtons.Right)
+            {
+                RightClickToTextboxes(Check.Text, Controls.Find("sometimesPanel", true).First());
+            }
+        }
     }
 }

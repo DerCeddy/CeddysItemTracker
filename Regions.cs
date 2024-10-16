@@ -13,29 +13,29 @@ namespace CeddysItemTracker
     {           
         private void RegionSelect(Control Region)
         {
-            List<Panel> panel = [];
-            foreach (Control pnl in maptracker.Controls)
+            List<Panel> Regions = [];
+            foreach (Control RegionPanel in maptracker.Controls)
             {
-                if (pnl is Panel panel1)
+                if (RegionPanel is Panel Panel)
                 {
-                    panel.Add(panel1);
+                    Regions.Add(Panel);
                 }
             }
-            foreach (Panel paneel in panel)
+            foreach (Panel RegionPanel in Regions)
             {
-                if (paneel == Region)
+                if (RegionPanel == Region)
                 {
                     Region.Visible = true;
                     Region.BringToFront();
                 }
                 else
                 {
-                    switch (paneel.Name)
+                    switch (RegionPanel.Name)
                     {                  
                         case "keysPanel":
                             break;                    
                         default:
-                            paneel.Visible = false;
+                            RegionPanel.Visible = false;
                             break;
                     }
                 }
@@ -53,9 +53,9 @@ namespace CeddysItemTracker
                     break;
                 case MouseButtons.Right:
                     RightClickToTextboxes(RegionName, Controls.Find("wothPanel", true).First());
-                    break;
+                    break;              
             }
-        }     
+        }                
         private void RegionCompletion(Control p)
         {
             int ChecksChecked = 0;
@@ -95,9 +95,8 @@ namespace CeddysItemTracker
         }
         private void LLR_Click(object sender, MouseEventArgs e)
         {
-            RegionButton(e, maptracker.Controls.Find("Lon-Lon-Ranch", true).First(), "Lon-Lon-Ranch");
+            RegionButton(e, maptracker.Controls.Find("Lon-Lon-Ranch", true).First(), "Lon-Lon-Ranch");           
         }
-
         private void HF_Click(object sender, MouseEventArgs e)
         {
             RegionButton(e, maptracker.Controls.Find("Hyrule Field", true).First(), "Hyrule Field");

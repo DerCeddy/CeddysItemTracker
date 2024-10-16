@@ -13,7 +13,7 @@ using CeddysItemTracker.Properties;
 namespace CeddysItemTracker
 {
     public partial class Form1 : Form
-    {
+    {       
         public void GossipStone(Point point, PictureBox pictureBox)
         {
             pictureBox.Image = Resources.gossip_stone_bw_32x32;
@@ -22,12 +22,11 @@ namespace CeddysItemTracker
             pictureBox.Location = point;
             pictureBox.AllowDrop = true;
             pictureBox.MouseUp += ItemClickMouseUp;
-            pictureBox.DragEnter += PictureBox2_DragEnter;
-            pictureBox.DragDrop += (sender, e) => PictureBox2_DragDrop(e, pictureBox);
+            pictureBox.DragEnter += GossipStone_DragEnter;
+            pictureBox.DragDrop += (sender, e) => GossipStone_DragDrop(e, pictureBox);
             pictureBox.MouseMove += (sender, e) => MouseMoveForDrag(e, pictureBox);
-            pictureBox.MouseClick += (sender, e) => PathStone_Click(e, pictureBox);
-            pictureBox.MouseDown += (sender, e) => Drag_MouseDown(e); 
-            
+            pictureBox.MouseClick += (sender, e) => GossipStone_Click(e, pictureBox);
+            pictureBox.MouseDown += (sender, e) => Drag_MouseDown(e);            
         }             
     }
 }

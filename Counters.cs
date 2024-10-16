@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,14 +52,14 @@ namespace CeddysItemTracker
             region = 0;
             foreach (Control c in region_panel.Controls)
             {
-                if (c is CheckBox cb && cb.Checked == false && (cb.ForeColor == Color.Lime || cb.ForeColor == coulddo))
+                if (c is CheckBox cb && cb.Checked == false && (cb.ForeColor == Color.Lime || cb.ForeColor == coulddo || cb.ForeColor == OoLChus))
                 {
                     region++;
                 }
             }
             region_button.Text = region.ToString();
             BackgroundColorForButtons(region_panel, region_button, maxChecks);
-        }
+        }      
         private void BackgroundColorForButtons(Control LocationPanel, Button LocationButton, int MaxCheckCount)
         {
             int availableItems = 0;
@@ -66,11 +67,11 @@ namespace CeddysItemTracker
             foreach (Control c in LocationPanel.Controls)
             {
                 CheckBox? cb = c as CheckBox;
-                if (cb != null && (cb.ForeColor == Color.Lime || cb.ForeColor == coulddo))
+                if (cb != null && (cb.ForeColor == Color.Lime || cb.ForeColor == coulddo || cb.ForeColor == OoLChus) && !cb.Checked)
                 {
                     availableItems++;
                 }
-                if (cb != null && cb.Checked == true)
+                if (cb != null && cb.Checked)
                 {
                     checkedItems++;
                 }
@@ -83,7 +84,7 @@ namespace CeddysItemTracker
             {
                 LocationButton.BackColor = Color.Red;
             }
-            else if (availableItems == MaxCheckCount)
+            else if (availableItems + checkedItems == MaxCheckCount)
             {
                 LocationButton.BackColor = Color.Lime;
             }

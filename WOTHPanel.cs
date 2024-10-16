@@ -13,7 +13,7 @@ namespace CeddysItemTracker
 {
     public partial class Form1 : Form
     {
-        public List<int> goal123 = new List<int>();      
+        public List<int> Goals = [];      
         public void DrawWOTHPanel(Form formInstance)
         {           
             Panel panel = new()
@@ -37,7 +37,7 @@ namespace CeddysItemTracker
             }          
             for (int i = 0; i < pathHintCount; i++)
             {
-                goal123.Add(0);
+                Goals.Add(0);
                 PictureBox goal = new()
                 {
                     Image = Resources.unknown_32x32,
@@ -73,29 +73,29 @@ namespace CeddysItemTracker
         {
             if (e.Delta < 0)
             {
-                goal123[i] = LabelUP(goal123[i]);
+                Goals[i] = LabelUP(Goals[i]);
                
             }
             if (e.Delta > 0)
             {
-                goal123[i] = LabelDOWN(goal123[i]);
+                Goals[i] = LabelDOWN(Goals[i]);
 
             }
-            CheckGoalState(goal123[i], BossImage);        
+            CheckGoalState(Goals[i], BossImage);        
         }
         public void GoalClick(MouseEventArgs e, PictureBox BossImage, int i)
         {
             if (e.Button == MouseButtons.Left)
             {
-                goal123[i] = LabelUP(goal123[i]);
+                Goals[i] = LabelUP(Goals[i]);
 
             }
             if (e.Button == MouseButtons.Right)
             {
-                goal123[i] = LabelDOWN(goal123[i]);
+                Goals[i] = LabelDOWN(Goals[i]);
 
             }
-            CheckGoalState(goal123[i], BossImage);
+            CheckGoalState(Goals[i], BossImage);
         }      
         private static void CheckGoalState(int x, PictureBox Goal)
         {

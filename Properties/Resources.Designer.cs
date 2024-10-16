@@ -135,7 +135,7 @@ namespace CeddysItemTracker.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bolero_bw_32x40 {
             get {
-                object obj = ResourceManager.GetObject("bolero-bw_32x40", resourceCulture);
+                object obj = ResourceManager.GetObject("bolero_bw_32x40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -385,7 +385,7 @@ namespace CeddysItemTracker.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap minuet_bw_32x40 {
             get {
-                object obj = ResourceManager.GetObject("minuet-bw_32x40", resourceCulture);
+                object obj = ResourceManager.GetObject("minuet_bw_32x40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -605,7 +605,7 @@ namespace CeddysItemTracker.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap OoT3D_Biggoron_s_Sword_Icon_bw {
             get {
-                object obj = ResourceManager.GetObject("OoT3D_Biggoron\'s_Sword_Icon_bw", resourceCulture);
+                object obj = ResourceManager.GetObject("OoT3D_Biggoron_s_Sword_Icon_bw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2575,7 +2575,7 @@ namespace CeddysItemTracker.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap prelude_bw_32x40 {
             get {
-                object obj = ResourceManager.GetObject("prelude-bw_32x40", resourceCulture);
+                object obj = ResourceManager.GetObject("prelude_bw_32x40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2595,7 +2595,7 @@ namespace CeddysItemTracker.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap requiem_bw_32x40 {
             get {
-                object obj = ResourceManager.GetObject("requiem-bw_32x40", resourceCulture);
+                object obj = ResourceManager.GetObject("requiem_bw_32x40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2635,7 +2635,7 @@ namespace CeddysItemTracker.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap serenade_bw_32x40 {
             get {
-                object obj = ResourceManager.GetObject("serenade-bw_32x40", resourceCulture);
+                object obj = ResourceManager.GetObject("serenade_bw_32x40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
