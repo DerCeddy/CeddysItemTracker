@@ -28,7 +28,8 @@ namespace CeddysItemTracker
             Market.AddRange(new string[] { "Bazaar Top Left", "Bazaar Top Right", "Bazaar Bottom Left", "Bazaar Bottom Right", "Potion Shop Top Left", "Potion Shop Top Right", "Potion Shop Bottom Left", "Potion Shop Bottom Right", "Bombchu Shop Top Left", "Bombchu Shop Top Right", "Bombchu Shop Bottom Left", "Bombchu Shop Bottom Right" });
             Kakariko.AddRange(new string[] { "Bazaar Top Left", "Bazaar Top Right", "Bazaar Bottom Left", "Bazaar Bottom Right", "Potion Shop Top Left", "Potion Shop Top Right", "Potion Shop Bottom Left", "Potion Shop Bottom Right" });
             GoronCity.AddRange(new string[] {"Shop Top Left", "Shop Top Right","Shop Bottom Left","Shop Bottom Right"});
-            ZoraDomain.AddRange(new string[] {"Shop Top Left", "Shop Top Right", "Shop Bottom Left", "Shop Bottom Right"});         
+            ZoraDomain.AddRange(new string[] {"Shop Top Left", "Shop Top Right", "Shop Bottom Left", "Shop Bottom Right"});
+            KokiriForest.AddRange(new string[] {"Shop Top Left", "Shop Top Right", "Shop Bottom Left", "Shop Bottom Right"});
         }
     }
 }

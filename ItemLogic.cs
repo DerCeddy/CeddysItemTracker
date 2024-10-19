@@ -92,7 +92,38 @@ namespace CeddysItemTracker
             } 
             if(ShopShuffle)
             {
-
+                Pb("Kokiri Forest", "Shop Top Left",maptracker_Panel).ForeColor = Available;
+                Pb("Kokiri Forest", "Shop Top Right", maptracker_Panel).ForeColor = Available;
+                Pb("Kokiri Forest", "Shop Bottom Left", maptracker_Panel).ForeColor = Available;
+                Pb("Kokiri Forest", "Shop Bottom Right", maptracker_Panel).ForeColor = Available;
+                Pb("Market", "Bazaar Top Left", maptracker_Panel).ForeColor = Available;
+                Pb("Market", "Bazaar Top Right", maptracker_Panel).ForeColor = Available;
+                Pb("Market", "Bazaar Bottom Left", maptracker_Panel).ForeColor = Available;
+                Pb("Market", "Bazaar Bottom Right", maptracker_Panel).ForeColor = Available;
+                Pb("Market", "Potion Shop Top Left", maptracker_Panel).ForeColor = Available;
+                Pb("Market", "Potion Shop Top Right", maptracker_Panel).ForeColor = Available;
+                Pb("Market", "Potion Shop Bottom Left", maptracker_Panel).ForeColor = Available;
+                Pb("Market", "Potion Shop Bottom Right", maptracker_Panel).ForeColor = Available;              
+                Pb("Market", "Bombchu Shop Top Left", maptracker_Panel).ForeColor = Available;
+                Pb("Market", "Bombchu Shop Top Right", maptracker_Panel).ForeColor = Available;
+                Pb("Market", "Bombchu Shop Bottom Left", maptracker_Panel).ForeColor = Available;
+                Pb("Market", "Bombchu Shop Bottom Right", maptracker_Panel).ForeColor = Available;
+                Pb("Kakariko", "Bazaar Top Left", maptracker_Panel).ForeColor = Available;
+                Pb("Kakariko", "Bazaar Top Right", maptracker_Panel).ForeColor = Available;
+                Pb("Kakariko", "Bazaar Bottom Left", maptracker_Panel).ForeColor = Available;
+                Pb("Kakariko", "Bazaar Bottom Right", maptracker_Panel).ForeColor = Available;
+                Pb("Kakariko", "Potion Shop Top Left", maptracker_Panel).ForeColor = Available;
+                Pb("Kakariko", "Potion Shop Top Right", maptracker_Panel).ForeColor = Available;
+                Pb("Kakariko", "Potion Shop Bottom Left", maptracker_Panel).ForeColor = Available;
+                Pb("Kakariko", "Potion Shop Bottom Right", maptracker_Panel).ForeColor = Available;
+                Pb("Goron City", "Shop Top Left", maptracker_Panel).ForeColor = Available;
+                Pb("Goron City", "Shop Top Right", maptracker_Panel).ForeColor = Available;
+                Pb("Goron City", "Shop Bottom Left", maptracker_Panel).ForeColor = Available;
+                Pb("Goron City", "Shop Bottom Right", maptracker_Panel).ForeColor = Available;
+                Pb("Zora Domain", "Shop Top Left", maptracker_Panel).ForeColor = Available;
+                Pb("Zora Domain", "Shop Top Right", maptracker_Panel).ForeColor = Available;
+                Pb("Zora Domain", "Shop Bottom Left", maptracker_Panel).ForeColor = Available;
+                Pb("Zora Domain", "Shop Bottom Right", maptracker_Panel).ForeColor = Available;
             }
         }
         public void ItemLogic()
@@ -2484,7 +2515,7 @@ namespace CeddysItemTracker
             }
 
             string checks = tokensAvailable.ToString();
-            tokenCounter.Text = $"Available Tokens: {checks}";
+            token_available_label.Text = $"{checks}";
             #endregion
             #region ScrubShuffle
             if (ScrubShuffle)
@@ -2623,7 +2654,42 @@ namespace CeddysItemTracker
                 }
             }
             #endregion
-        }      
+            #region ShopShuffle
+            if(ShopShuffle)
+            {
+                //Goron Shop
+                if(Has(Bomb) || Has(Bow) || Has(Strength) || (Has(Dins) && Has(Magic)))
+                {
+                    Pb("Goron City", "Shop Top Left", maptracker_Panel).ForeColor = Available;
+                    Pb("Goron City", "Shop Top Right", maptracker_Panel).ForeColor = Available;
+                    Pb("Goron City", "Shop Bottom Left", maptracker_Panel).ForeColor = Available;
+                    Pb("Goron City", "Shop Bottom Right", maptracker_Panel).ForeColor = Available;
+                }
+                else
+                {
+                    Pb("Goron City", "Shop Top Left", maptracker_Panel).ForeColor = red;
+                    Pb("Goron City", "Shop Top Right", maptracker_Panel).ForeColor = red;
+                    Pb("Goron City", "Shop Bottom Left", maptracker_Panel).ForeColor = red;
+                    Pb("Goron City", "Shop Bottom Right", maptracker_Panel).ForeColor = red;
+                }
+                //Zoras Domain
+                if(Has(ZeldasLullaby) && has_bottle && Wallet.State == 2)
+                {
+                    Pb("Zora Domain", "Shop Top Left", maptracker_Panel).ForeColor = Available;
+                    Pb("Zora Domain", "Shop Top Right", maptracker_Panel).ForeColor = Available;
+                    Pb("Zora Domain", "Shop Bottom Left", maptracker_Panel).ForeColor = Available;
+                    Pb("Zora Domain", "Shop Bottom Right", maptracker_Panel).ForeColor = Available;
+                }
+                else
+                {
+                    Pb("Zora Domain", "Shop Top Left", maptracker_Panel).ForeColor = red;
+                    Pb("Zora Domain", "Shop Top Right", maptracker_Panel).ForeColor = red;
+                    Pb("Zora Domain", "Shop Bottom Left", maptracker_Panel).ForeColor = red;
+                    Pb("Zora Domain", "Shop Bottom Right", maptracker_Panel).ForeColor = red;
+                }
+            }
+            #endregion
+        }
     }
 
 }

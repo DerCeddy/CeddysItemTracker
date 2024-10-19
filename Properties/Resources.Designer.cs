@@ -2643,6 +2643,16 @@ namespace CeddysItemTracker.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap skulltula {
+            get {
+                object obj = ResourceManager.GetObject("skulltula", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Soldout {
             get {
                 object obj = ResourceManager.GetObject("Soldout", resourceCulture);

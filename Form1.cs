@@ -404,7 +404,7 @@ namespace CeddysItemTracker
                     p.BackColor = Color.Transparent;
                     p.MouseUp += ItemClickMouseUp;
                 }
-            }
+            }              
         }
         private void Starttimer_button_Click(object sender, EventArgs e)
         {

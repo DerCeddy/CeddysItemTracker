@@ -76,7 +76,6 @@ namespace CeddysItemTracker
             kStoneLabel = new Label();
             gStoneLabel = new Label();
             zStoneLabel = new Label();
-            tokenCounter = new Label();
             tokenCounterDisplay = new Label();
             alwayshintsPanel = new Panel();
             alwayshintStone8 = new PictureBox();
@@ -210,6 +209,8 @@ namespace CeddysItemTracker
             maptracker = new Panel();
             timer = new System.Windows.Forms.Timer(components);
             stat_panel = new Panel();
+            label4 = new Label();
+            token_available_label = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -466,12 +467,14 @@ namespace CeddysItemTracker
             // 
             // kakariko
             // 
+            kakariko.AutoEllipsis = true;
             kakariko.FlatAppearance.BorderColor = Color.Black;
             kakariko.FlatAppearance.BorderSize = 2;
             kakariko.FlatStyle = FlatStyle.Flat;
+            kakariko.Font = new Font("Segoe UI", 9F);
             kakariko.ForeColor = Color.Black;
             kakariko.Location = new Point(626, 104);
-            kakariko.Margin = new Padding(4, 3, 4, 3);
+            kakariko.Margin = new Padding(0);
             kakariko.Name = "kakariko";
             kakariko.Size = new Size(28, 28);
             kakariko.TabIndex = 81;
@@ -542,9 +545,10 @@ namespace CeddysItemTracker
             market.FlatAppearance.BorderColor = Color.Black;
             market.FlatAppearance.BorderSize = 2;
             market.FlatStyle = FlatStyle.Flat;
+            market.Font = new Font("Segoe UI", 9F);
             market.ForeColor = Color.Black;
             market.Location = new Point(509, 102);
-            market.Margin = new Padding(4, 3, 4, 3);
+            market.Margin = new Padding(0);
             market.Name = "market";
             market.Size = new Size(28, 28);
             market.TabIndex = 91;
@@ -953,16 +957,6 @@ namespace CeddysItemTracker
             zStoneLabel.Text = "FREE";
             zStoneLabel.TextAlign = ContentAlignment.TopCenter;
             zStoneLabel.MouseWheel += ZStoneLabel_Scroll;
-            // 
-            // tokenCounter
-            // 
-            tokenCounter.AutoSize = true;
-            tokenCounter.Location = new Point(325, 43);
-            tokenCounter.Margin = new Padding(4, 0, 4, 0);
-            tokenCounter.Name = "tokenCounter";
-            tokenCounter.Size = new Size(13, 15);
-            tokenCounter.TabIndex = 134;
-            tokenCounter.Text = "0";
             // 
             // tokenCounterDisplay
             // 
@@ -2359,6 +2353,7 @@ namespace CeddysItemTracker
             // 
             // menuStrip1
             // 
+            menuStrip1.ImageScalingSize = new Size(24, 24);
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
@@ -2471,6 +2466,8 @@ namespace CeddysItemTracker
             // 
             // stat_panel
             // 
+            stat_panel.Controls.Add(label4);
+            stat_panel.Controls.Add(token_available_label);
             stat_panel.Controls.Add(label3);
             stat_panel.Controls.Add(label2);
             stat_panel.Controls.Add(label1);
@@ -2479,16 +2476,38 @@ namespace CeddysItemTracker
             stat_panel.Controls.Add(starttimer_button);
             stat_panel.Controls.Add(cph_label);
             stat_panel.Controls.Add(checksdone_label);
-            stat_panel.Controls.Add(tokenCounter);
             stat_panel.Location = new Point(662, 25);
             stat_panel.Name = "stat_panel";
             stat_panel.Size = new Size(450, 94);
             stat_panel.TabIndex = 157;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(274, 5);
+            label4.Name = "label4";
+            label4.Size = new Size(55, 15);
+            label4.TabIndex = 158;
+            label4.Text = "Available";
+            // 
+            // token_available_label
+            // 
+            token_available_label.BackColor = Color.Transparent;
+            token_available_label.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
+            token_available_label.Image = Properties.Resources.skulltula;
+            token_available_label.ImageAlign = ContentAlignment.TopCenter;
+            token_available_label.Location = new Point(275, 24);
+            token_available_label.Margin = new Padding(4, 0, 4, 0);
+            token_available_label.Name = "token_available_label";
+            token_available_label.Size = new Size(50, 50);
+            token_available_label.TabIndex = 157;
+            token_available_label.Text = "0";
+            token_available_label.TextAlign = ContentAlignment.BottomCenter;
+            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(258, 5);
+            label3.Location = new Point(215, 5);
             label3.Name = "label3";
             label3.Size = new Size(55, 15);
             label3.TabIndex = 156;
@@ -2497,7 +2516,7 @@ namespace CeddysItemTracker
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(174, 5);
+            label2.Location = new Point(152, 5);
             label2.Name = "label2";
             label2.Size = new Size(64, 15);
             label2.TabIndex = 155;
@@ -2506,7 +2525,7 @@ namespace CeddysItemTracker
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(106, 5);
+            label1.Location = new Point(108, 5);
             label1.Name = "label1";
             label1.Size = new Size(35, 15);
             label1.TabIndex = 154;
@@ -2516,7 +2535,7 @@ namespace CeddysItemTracker
             // 
             availablechecks_label.BackColor = Color.LimeGreen;
             availablechecks_label.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            availablechecks_label.Location = new Point(261, 24);
+            availablechecks_label.Location = new Point(217, 24);
             availablechecks_label.Margin = new Padding(4, 0, 4, 0);
             availablechecks_label.Name = "availablechecks_label";
             availablechecks_label.Size = new Size(50, 50);
@@ -2528,7 +2547,7 @@ namespace CeddysItemTracker
             // 
             checksremaining_label.BackColor = Color.Goldenrod;
             checksremaining_label.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            checksremaining_label.Location = new Point(181, 24);
+            checksremaining_label.Location = new Point(159, 24);
             checksremaining_label.Margin = new Padding(4, 0, 4, 0);
             checksremaining_label.Name = "checksremaining_label";
             checksremaining_label.Size = new Size(50, 50);
@@ -2631,8 +2650,7 @@ namespace CeddysItemTracker
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.Black;
             ClientSize = new Size(1787, 917);
             Controls.Add(equip_panel);
@@ -2875,7 +2893,6 @@ namespace CeddysItemTracker
         private PictureBox serenade_PictureBox;
         private Button dodongoCavernButton;
         private Button jjButton;
-        private Label tokenCounter;
         private PictureBox token_PictureBox;
         private Label tokenCounterDisplay;
         private Label alwayshintsLabel;
@@ -2956,6 +2973,8 @@ namespace CeddysItemTracker
         private PictureBox shadowBossKey_PictureBox;
         private PictureBox spiritBossKey_PictureBox;
         private PictureBox fireBossKey_PictureBox;
+        private Label token_available_label;
+        private Label label4;
     }
 }
 
