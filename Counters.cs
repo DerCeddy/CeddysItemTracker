@@ -52,7 +52,7 @@ namespace CeddysItemTracker
             region = 0;
             foreach (Control c in region_panel.Controls)
             {
-                if (c is CheckBox cb && cb.Checked == false && (cb.ForeColor == Color.Lime || cb.ForeColor == coulddo || cb.ForeColor == OoLChus))
+                if (c is CheckBox cb && cb.Checked == false && (cb.ForeColor == Color.Lime || cb.ForeColor == coulddo))
                 {
                     region++;
                 }
@@ -67,7 +67,7 @@ namespace CeddysItemTracker
             foreach (Control c in LocationPanel.Controls)
             {
                 CheckBox? cb = c as CheckBox;
-                if (cb != null && (cb.ForeColor == Color.Lime || cb.ForeColor == coulddo || cb.ForeColor == OoLChus) && !cb.Checked)
+                if (cb != null && (cb.ForeColor == Color.Lime || cb.ForeColor == coulddo) && !cb.Checked)
                 {
                     availableItems++;
                 }
