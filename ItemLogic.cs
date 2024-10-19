@@ -2516,7 +2516,7 @@ namespace CeddysItemTracker
                     Pb("Goron City", "Shop Bottom Right", maptracker_Panel).ForeColor = red;
                 }
                 //Zoras Domain
-                if(Has(ZeldasLullaby) && has_bottle && Wallet.State == 2)
+                if((Has(ZeldasLullaby) && (has_bottle && Wallet.State == 2 || Has(Bomb))) || Has(Scales))
                 {
                     Pb("Zora Domain", "Shop Top Left", maptracker_Panel).ForeColor = Available;
                     Pb("Zora Domain", "Shop Top Right", maptracker_Panel).ForeColor = Available;
