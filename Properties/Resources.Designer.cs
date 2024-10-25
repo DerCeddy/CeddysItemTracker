@@ -1493,26 +1493,6 @@ namespace CeddysItemTracker.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap OoT3D_Half_Goron_Tunic_Icon {
-            get {
-                object obj = ResourceManager.GetObject("OoT3D_Half_Goron_Tunic_Icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap OoT3D_Half_Zora_Tunic_Icon {
-            get {
-                object obj = ResourceManager.GetObject("OoT3D_Half_Zora_Tunic_Icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap OoT3D_Heart_Container_Icon {
             get {
                 object obj = ResourceManager.GetObject("OoT3D_Heart_Container_Icon", resourceCulture);

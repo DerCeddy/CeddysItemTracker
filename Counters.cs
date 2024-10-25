@@ -57,7 +57,16 @@ namespace CeddysItemTracker
                     region++;
                 }
             }
-            region_button.Text = region.ToString();
+            if(region >= 10 && region_button.Tag != "Dungeon")
+            {
+                region_button.Text = region.ToString();
+                region_button.Font = new Font("Segoe UI",9,GraphicsUnit.Pixel);
+            }  
+            else
+            {
+                region_button.Text = region.ToString();
+                region_button.Font = new Font("Segoe UI", 12, GraphicsUnit.Pixel);
+            }
             BackgroundColorForButtons(region_panel, region_button, maxChecks);
         }      
         private void BackgroundColorForButtons(Control LocationPanel, Button LocationButton, int MaxCheckCount)

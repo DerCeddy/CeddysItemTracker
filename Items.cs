@@ -43,7 +43,7 @@ namespace CeddysItemTracker
         public Item Bottle3 = new() { ItemPicture = Resources.OoT3D_Bottle_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Bottle_Icon_bw };
         public Item Bottle4 = new() { ItemPicture = Resources.OoT3D_Bottle_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Bottle_Icon_bw };
         public Item BiggoronSword = new() { ItemPicture = Resources.OoT3D_Biggoron_s_Sword_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Biggoron_s_Sword_Icon_bw };
-        public Item MasterSwrod = new() { ItemPicture = Resources.OoT3D_Master_Sword_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Master_Sword_Icon_bw };
+        public Item MasterSword = new() { ItemPicture = Resources.OoT3D_Master_Sword_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Master_Sword_Icon_bw };
         public Item KokiriSword = new() { ItemPicture = Resources.OoT3D_Kokiri_Sword_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Kokiri_Sword_Icon_bw };
         public Item Slingshot = new() { ItemPicture = Resources.OoT3D_Fairy_Slingshot_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Fairy_Slingshot_Icon_bw };
         public Item Boomerang = new() { ItemPicture = Resources.OoT3D_Boomerang_Icon, State = 0, MaxCount = 1, MinCount = 0, ItemPicture_bw = Resources.OoT3D_Boomerang_Icon_bw };

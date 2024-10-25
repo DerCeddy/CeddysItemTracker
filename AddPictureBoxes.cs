@@ -35,7 +35,7 @@ namespace CeddysItemTracker
             AdultTradeItems.ItemPictureBox = adultTrade_PictureBox;
             ChildTradeItems.ItemPictureBox = childTrade_PictureBix;
             KokiriSword.ItemPictureBox = kokiriSword_PictureBox;
-            MasterSwrod.ItemPictureBox = masterSword_PictureBox;
+            MasterSword.ItemPictureBox = masterSword_PictureBox;
             BiggoronSword.ItemPictureBox = bigGoronSword_PictureBox;
             GerudoCard.ItemPictureBox = gerudoToken_PictureBox;
             DekuShield.ItemPictureBox = dekuShield_PictureBox;

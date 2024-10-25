@@ -54,7 +54,7 @@ namespace CeddysItemTracker
         public bool helplines;
         public bool enableStats;
         public Point stats_location;
-        readonly List<CheckBox> LonLonRanch_cb = [];
+        public bool N64_Textures;
         readonly List<string> LonLonRanch = ["Lon-Lon-Ranch", "Talon Minigame", "Malon Song", "LLR HP"];
         readonly List<string> HyruleField = ["Hyrule Field", "Open Grotto", "Southeast Grotto", "Salesman", "North Grotto", "Tektite Grotto Freestanding PoH", "Song of Time"];
         readonly List<string> KokiriForest = ["Kokiri Forest", "Mido Top Left", "Mido Top Right", "Mido Bottom Left", "Mido Bottom Right", "Kokiri Sword Chest", "Storms Grotto"];
@@ -160,6 +160,7 @@ namespace CeddysItemTracker
 
             public Size Appsize;
             public bool HelpLines;
+            public bool N64_Textures;
         }
         public Form1()
         {
@@ -191,6 +192,7 @@ namespace CeddysItemTracker
             equip_panel.Location = items_equips_location;
             enableStats = Konfig.stats.Enabled;
             stats_location = Konfig.stats.Location;
+            N64_Textures = Konfig.general.N64_Textures;          
             if (ScrubShuffle)
             {
                 AddScrubs();
@@ -269,7 +271,7 @@ namespace CeddysItemTracker
                 ChildTradeItems,
                 AdultTradeItems,
                 KokiriSword,
-                MasterSwrod,
+                MasterSword,
                 BiggoronSword,
                 GerudoCard,
                 DekuShield,
@@ -313,6 +315,14 @@ namespace CeddysItemTracker
                 ShadowBossKey,
                 SpiritBossKey
             ];
+            if (N64_Textures)
+            {
+                ChangeToN64();
+                foreach (Item i in Items)
+                {
+                    CheckItemState(i);
+                }
+            }
             resetTracker.MouseDown += (sender, e) => ResetTracker(Items);
             //Mouse Interactions with Items
             foreach (Item i in Items)

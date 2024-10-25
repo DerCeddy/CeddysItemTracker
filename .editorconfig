@@ -20,3 +20,6 @@ dotnet_diagnostic.CA1822.severity = none
 
 # CA1861: Konstantenmatrizen als Argumente vermeiden
 dotnet_diagnostic.CA1861.severity = none
+
+# CS0252: Möglicher unbeabsichtigter Referenzvergleich; linke Seite muss umgewandelt werden.
+dotnet_diagnostic.CS0252.severity = none

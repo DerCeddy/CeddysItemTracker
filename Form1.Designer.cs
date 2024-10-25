@@ -401,6 +401,7 @@ namespace CeddysItemTracker
             dekuTreeButton.Name = "dekuTreeButton";
             dekuTreeButton.Size = new Size(34, 34);
             dekuTreeButton.TabIndex = 74;
+            dekuTreeButton.Tag = "Dungeon";
             toolTip1.SetToolTip(dekuTreeButton, "Deku Tree");
             dekuTreeButton.UseVisualStyleBackColor = true;
             dekuTreeButton.MouseDown += DekuTreeButton_Click;
@@ -446,6 +447,7 @@ namespace CeddysItemTracker
             forestButton.Name = "forestButton";
             forestButton.Size = new Size(34, 34);
             forestButton.TabIndex = 77;
+            forestButton.Tag = "Dungeon";
             toolTip1.SetToolTip(forestButton, "Forest Temple");
             forestButton.UseVisualStyleBackColor = true;
             forestButton.MouseDown += ForestButton_Click;
@@ -461,6 +463,7 @@ namespace CeddysItemTracker
             waterTemple.Name = "waterTemple";
             waterTemple.Size = new Size(34, 34);
             waterTemple.TabIndex = 85;
+            waterTemple.Tag = "Dungeon";
             toolTip1.SetToolTip(waterTemple, "Water Temple");
             waterTemple.UseVisualStyleBackColor = true;
             waterTemple.MouseDown += WaterTemple_Click;
@@ -582,6 +585,7 @@ namespace CeddysItemTracker
             ganonCastle.Name = "ganonCastle";
             ganonCastle.Size = new Size(34, 34);
             ganonCastle.TabIndex = 93;
+            ganonCastle.Tag = "Dungeon";
             toolTip1.SetToolTip(ganonCastle, "Ganon's Castle");
             ganonCastle.UseVisualStyleBackColor = true;
             ganonCastle.MouseDown += GanonCastle_Click;
@@ -612,6 +616,7 @@ namespace CeddysItemTracker
             shadowTemple.Name = "shadowTemple";
             shadowTemple.Size = new Size(34, 34);
             shadowTemple.TabIndex = 95;
+            shadowTemple.Tag = "Dungeon";
             toolTip1.SetToolTip(shadowTemple, "Shadow Temple");
             shadowTemple.UseVisualStyleBackColor = true;
             shadowTemple.MouseDown += ShadowTemple_Click;
@@ -687,6 +692,7 @@ namespace CeddysItemTracker
             fireTemple.Name = "fireTemple";
             fireTemple.Size = new Size(34, 34);
             fireTemple.TabIndex = 103;
+            fireTemple.Tag = "Dungeon";
             toolTip1.SetToolTip(fireTemple, "Fire Temple");
             fireTemple.UseVisualStyleBackColor = true;
             fireTemple.MouseDown += FireTemple_Click;
@@ -702,6 +708,7 @@ namespace CeddysItemTracker
             dodongoCavernButton.Name = "dodongoCavernButton";
             dodongoCavernButton.Size = new Size(34, 34);
             dodongoCavernButton.TabIndex = 129;
+            dodongoCavernButton.Tag = "Dungeon";
             toolTip1.SetToolTip(dodongoCavernButton, "Dodongo's Cavern");
             dodongoCavernButton.UseVisualStyleBackColor = true;
             dodongoCavernButton.MouseDown += DodongoCavernButton_Click;
@@ -716,6 +723,7 @@ namespace CeddysItemTracker
             gtg_button.Name = "gtg_button";
             gtg_button.Size = new Size(34, 34);
             gtg_button.TabIndex = 140;
+            gtg_button.Tag = "Dungeon";
             toolTip1.SetToolTip(gtg_button, "Gerudo Training Ground");
             gtg_button.UseVisualStyleBackColor = true;
             gtg_button.MouseDown += Gtg_button_Click;
@@ -731,6 +739,7 @@ namespace CeddysItemTracker
             botw_Button.Name = "botw_Button";
             botw_Button.Size = new Size(34, 34);
             botw_Button.TabIndex = 143;
+            botw_Button.Tag = "Dungeon";
             toolTip1.SetToolTip(botw_Button, "Bottom of the Well");
             botw_Button.UseVisualStyleBackColor = true;
             botw_Button.MouseDown += Botw_Button_Click;
@@ -776,6 +785,7 @@ namespace CeddysItemTracker
             spiritTemple.Name = "spiritTemple";
             spiritTemple.Size = new Size(34, 34);
             spiritTemple.TabIndex = 90;
+            spiritTemple.Tag = "Dungeon";
             toolTip1.SetToolTip(spiritTemple, "Spirit Temple");
             spiritTemple.UseVisualStyleBackColor = true;
             spiritTemple.MouseDown += SpiritTemple_Click;
@@ -821,6 +831,7 @@ namespace CeddysItemTracker
             iceCavern.Name = "iceCavern";
             iceCavern.Size = new Size(34, 34);
             iceCavern.TabIndex = 98;
+            iceCavern.Tag = "Dungeon";
             toolTip1.SetToolTip(iceCavern, "Ice Cavern");
             iceCavern.UseVisualStyleBackColor = true;
             iceCavern.MouseDown += IceCavern_Click;
@@ -836,6 +847,7 @@ namespace CeddysItemTracker
             jjButton.Name = "jjButton";
             jjButton.Size = new Size(34, 34);
             jjButton.TabIndex = 131;
+            jjButton.Tag = "Dungeon";
             toolTip1.SetToolTip(jjButton, "Jabu-Jabus Belly");
             jjButton.UseVisualStyleBackColor = true;
             jjButton.MouseDown += JjButton_Click;
@@ -843,7 +855,7 @@ namespace CeddysItemTracker
             // forestLabel
             // 
             forestLabel.BackColor = Color.Transparent;
-            forestLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
+            forestLabel.Font = new Font("Segoe Fluent Icons", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             forestLabel.ForeColor = Color.White;
             forestLabel.Location = new Point(2, 485);
             forestLabel.Margin = new Padding(4, 0, 4, 0);
@@ -856,7 +868,7 @@ namespace CeddysItemTracker
             // 
             // fireLabel
             // 
-            fireLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
+            fireLabel.Font = new Font("Segoe Fluent Icons", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             fireLabel.ForeColor = Color.White;
             fireLabel.Location = new Point(54, 485);
             fireLabel.Margin = new Padding(4, 0, 4, 0);
@@ -869,9 +881,9 @@ namespace CeddysItemTracker
             // 
             // waterLabel
             // 
-            waterLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
+            waterLabel.Font = new Font("Segoe Fluent Icons", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             waterLabel.ForeColor = Color.White;
-            waterLabel.Location = new Point(106, 485);
+            waterLabel.Location = new Point(105, 485);
             waterLabel.Margin = new Padding(4, 0, 4, 0);
             waterLabel.Name = "waterLabel";
             waterLabel.Size = new Size(54, 21);
@@ -882,7 +894,7 @@ namespace CeddysItemTracker
             // 
             // shadowLabel
             // 
-            shadowLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
+            shadowLabel.Font = new Font("Segoe Fluent Icons", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             shadowLabel.ForeColor = Color.White;
             shadowLabel.Location = new Point(156, 485);
             shadowLabel.Margin = new Padding(4, 0, 4, 0);
@@ -895,7 +907,7 @@ namespace CeddysItemTracker
             // 
             // spiritLabel
             // 
-            spiritLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
+            spiritLabel.Font = new Font("Segoe Fluent Icons", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             spiritLabel.ForeColor = Color.White;
             spiritLabel.Location = new Point(208, 485);
             spiritLabel.Margin = new Padding(4, 0, 4, 0);
@@ -908,7 +920,7 @@ namespace CeddysItemTracker
             // 
             // lightLabel
             // 
-            lightLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
+            lightLabel.Font = new Font("Segoe Fluent Icons", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             lightLabel.ForeColor = Color.White;
             lightLabel.Location = new Point(260, 485);
             lightLabel.Margin = new Padding(4, 0, 4, 0);
@@ -921,7 +933,7 @@ namespace CeddysItemTracker
             // 
             // kStoneLabel
             // 
-            kStoneLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
+            kStoneLabel.Font = new Font("Segoe Fluent Icons", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             kStoneLabel.ForeColor = Color.White;
             kStoneLabel.Location = new Point(156, 420);
             kStoneLabel.Margin = new Padding(4, 0, 4, 0);
@@ -934,7 +946,7 @@ namespace CeddysItemTracker
             // 
             // gStoneLabel
             // 
-            gStoneLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
+            gStoneLabel.Font = new Font("Segoe Fluent Icons", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             gStoneLabel.ForeColor = Color.White;
             gStoneLabel.Location = new Point(208, 420);
             gStoneLabel.Margin = new Padding(4, 0, 4, 0);
@@ -947,7 +959,7 @@ namespace CeddysItemTracker
             // 
             // zStoneLabel
             // 
-            zStoneLabel.Font = new Font("Segoe Fluent Icons", 9F, FontStyle.Bold);
+            zStoneLabel.Font = new Font("Segoe Fluent Icons", 12F, FontStyle.Bold, GraphicsUnit.Pixel);
             zStoneLabel.ForeColor = Color.White;
             zStoneLabel.Location = new Point(260, 420);
             zStoneLabel.Margin = new Padding(4, 0, 4, 0);
@@ -989,6 +1001,7 @@ namespace CeddysItemTracker
             alwayshintsPanel.Controls.Add(alwayshintStone1);
             alwayshintsPanel.Controls.Add(alwayshintSoTPicture);
             alwayshintsPanel.Controls.Add(alwayshintsLabel);
+            alwayshintsPanel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             alwayshintsPanel.Location = new Point(391, 170);
             alwayshintsPanel.Margin = new Padding(4, 3, 4, 3);
             alwayshintsPanel.Name = "alwayshintsPanel";
@@ -1567,6 +1580,7 @@ namespace CeddysItemTracker
             keysPanel.Controls.Add(waterkey_Picturebox);
             keysPanel.Controls.Add(firekey_Picturebox);
             keysPanel.Controls.Add(forestkey_Picturebox);
+            keysPanel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             keysPanel.Location = new Point(0, 161);
             keysPanel.Margin = new Padding(4, 3, 4, 3);
             keysPanel.Name = "keysPanel";
@@ -1774,6 +1788,7 @@ namespace CeddysItemTracker
             zoraTunic_PictureBox.Margin = new Padding(4, 3, 4, 3);
             zoraTunic_PictureBox.Name = "zoraTunic_PictureBox";
             zoraTunic_PictureBox.Size = new Size(42, 42);
+            zoraTunic_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             zoraTunic_PictureBox.TabIndex = 70;
             zoraTunic_PictureBox.TabStop = false;
             // 
@@ -1784,6 +1799,7 @@ namespace CeddysItemTracker
             mirrorShield_PictureBox.Margin = new Padding(4, 3, 4, 3);
             mirrorShield_PictureBox.Name = "mirrorShield_PictureBox";
             mirrorShield_PictureBox.Size = new Size(42, 42);
+            mirrorShield_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             mirrorShield_PictureBox.TabIndex = 67;
             mirrorShield_PictureBox.TabStop = false;
             // 
@@ -1794,6 +1810,7 @@ namespace CeddysItemTracker
             nuts_PictureBox.Margin = new Padding(4, 3, 4, 3);
             nuts_PictureBox.Name = "nuts_PictureBox";
             nuts_PictureBox.Size = new Size(42, 42);
+            nuts_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             nuts_PictureBox.TabIndex = 42;
             nuts_PictureBox.TabStop = false;
             // 
@@ -1916,6 +1933,7 @@ namespace CeddysItemTracker
             dins_PictureBox.Margin = new Padding(4, 3, 4, 3);
             dins_PictureBox.Name = "dins_PictureBox";
             dins_PictureBox.Size = new Size(42, 42);
+            dins_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             dins_PictureBox.TabIndex = 45;
             dins_PictureBox.TabStop = false;
             // 
@@ -1926,6 +1944,7 @@ namespace CeddysItemTracker
             dekuSticks_PictureBox.Margin = new Padding(4, 3, 4, 3);
             dekuSticks_PictureBox.Name = "dekuSticks_PictureBox";
             dekuSticks_PictureBox.Size = new Size(42, 42);
+            dekuSticks_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             dekuSticks_PictureBox.TabIndex = 44;
             dekuSticks_PictureBox.TabStop = false;
             // 
@@ -1936,6 +1955,7 @@ namespace CeddysItemTracker
             dekuShield_PictureBox.Margin = new Padding(4, 3, 4, 3);
             dekuShield_PictureBox.Name = "dekuShield_PictureBox";
             dekuShield_PictureBox.Size = new Size(42, 42);
+            dekuShield_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             dekuShield_PictureBox.TabIndex = 43;
             dekuShield_PictureBox.TabStop = false;
             // 
@@ -1946,6 +1966,7 @@ namespace CeddysItemTracker
             bottle1_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bottle1_PictureBox.Name = "bottle1_PictureBox";
             bottle1_PictureBox.Size = new Size(42, 42);
+            bottle1_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             bottle1_PictureBox.TabIndex = 41;
             bottle1_PictureBox.TabStop = false;
             // 
@@ -1956,6 +1977,7 @@ namespace CeddysItemTracker
             bottle3_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bottle3_PictureBox.Name = "bottle3_PictureBox";
             bottle3_PictureBox.Size = new Size(42, 42);
+            bottle3_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             bottle3_PictureBox.TabIndex = 40;
             bottle3_PictureBox.TabStop = false;
             // 
@@ -1966,6 +1988,7 @@ namespace CeddysItemTracker
             bottle2_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bottle2_PictureBox.Name = "bottle2_PictureBox";
             bottle2_PictureBox.Size = new Size(42, 42);
+            bottle2_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             bottle2_PictureBox.TabIndex = 39;
             bottle2_PictureBox.TabStop = false;
             // 
@@ -1976,6 +1999,7 @@ namespace CeddysItemTracker
             boomerang_PictureBox.Margin = new Padding(4, 3, 4, 3);
             boomerang_PictureBox.Name = "boomerang_PictureBox";
             boomerang_PictureBox.Size = new Size(42, 42);
+            boomerang_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             boomerang_PictureBox.TabIndex = 38;
             boomerang_PictureBox.TabStop = false;
             // 
@@ -1986,6 +2010,7 @@ namespace CeddysItemTracker
             bombchu_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bombchu_PictureBox.Name = "bombchu_PictureBox";
             bombchu_PictureBox.Size = new Size(42, 42);
+            bombchu_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             bombchu_PictureBox.TabIndex = 37;
             bombchu_PictureBox.TabStop = false;
             // 
@@ -1996,6 +2021,7 @@ namespace CeddysItemTracker
             letter_PictureBox.Margin = new Padding(4, 3, 4, 3);
             letter_PictureBox.Name = "letter_PictureBox";
             letter_PictureBox.Size = new Size(42, 42);
+            letter_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             letter_PictureBox.TabIndex = 36;
             letter_PictureBox.TabStop = false;
             // 
@@ -2006,6 +2032,7 @@ namespace CeddysItemTracker
             adultTrade_PictureBox.Margin = new Padding(4, 3, 4, 3);
             adultTrade_PictureBox.Name = "adultTrade_PictureBox";
             adultTrade_PictureBox.Size = new Size(42, 42);
+            adultTrade_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             adultTrade_PictureBox.TabIndex = 35;
             adultTrade_PictureBox.TabStop = false;
             // 
@@ -2016,6 +2043,7 @@ namespace CeddysItemTracker
             nayruLove_PictureBox.Margin = new Padding(4, 3, 4, 3);
             nayruLove_PictureBox.Name = "nayruLove_PictureBox";
             nayruLove_PictureBox.Size = new Size(42, 42);
+            nayruLove_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             nayruLove_PictureBox.TabIndex = 34;
             nayruLove_PictureBox.TabStop = false;
             // 
@@ -2026,6 +2054,7 @@ namespace CeddysItemTracker
             masterSword_PictureBox.Margin = new Padding(4, 3, 4, 3);
             masterSword_PictureBox.Name = "masterSword_PictureBox";
             masterSword_PictureBox.Size = new Size(42, 42);
+            masterSword_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             masterSword_PictureBox.TabIndex = 32;
             masterSword_PictureBox.TabStop = false;
             // 
@@ -2036,6 +2065,7 @@ namespace CeddysItemTracker
             magicBean_PictureBox.Margin = new Padding(4, 3, 4, 3);
             magicBean_PictureBox.Name = "magicBean_PictureBox";
             magicBean_PictureBox.Size = new Size(42, 42);
+            magicBean_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             magicBean_PictureBox.TabIndex = 31;
             magicBean_PictureBox.TabStop = false;
             // 
@@ -2046,6 +2076,7 @@ namespace CeddysItemTracker
             lightArrow_PictureBox.Margin = new Padding(4, 3, 4, 3);
             lightArrow_PictureBox.Name = "lightArrow_PictureBox";
             lightArrow_PictureBox.Size = new Size(42, 42);
+            lightArrow_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             lightArrow_PictureBox.TabIndex = 30;
             lightArrow_PictureBox.TabStop = false;
             // 
@@ -2056,6 +2087,7 @@ namespace CeddysItemTracker
             kokiriTunic_PictureBox.Margin = new Padding(4, 3, 4, 3);
             kokiriTunic_PictureBox.Name = "kokiriTunic_PictureBox";
             kokiriTunic_PictureBox.Size = new Size(42, 42);
+            kokiriTunic_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             kokiriTunic_PictureBox.TabIndex = 29;
             kokiriTunic_PictureBox.TabStop = false;
             // 
@@ -2066,6 +2098,7 @@ namespace CeddysItemTracker
             kokiriSword_PictureBox.Margin = new Padding(4, 3, 4, 3);
             kokiriSword_PictureBox.Name = "kokiriSword_PictureBox";
             kokiriSword_PictureBox.Size = new Size(42, 42);
+            kokiriSword_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             kokiriSword_PictureBox.TabIndex = 28;
             kokiriSword_PictureBox.TabStop = false;
             // 
@@ -2076,6 +2109,7 @@ namespace CeddysItemTracker
             kokiriBoots_PictureBox.Margin = new Padding(4, 3, 4, 3);
             kokiriBoots_PictureBox.Name = "kokiriBoots_PictureBox";
             kokiriBoots_PictureBox.Size = new Size(42, 42);
+            kokiriBoots_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             kokiriBoots_PictureBox.TabIndex = 27;
             kokiriBoots_PictureBox.TabStop = false;
             // 
@@ -2086,6 +2120,7 @@ namespace CeddysItemTracker
             childTrade_PictureBix.Margin = new Padding(4, 3, 4, 3);
             childTrade_PictureBix.Name = "childTrade_PictureBix";
             childTrade_PictureBix.Size = new Size(42, 42);
+            childTrade_PictureBix.SizeMode = PictureBoxSizeMode.StretchImage;
             childTrade_PictureBix.TabIndex = 26;
             childTrade_PictureBix.TabStop = false;
             // 
@@ -2096,6 +2131,7 @@ namespace CeddysItemTracker
             ironBoots_PictureBox.Margin = new Padding(4, 3, 4, 3);
             ironBoots_PictureBox.Name = "ironBoots_PictureBox";
             ironBoots_PictureBox.Size = new Size(42, 42);
+            ironBoots_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             ironBoots_PictureBox.TabIndex = 25;
             ironBoots_PictureBox.TabStop = false;
             // 
@@ -2106,6 +2142,7 @@ namespace CeddysItemTracker
             iceArrow_PictureBox.Margin = new Padding(4, 3, 4, 3);
             iceArrow_PictureBox.Name = "iceArrow_PictureBox";
             iceArrow_PictureBox.Size = new Size(42, 42);
+            iceArrow_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             iceArrow_PictureBox.TabIndex = 24;
             iceArrow_PictureBox.TabStop = false;
             // 
@@ -2116,6 +2153,7 @@ namespace CeddysItemTracker
             hylianShield_PictureBox.Margin = new Padding(4, 3, 4, 3);
             hylianShield_PictureBox.Name = "hylianShield_PictureBox";
             hylianShield_PictureBox.Size = new Size(42, 42);
+            hylianShield_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             hylianShield_PictureBox.TabIndex = 23;
             hylianShield_PictureBox.TabStop = false;
             // 
@@ -2126,6 +2164,7 @@ namespace CeddysItemTracker
             hoverBoots_PictureBox.Margin = new Padding(4, 3, 4, 3);
             hoverBoots_PictureBox.Name = "hoverBoots_PictureBox";
             hoverBoots_PictureBox.Size = new Size(42, 42);
+            hoverBoots_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             hoverBoots_PictureBox.TabIndex = 22;
             hoverBoots_PictureBox.TabStop = false;
             // 
@@ -2136,6 +2175,7 @@ namespace CeddysItemTracker
             goronTunic_PictureBox.Margin = new Padding(4, 3, 4, 3);
             goronTunic_PictureBox.Name = "goronTunic_PictureBox";
             goronTunic_PictureBox.Size = new Size(42, 42);
+            goronTunic_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             goronTunic_PictureBox.TabIndex = 21;
             goronTunic_PictureBox.TabStop = false;
             // 
@@ -2146,6 +2186,7 @@ namespace CeddysItemTracker
             bigGoronSword_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bigGoronSword_PictureBox.Name = "bigGoronSword_PictureBox";
             bigGoronSword_PictureBox.Size = new Size(42, 42);
+            bigGoronSword_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             bigGoronSword_PictureBox.TabIndex = 20;
             bigGoronSword_PictureBox.TabStop = false;
             // 
@@ -2156,6 +2197,7 @@ namespace CeddysItemTracker
             wallet_PictureBox.Margin = new Padding(4, 3, 4, 3);
             wallet_PictureBox.Name = "wallet_PictureBox";
             wallet_PictureBox.Size = new Size(42, 42);
+            wallet_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             wallet_PictureBox.TabIndex = 19;
             wallet_PictureBox.TabStop = false;
             // 
@@ -2166,6 +2208,7 @@ namespace CeddysItemTracker
             fw_PictureBox.Margin = new Padding(4, 3, 4, 3);
             fw_PictureBox.Name = "fw_PictureBox";
             fw_PictureBox.Size = new Size(42, 42);
+            fw_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             fw_PictureBox.TabIndex = 18;
             fw_PictureBox.TabStop = false;
             // 
@@ -2176,6 +2219,7 @@ namespace CeddysItemTracker
             ocarina_PictureBox.Margin = new Padding(4, 3, 4, 3);
             ocarina_PictureBox.Name = "ocarina_PictureBox";
             ocarina_PictureBox.Size = new Size(42, 42);
+            ocarina_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             ocarina_PictureBox.TabIndex = 17;
             ocarina_PictureBox.TabStop = false;
             // 
@@ -2186,6 +2230,7 @@ namespace CeddysItemTracker
             scale_PictureBox.Margin = new Padding(4, 3, 4, 3);
             scale_PictureBox.Name = "scale_PictureBox";
             scale_PictureBox.Size = new Size(42, 42);
+            scale_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             scale_PictureBox.TabIndex = 16;
             scale_PictureBox.TabStop = false;
             // 
@@ -2196,6 +2241,7 @@ namespace CeddysItemTracker
             hookshot_PictureBox.Margin = new Padding(4, 3, 4, 3);
             hookshot_PictureBox.Name = "hookshot_PictureBox";
             hookshot_PictureBox.Size = new Size(42, 42);
+            hookshot_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             hookshot_PictureBox.TabIndex = 15;
             hookshot_PictureBox.TabStop = false;
             // 
@@ -2206,6 +2252,7 @@ namespace CeddysItemTracker
             lens_PictureBox.Margin = new Padding(4, 3, 4, 3);
             lens_PictureBox.Name = "lens_PictureBox";
             lens_PictureBox.Size = new Size(42, 42);
+            lens_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             lens_PictureBox.TabIndex = 14;
             lens_PictureBox.TabStop = false;
             // 
@@ -2217,6 +2264,7 @@ namespace CeddysItemTracker
             slingshot_PictureBox.Margin = new Padding(4, 3, 4, 3);
             slingshot_PictureBox.Name = "slingshot_PictureBox";
             slingshot_PictureBox.Size = new Size(42, 42);
+            slingshot_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             slingshot_PictureBox.TabIndex = 13;
             slingshot_PictureBox.TabStop = false;
             // 
@@ -2227,6 +2275,7 @@ namespace CeddysItemTracker
             gerudoToken_PictureBox.Margin = new Padding(4, 3, 4, 3);
             gerudoToken_PictureBox.Name = "gerudoToken_PictureBox";
             gerudoToken_PictureBox.Size = new Size(42, 42);
+            gerudoToken_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             gerudoToken_PictureBox.TabIndex = 12;
             gerudoToken_PictureBox.TabStop = false;
             // 
@@ -2237,6 +2286,7 @@ namespace CeddysItemTracker
             fireArrow_PictureBox.Margin = new Padding(4, 3, 4, 3);
             fireArrow_PictureBox.Name = "fireArrow_PictureBox";
             fireArrow_PictureBox.Size = new Size(42, 42);
+            fireArrow_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             fireArrow_PictureBox.TabIndex = 11;
             fireArrow_PictureBox.TabStop = false;
             // 
@@ -2247,6 +2297,7 @@ namespace CeddysItemTracker
             bow_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bow_PictureBox.Name = "bow_PictureBox";
             bow_PictureBox.Size = new Size(42, 42);
+            bow_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             bow_PictureBox.TabIndex = 10;
             bow_PictureBox.TabStop = false;
             // 
@@ -2258,6 +2309,7 @@ namespace CeddysItemTracker
             strength_PictureBox.Margin = new Padding(4, 3, 4, 3);
             strength_PictureBox.Name = "strength_PictureBox";
             strength_PictureBox.Size = new Size(42, 42);
+            strength_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             strength_PictureBox.TabIndex = 9;
             strength_PictureBox.TabStop = false;
             // 
@@ -2269,6 +2321,7 @@ namespace CeddysItemTracker
             hammer_PictureBox.Margin = new Padding(4, 3, 4, 3);
             hammer_PictureBox.Name = "hammer_PictureBox";
             hammer_PictureBox.Size = new Size(42, 42);
+            hammer_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             hammer_PictureBox.TabIndex = 8;
             hammer_PictureBox.TabStop = false;
             // 
@@ -2291,6 +2344,7 @@ namespace CeddysItemTracker
             bomb_PictureBox.Margin = new Padding(4, 3, 4, 3);
             bomb_PictureBox.Name = "bomb_PictureBox";
             bomb_PictureBox.Size = new Size(42, 42);
+            bomb_PictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             bomb_PictureBox.TabIndex = 1;
             bomb_PictureBox.TabStop = false;
             // 
@@ -2309,7 +2363,7 @@ namespace CeddysItemTracker
             // checksdone_label
             // 
             checksdone_label.BackColor = Color.FromArgb(192, 0, 0);
-            checksdone_label.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            checksdone_label.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             checksdone_label.Location = new Point(101, 24);
             checksdone_label.Margin = new Padding(4, 0, 4, 0);
             checksdone_label.Name = "checksdone_label";
@@ -2337,6 +2391,7 @@ namespace CeddysItemTracker
             agony_Picturebox.Margin = new Padding(4, 3, 4, 3);
             agony_Picturebox.Name = "agony_Picturebox";
             agony_Picturebox.Size = new Size(42, 42);
+            agony_Picturebox.SizeMode = PictureBoxSizeMode.StretchImage;
             agony_Picturebox.TabIndex = 151;
             agony_Picturebox.TabStop = false;
             // 
@@ -2353,6 +2408,7 @@ namespace CeddysItemTracker
             // 
             // menuStrip1
             // 
+            menuStrip1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             menuStrip1.ImageScalingSize = new Size(24, 24);
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
@@ -2412,6 +2468,7 @@ namespace CeddysItemTracker
             // 
             // sphere_panel
             // 
+            sphere_panel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             sphere_panel.Location = new Point(769, 634);
             sphere_panel.Name = "sphere_panel";
             sphere_panel.Size = new Size(224, 100);
@@ -2454,6 +2511,7 @@ namespace CeddysItemTracker
             maptracker.Controls.Add(fireTemple);
             maptracker.Controls.Add(dodongoCavernButton);
             maptracker.Controls.Add(hyrule_map);
+            maptracker.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             maptracker.Location = new Point(662, 117);
             maptracker.Name = "maptracker";
             maptracker.Size = new Size(992, 487);
@@ -2476,6 +2534,7 @@ namespace CeddysItemTracker
             stat_panel.Controls.Add(starttimer_button);
             stat_panel.Controls.Add(cph_label);
             stat_panel.Controls.Add(checksdone_label);
+            stat_panel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             stat_panel.Location = new Point(662, 25);
             stat_panel.Name = "stat_panel";
             stat_panel.Size = new Size(450, 94);
@@ -2534,7 +2593,7 @@ namespace CeddysItemTracker
             // availablechecks_label
             // 
             availablechecks_label.BackColor = Color.LimeGreen;
-            availablechecks_label.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            availablechecks_label.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             availablechecks_label.Location = new Point(217, 24);
             availablechecks_label.Margin = new Padding(4, 0, 4, 0);
             availablechecks_label.Name = "availablechecks_label";
@@ -2546,7 +2605,7 @@ namespace CeddysItemTracker
             // checksremaining_label
             // 
             checksremaining_label.BackColor = Color.Goldenrod;
-            checksremaining_label.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            checksremaining_label.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             checksremaining_label.Location = new Point(159, 24);
             checksremaining_label.Margin = new Padding(4, 0, 4, 0);
             checksremaining_label.Name = "checksremaining_label";
@@ -2643,6 +2702,7 @@ namespace CeddysItemTracker
             equip_panel.Controls.Add(dekuShield_PictureBox);
             equip_panel.Controls.Add(bottle1_PictureBox);
             equip_panel.Controls.Add(pictureBox1);
+            equip_panel.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Pixel);
             equip_panel.Location = new Point(0, 25);
             equip_panel.Name = "equip_panel";
             equip_panel.Size = new Size(384, 540);
@@ -2659,6 +2719,7 @@ namespace CeddysItemTracker
             Controls.Add(sphere_panel);
             Controls.Add(alwayshintsPanel);
             Controls.Add(menuStrip1);
+            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             ForeColor = Color.White;
             MainMenuStrip = menuStrip1;
             Margin = new Padding(4, 3, 4, 3);
