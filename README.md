@@ -6,7 +6,7 @@ Item layout is modeled after [Barinade's Item Tracker](https://wiki.ootrandomize
 Map Tracker is inspired from the [ALTTP Community Tracker](https://alttprtracker.dunka.net/)
 ## Features
 ### Maptracker
-![grafik](https://github.com/user-attachments/assets/3feeeb45-f9ae-4b90-86d9-6de370c18ba2)
+![grafik](https://github.com/user-attachments/assets/31d7253b-9536-4750-9930-e10a4aa5af02)
 
 Simple Maptracker with checklists to quickly track checks.
 
@@ -34,7 +34,7 @@ To delete a wrong input just leftclick the textbox.
 
 ### Stats
 
-![grafik](https://github.com/user-attachments/assets/5e90911b-f762-4d19-a30d-3c764429c4bf)
+![grafik](https://github.com/user-attachments/assets/19915af7-7887-422e-b242-ac94dbcfcff7)
 
 Here you can see how many checks you have done, how many are remaining and how many are accessible. 
 
