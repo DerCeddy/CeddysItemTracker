@@ -51,6 +51,9 @@ namespace CeddysItemTracker
         public void Sphere0Checks()
         {
             Panel maptracker_Panel = maptracker;
+            Pb("Lon-Lon-Ranch", "Talon Minigame", maptracker_Panel).ForeColor = Available;
+            Pb("Lon-Lon-Ranch", "Malon Song", maptracker_Panel).ForeColor = Available;
+            Pb("Lon-Lon-Ranch", "LLR HP", maptracker_Panel).ForeColor = Available;
             Pb("Kakariko", "Chickens", maptracker_Panel).ForeColor = Available;
             Pb("Kakariko", "Anju as Adult", maptracker_Panel).ForeColor = Available;
             Pb("Kakariko", "Impas House Freestanding PoH", maptracker_Panel).ForeColor = Available;
@@ -295,12 +298,7 @@ namespace CeddysItemTracker
             {
                 tokensAvailable++;
             }
-            #endregion
-            #region Lon-Lon-Ranch
-            Pb("Lon-Lon-Ranch", "Talon Minigame", maptracker_Panel).ForeColor = Available;
-            Pb("Lon-Lon-Ranch", "Malon Song", maptracker_Panel).ForeColor = Available;
-            Pb("Lon-Lon-Ranch", "LLR HP", maptracker_Panel).ForeColor = Available;
-            #endregion
+            #endregion            
             #region SFM
             //Wolfo Grotto
             if (Has(Bomb) || ((Has(SariasSong) || Has(Minuet)) && Has(Hammer)))
@@ -725,8 +723,7 @@ namespace CeddysItemTracker
             }
             #endregion
             #region Shadow Temple
-            //Shadow Entrance
-            
+            //Shadow Entrance      
             if (Has(Dins) && Has(Nocturne) && Has(Magic) && (Has(Hookshot) || Has(HoverBoots)))
             {
                 Pb("Shadow Temple", "Map Chest", maptracker_Panel).ForeColor = Available;
@@ -2557,6 +2554,124 @@ namespace CeddysItemTracker
                 }
             }
             #endregion
+        }
+        public void ItemLogic(Item i)
+        {
+            tokensAvailable = 13;
+            switch (i.Item_Name)
+            {
+                case "Bomb":
+                    ItemLogic_Helper();
+                    ItemLogic_SpiritTemple();
+                    ItemLogic_DesertColossus();
+                    ItemLogic_GTG();
+                    ItemLogic_WaterTemple();
+                    ItemLogic_HyruleField();
+                    ItemLogic_DodongosCavern();
+                    ItemLogic_Market();
+                    ItemLogic_Castles();
+                    ItemLogic_GanonsCastle();
+                    ItemLogic_Kakariko();
+                    ItemLogic_BotW();
+                    ItemLogic_ShadowTemple();
+                    ItemLogic_DMC();
+                    ItemLogic_DMT();
+                    ItemLogic_GoronCity();
+                    ItemLogic_ZoraFountain();
+                    ItemLogic_IceCavern();
+                    ItemLogic_ZoraDomain();
+                    ItemLogic_Jabu();
+                    ItemLogic_LostWoods();
+                    ItemLogic_SFM();
+                    break;
+                case "Bow":
+                    ItemLogic_Kakariko();
+                    ItemLogic_SpiritTemple();
+                    ItemLogic_GTG();
+                    ItemLogic_GerudoFortress();
+                    ItemLogic_LakeHylia();
+                    ItemLogic_WaterTemple();
+                    ItemLogic_Market();
+                    ItemLogic_FireTemple();
+                    ItemLogic_ForestTemple();
+                    break;
+                case "Hookshot":
+                    ItemLogic_SpiritTemple();
+                    ItemLogic_GTG();
+                    ItemLogic_LakeHylia();
+                    ItemLogic_WaterTemple();
+                    ItemLogic_GanonsCastle();
+                    ItemLogic_FireTemple();
+                    ItemLogic_ForestTemple();
+                    ItemLogic_ShadowTemple();
+                    break;
+                case "Slingshot":
+                    ItemLogic_SpiritTemple();
+                    ItemLogic_LostWoods();
+                    ItemLogic_DekuTree();
+                    break;
+                case "Boomerang":
+                    ItemLogic_SpiritTemple();
+                    ItemLogic_Jabu();
+                    break;
+                case "Letter":
+                    ItemLogic_Jabu();
+                    ItemLogic_ZoraFountain();
+                    ItemLogic_IceCavern();
+                    break;
+                case "Bottle":
+                    ItemLogic_ZoraDomain();
+                    ItemLogic_Market();
+                    break;
+                case "Beans":
+                    ItemLogic_DesertColossus();
+                    ItemLogic_LakeHylia();
+                    ItemLogic_DMC();
+                    break;
+                case "Lens":
+                    ItemLogic_Helper();
+                    ItemLogic_Market();
+                    ItemLogic_DesertColossus();
+                    ItemLogic_SpiritTemple();
+                    ItemLogic_Wasteland();
+                    break;
+                case "Hammer":
+                    ItemLogic_GTG();
+                    ItemLogic_GerudoValley();
+                    ItemLogic_HyruleField();
+                    ItemLogic_DMC();
+                    ItemLogic_DMT();
+                    ItemLogic_GoronCity();
+                    ItemLogic_FireTemple();
+                    ItemLogic_LostWoods();
+                    ItemLogic_SFM();
+                    ItemLogic_Kakariko();
+                    break;
+                case "Fire Arrows":
+                    ItemLogic_SpiritTemple();
+                    ItemLogic_Wasteland();
+                    ItemLogic_Graveyard();
+                    break;
+                case "Dins":
+                    ItemLogic_SpiritTemple();
+                    ItemLogic_Wasteland();
+                    ItemLogic_Graveyard();
+                    ItemLogic_GoronCity();
+                    ItemLogic_ShadowTemple();
+                    break;
+                case "Light Arrows":
+                    ItemLogic_GanonsCastle();
+                    break;
+                case "Adult Trade":
+                    ItemLogic_DMT();
+                    break;
+                case "Kokiri Sword":
+                    ItemLogic_DekuTree();
+                    break;
+                case "Gerudo Token":
+                    
+                    break;
+            }
         }
     }
 

@@ -22,7 +22,7 @@ namespace CeddysItemTracker
                 Item.State = ValueDown(Item.State, Item.MinCount);
             }
             CheckItemState(Item);
-            ItemLogic();
+            ItemLogic(Item);
             UpdateAllCountersOnClick();
         }
         public void Drag_MouseDown(MouseEventArgs e, Item Item)
