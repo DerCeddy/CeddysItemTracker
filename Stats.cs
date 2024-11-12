@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace CeddysItemTracker
 {
     public partial class Form1 : Form
-    {       
+    {
+        public int rupees_needed_value;
         private void UpdateChecks()
         {
             remainingChecks = 0;
@@ -46,6 +47,6 @@ namespace CeddysItemTracker
         {
             time++;
             cph_label.Text = $"{Math.Round((checkedchecks / time * 60 * 60))} cph";
-        }
+        }      
     }
 }

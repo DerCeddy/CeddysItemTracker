@@ -182,6 +182,7 @@ namespace CeddysItemTracker
             SphereTrackerActive = Konfig.spheretracker.Enabled;
             sphere_panel.Location = Konfig.spheretracker.Location;
             sphere_panel.Size = Konfig.spheretracker.Size;
+            //dungeon_item_count_panel.Location = new Point(755,621);
             SphereColumns = Konfig.spheretracker.Columns;
             SphereRows = Konfig.spheretracker.Rows;
             alwaysLocation = Konfig.alwayspanel.Location;
@@ -326,14 +327,11 @@ namespace CeddysItemTracker
             resetTracker.MouseDown += (sender, e) => ResetTracker(Items);
             //Mouse Interactions with Items
             foreach (Item i in Items)
-            {
-                //if (i != null)
-                //{
+            {            
                     i.ItemPictureBox.MouseDown += (sender, e) => Drag_MouseDown(e, i);
                     i.ItemPictureBox.MouseDown += (sender, e) => ItemClick(sender, e, i);
                     i.ItemPictureBox.MouseMove += (sender, e) => MouseMoveForDrag(sender, e, i);
-                    i.ItemPictureBox.MouseUp += ItemClickMouseUp;
-                //}
+                    i.ItemPictureBox.MouseUp += ItemClickMouseUp;             
             }
             List<PictureBox> boxes = [];
             foreach (Control c in equip_panel.Controls)

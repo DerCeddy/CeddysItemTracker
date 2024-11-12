@@ -22,8 +22,8 @@ namespace CeddysItemTracker
             {
                 Text = Region[0],
                 Location = new Point(0,0),
-                Size = new Size(210,20),
-                Font = new Font("Segoe UI", 12, FontStyle.Bold)
+                Size = new Size(210,20),              
+                Font = new Font("Segoe UI", 16, FontStyle.Bold, GraphicsUnit.Pixel)
             };
             forminstance.Controls.Add(panel);
             panel.Controls.Add(label);

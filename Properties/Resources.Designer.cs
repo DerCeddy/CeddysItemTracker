@@ -153,6 +153,16 @@ namespace CeddysItemTracker.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap closed_chest {
+            get {
+                object obj = ResourceManager.GetObject("closed_chest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dodongo_32x32 {
             get {
                 object obj = ResourceManager.GetObject("dodongo_32x32", resourceCulture);
@@ -2533,6 +2543,16 @@ namespace CeddysItemTracker.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap open_chest {
+            get {
+                object obj = ResourceManager.GetObject("open_chest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pg_32x32 {
             get {
                 object obj = ResourceManager.GetObject("pg_32x32", resourceCulture);
@@ -2576,6 +2596,16 @@ namespace CeddysItemTracker.Properties {
         internal static System.Drawing.Bitmap requiem_bw_32x40 {
             get {
                 object obj = ResourceManager.GetObject("requiem_bw_32x40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rupee {
+            get {
+                object obj = ResourceManager.GetObject("rupee", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

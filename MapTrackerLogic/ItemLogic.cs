@@ -27,6 +27,7 @@ namespace CeddysItemTracker
         public bool has_bottle = false;
         public bool can_get_beans = false;
         public bool rainbowbridge;
+        public int gtg_available_checks;
         public Color Available = Color.Lime;
         public Color red = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
         public Color coulddo = Color.Yellow;      
@@ -128,7 +129,8 @@ namespace CeddysItemTracker
         public void ItemLogic()
         {
             Panel maptracker_Panel = maptracker;
-            tokensAvailable = 13;                                          
+            tokensAvailable = 13;
+            gtg_available_checks = 0;
             #region Has Anything
             //Explosives
             if (Has(Bomb))
@@ -1584,7 +1586,7 @@ namespace CeddysItemTracker
                 Pb("Spirit Temple", "Silver Gauntlets Chest", maptracker_Panel).ForeColor = red;
             }
             //Adult Entry
-            if (desertaccess == 1 && Strength.State >= 2 && (Has(Hookshot) || Has(Bow)))
+            if (desertaccess == 1 && Strength.State >= 2 && (Has(Hookshot) || Has(Bow) || Has(Bomb)))
             {
                 Pb("Spirit Temple", "Early Adult Right Chest", maptracker_Panel).ForeColor = Available;
             }        
@@ -1602,13 +1604,13 @@ namespace CeddysItemTracker
                 Pb("Spirit Temple", "Compass Chest", maptracker_Panel).ForeColor = red;
             }
             //Adult Climb
-            if (desertaccess == 1 && Strength.State >= 2 && spirit_keys >= 3 && (Has(Hookshot) || Has(Bow)))
+            if (desertaccess == 1 && Strength.State >= 2 && spirit_keys >= 3 && (Has(Hookshot) || Has(Bow) || Has(Bomb)))
             {
 
                 Pb("Spirit Temple", "First Mirror Left Chest", maptracker_Panel).ForeColor = Available;
                 Pb("Spirit Temple", "First Mirror Right Chest", maptracker_Panel).ForeColor = Available;
             }
-            else if (desertaccess == 1 && Strength.State >= 2 && (Has(Hookshot) || Has(Bow)))
+            else if (desertaccess == 1 && Strength.State >= 2 && (Has(Hookshot) || Has(Bow) || Has(Bomb)))
             {
 
                 Pb("Spirit Temple", "First Mirror Left Chest", maptracker_Panel).ForeColor = coulddo;
@@ -1620,11 +1622,11 @@ namespace CeddysItemTracker
                 Pb("Spirit Temple", "First Mirror Right Chest", maptracker_Panel).ForeColor = red;
             }
             //Adult Centerroom
-            if (desertaccess == 1 && Strength.State >= 2 && spirit_keys >= 3 && (Has(Hookshot) || Has(Bow)) && Has(ZeldasLullaby))
+            if (desertaccess == 1 && Strength.State >= 2 && spirit_keys >= 3 && (Has(Hookshot) || Has(Bow) || Has(Bomb)) && Has(ZeldasLullaby))
             {
                 Pb("Spirit Temple", "Statue Room Hand Chest", maptracker_Panel).ForeColor = Available;
             }
-            else if (desertaccess == 1 && Strength.State >= 2 && (Has(Hookshot) || Has(Bow)) && Has(ZeldasLullaby))
+            else if (desertaccess == 1 && Strength.State >= 2 && (Has(Hookshot) || Has(Bow) || Has(Bomb)) && Has(ZeldasLullaby))
             {
                 Pb("Spirit Temple", "Statue Room Hand Chest", maptracker_Panel).ForeColor = coulddo;
             }
@@ -1646,13 +1648,13 @@ namespace CeddysItemTracker
                 Pb("Spirit Temple", "Statue Room Northeast Chest", maptracker_Panel).ForeColor = red;
             }
             //Adult beyond Anubis Room
-            if (desertaccess == 1 && Strength.State >= 2 && spirit_keys >= 4 && (Has(Hookshot) || Has(Bow)) && Bomb.State == 1)
+            if (desertaccess == 1 && Strength.State >= 2 && spirit_keys >= 4 && (Has(Hookshot) || Has(Bow) || Has(Bomb)) && Bomb.State == 1)
             {
                 Pb("Spirit Temple", "Hallway Right Invisible Chest", maptracker_Panel).ForeColor = Available;
                 Pb("Spirit Temple", "Hallway Left Invisible Chest", maptracker_Panel).ForeColor = Available;
                 Pb("Spirit Temple", "Mirror Shield Chest", maptracker_Panel).ForeColor = Available;
             }          
-            else if (desertaccess == 1 && Strength.State >= 2 && (Has(Hookshot) || Has(Bow)) && Bomb.State == 1)
+            else if (desertaccess == 1 && Strength.State >= 2 && (Has(Hookshot) || Has(Bow) || Has(Bomb)) && Bomb.State == 1)
             {
                 Pb("Spirit Temple", "Hallway Right Invisible Chest", maptracker_Panel).ForeColor = coulddo;
                 Pb("Spirit Temple", "Hallway Left Invisible Chest", maptracker_Panel).ForeColor = coulddo;
@@ -1950,6 +1952,7 @@ namespace CeddysItemTracker
             {
                 Pb("Gerudos Training Grounds", "Lobby Left Chest", maptracker_Panel).ForeColor = Available;
                 Pb("Gerudos Training Grounds", "Lobby Right Chest", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks += 2;
             }
             else
             {
@@ -1960,6 +1963,7 @@ namespace CeddysItemTracker
             if (has_or_can_get_gerudocard)
             {
                 Pb("Gerudos Training Grounds", "Stalfos Chest", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks++;
             }
             else
             {
@@ -1969,80 +1973,17 @@ namespace CeddysItemTracker
             if (has_or_can_get_gerudocard && Bomb.State == 1)
             {
                 Pb("Gerudos Training Grounds", "Beamos Chest", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks++;
             }
             else
             {
                 Pb("Gerudos Training Grounds", "Beamos Chest", maptracker_Panel).ForeColor = red;
-            }
-            //Hidden Ceiling
-            if (has_or_can_get_gerudocard && gtg_keys >= 3)
-            {
-                Pb("Gerudos Training Grounds", "Hidden Ceiling Chest", maptracker_Panel).ForeColor = Available;
-            }
-            else if(has_or_can_get_gerudocard)
-            {
-                Pb("Gerudos Training Grounds", "Hidden Ceiling Chest", maptracker_Panel).ForeColor = coulddo;
-            }
-            else
-            {
-                Pb("Gerudos Training Grounds", "Hidden Ceiling Chest", maptracker_Panel).ForeColor = red;
-            }
-            //Maze 1
-            if (has_or_can_get_gerudocard && gtg_keys >= 4)
-            {
-                Pb("Gerudos Training Grounds", "Maze Path First Chest", maptracker_Panel).ForeColor = Available;
-            }
-            else if (has_or_can_get_gerudocard)
-            {
-                Pb("Gerudos Training Grounds", "Maze Path First Chest", maptracker_Panel).ForeColor = coulddo;
-            }
-            else
-            {
-                Pb("Gerudos Training Grounds", "Maze Path First Chest", maptracker_Panel).ForeColor = red;
-            }
-            //Maze 2
-            if (has_or_can_get_gerudocard && gtg_keys >= 6)
-            {
-                Pb("Gerudos Training Grounds", "Maze Path Second Chest", maptracker_Panel).ForeColor = Available;
-            }
-            else if (has_or_can_get_gerudocard)
-            {
-                Pb("Gerudos Training Grounds", "Maze Path Second Chest", maptracker_Panel).ForeColor = coulddo;
-            }
-            else
-            {
-                Pb("Gerudos Training Grounds", "Maze Path Second Chest", maptracker_Panel).ForeColor = red;
-            }
-            //Maze 3
-            if (has_or_can_get_gerudocard && gtg_keys >= 7)
-            {
-                Pb("Gerudos Training Grounds", "Maze Path Third Chest", maptracker_Panel).ForeColor = Available;
-            }
-            else if (has_or_can_get_gerudocard)
-            {
-                Pb("Gerudos Training Grounds", "Maze Path Third Chest", maptracker_Panel).ForeColor = coulddo;
-            }
-            else
-            {
-                Pb("Gerudos Training Grounds", "Maze Path Third Chest", maptracker_Panel).ForeColor = red;
-            }
-            //Maze 4
-            if (has_or_can_get_gerudocard && gtg_keys >= 9)
-            {
-                Pb("Gerudos Training Grounds", "Maze Path Final Chest", maptracker_Panel).ForeColor = Available;
-            }
-            else if (has_or_can_get_gerudocard)
-            {
-                Pb("Gerudos Training Grounds", "Maze Path Final Chest", maptracker_Panel).ForeColor = coulddo;
-            }
-            else
-            {
-                Pb("Gerudos Training Grounds", "Maze Path Final Chest", maptracker_Panel).ForeColor = red;
-            }
+            }                    
             //Toilet
             if (has_or_can_get_gerudocard && Has(IronBoots) && Has(SongOfTime) && Bomb.State == 1)
             {
                 Pb("Gerudos Training Grounds", "Underwater Silver Rupee Chest", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks++;
             }
             else
             {
@@ -2053,7 +1994,13 @@ namespace CeddysItemTracker
             {
                 Pb("Gerudos Training Grounds", "Maze Right Central Chest", maptracker_Panel).ForeColor = Available;
                 Pb("Gerudos Training Grounds", "Maze Right Side Chest", maptracker_Panel).ForeColor = Available;
-            }           
+                gtg_available_checks += 2;
+            }  
+            else if (has_or_can_get_gerudocard && ((Bomb.State == 1 || Has(Hookshot)) && Has(SongOfTime) || gtg_available_checks >= 9))
+            {
+                Pb("Gerudos Training Grounds", "Maze Right Central Chest", maptracker_Panel).ForeColor = Available;
+                Pb("Gerudos Training Grounds", "Maze Right Side Chest", maptracker_Panel).ForeColor = Available;               
+            }
             else
             {
                 Pb("Gerudos Training Grounds", "Maze Right Central Chest", maptracker_Panel).ForeColor = red;
@@ -2063,6 +2010,7 @@ namespace CeddysItemTracker
             if (has_or_can_get_gerudocard && ((Bomb.State == 1 || Has(Hookshot)) && Has(SongOfTime) || gtg_keys == 9))
             {
                 Pb("Gerudos Training Grounds", "Freestanding Key", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks++;
             }
             else if (has_or_can_get_gerudocard && (Bomb.State == 1 || Has(Hookshot)) && Has(SongOfTime))
             {
@@ -2076,6 +2024,7 @@ namespace CeddysItemTracker
             if (has_or_can_get_gerudocard && Has(Hookshot))
             {
                 Pb("Gerudos Training Grounds", "Before Heavy Block Chest", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks++;
             }
             else
             {
@@ -2088,6 +2037,7 @@ namespace CeddysItemTracker
                 Pb("Gerudos Training Grounds", "Heavy Block Second Chest", maptracker_Panel).ForeColor = Available;
                 Pb("Gerudos Training Grounds", "Heavy Block Third Chest", maptracker_Panel).ForeColor = Available;
                 Pb("Gerudos Training Grounds", "Heavy Block Fourth Chest", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks += 4;
             }
             else
             {
@@ -2101,6 +2051,7 @@ namespace CeddysItemTracker
             {
                 Pb("Gerudos Training Grounds", "Eye Statue Chest", maptracker_Panel).ForeColor = Available;
                 Pb("Gerudos Training Grounds", "Near Scarecrow Chest", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks += 2;
             }
             else
             {
@@ -2111,6 +2062,7 @@ namespace CeddysItemTracker
             if (has_or_can_get_gerudocard && Has(Hookshot))
             {
                 Pb("Gerudos Training Grounds", "Hammer Room Clear Chest", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks++;
             }
             else
             {
@@ -2119,10 +2071,83 @@ namespace CeddysItemTracker
             if (has_or_can_get_gerudocard && Has(Hookshot) && Has(Hammer))
             {
                 Pb("Gerudos Training Grounds", "Hammer Room Switch Chest", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks++;
             }
             else
             {
                 Pb("Gerudos Training Grounds", "Hammer Room Switch Chest", maptracker_Panel).ForeColor = red;
+            }
+            //Hidden Ceiling
+            if (has_or_can_get_gerudocard && gtg_keys >= 3)
+            {
+                Pb("Gerudos Training Grounds", "Hidden Ceiling Chest", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks++;
+            }
+            else if (has_or_can_get_gerudocard && gtg_available_checks >= 3)
+            {
+                Pb("Gerudos Training Grounds", "Hidden Ceiling Chest", maptracker_Panel).ForeColor = coulddo;
+                gtg_available_checks++;
+            }
+            else
+            {
+                Pb("Gerudos Training Grounds", "Hidden Ceiling Chest", maptracker_Panel).ForeColor = red;
+            }
+            //Maze 1
+            if (has_or_can_get_gerudocard && gtg_keys >= 4)
+            {
+                Pb("Gerudos Training Grounds", "Maze Path First Chest", maptracker_Panel).ForeColor = Available;
+                gtg_available_checks++;
+            }
+            else if (has_or_can_get_gerudocard && gtg_available_checks >= 4)
+            {
+                Pb("Gerudos Training Grounds", "Maze Path First Chest", maptracker_Panel).ForeColor = coulddo;
+                gtg_available_checks++;
+            }
+            else
+            {
+                Pb("Gerudos Training Grounds", "Maze Path First Chest", maptracker_Panel).ForeColor = red;
+            }
+            //Maze 2
+            if (has_or_can_get_gerudocard && gtg_keys >= 6)
+            {
+                Pb("Gerudos Training Grounds", "Maze Path Second Chest", maptracker_Panel).ForeColor = Available;
+            }
+            else if (has_or_can_get_gerudocard && gtg_available_checks >= 6)
+            {
+                Pb("Gerudos Training Grounds", "Maze Path Second Chest", maptracker_Panel).ForeColor = coulddo;
+                gtg_available_checks++;
+            }
+            else
+            {
+                Pb("Gerudos Training Grounds", "Maze Path Second Chest", maptracker_Panel).ForeColor = red;
+            }
+            //Maze 3
+            if (has_or_can_get_gerudocard && gtg_keys >= 7)
+            {
+                Pb("Gerudos Training Grounds", "Maze Path Third Chest", maptracker_Panel).ForeColor = Available;
+            }
+            else if (has_or_can_get_gerudocard && gtg_available_checks >= 7)
+            {
+                Pb("Gerudos Training Grounds", "Maze Path Third Chest", maptracker_Panel).ForeColor = coulddo;
+                gtg_available_checks++;
+            }
+            else
+            {
+                Pb("Gerudos Training Grounds", "Maze Path Third Chest", maptracker_Panel).ForeColor = red;
+            }
+            //Maze 4
+            if (has_or_can_get_gerudocard && gtg_keys >= 9)
+            {
+                Pb("Gerudos Training Grounds", "Maze Path Final Chest", maptracker_Panel).ForeColor = Available;
+            }
+            else if (has_or_can_get_gerudocard && gtg_available_checks >= 9)
+            {
+                Pb("Gerudos Training Grounds", "Maze Path Final Chest", maptracker_Panel).ForeColor = coulddo;
+                gtg_available_checks++;
+            }
+            else
+            {
+                Pb("Gerudos Training Grounds", "Maze Path Final Chest", maptracker_Panel).ForeColor = red;
             }
             #endregion
             #region BotW
