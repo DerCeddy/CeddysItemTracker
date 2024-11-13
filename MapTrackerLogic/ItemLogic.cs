@@ -2596,6 +2596,7 @@ namespace CeddysItemTracker
                     ItemLogic_ForestTemple();
                     break;
                 case "Hookshot":
+                    ItemLogic_Helper();
                     ItemLogic_SpiritTemple();
                     ItemLogic_GTG();
                     ItemLogic_LakeHylia();
@@ -2615,11 +2616,13 @@ namespace CeddysItemTracker
                     ItemLogic_Jabu();
                     break;
                 case "Letter":
+                    ItemLogic_Helper();
                     ItemLogic_Jabu();
                     ItemLogic_ZoraFountain();
                     ItemLogic_IceCavern();
                     break;
                 case "Bottle":
+                    ItemLogic_Helper();
                     ItemLogic_ZoraDomain();
                     ItemLogic_Market();
                     break;
@@ -2668,8 +2671,88 @@ namespace CeddysItemTracker
                 case "Kokiri Sword":
                     ItemLogic_DekuTree();
                     break;
-                case "Gerudo Token":
-                    
+                case "Mirror Shield":
+                    ItemLogic_SpiritTemple();
+                    break;
+                case "Strength":
+                    ItemLogic_SpiritTemple();
+                    ItemLogic_GTG();
+                    ItemLogic_WaterTemple();
+                    ItemLogic_WaterTemple();
+                    ItemLogic_Castles();
+                    ItemLogic_GanonsCastle();
+                    ItemLogic_DodongosCavern();
+                    ItemLogic_DMC();
+                    ItemLogic_GoronCity();
+                    ItemLogic_BotW();
+                    ItemLogic_ForestTemple();
+                    break;
+                case "Scale":
+                    ItemLogic_ZoraRiver();
+                    ItemLogic_Jabu();
+                    ItemLogic_ZoraFountain();
+                    ItemLogic_IceCavern();
+                    ItemLogic_LakeHylia();
+                    ItemLogic_HyruleField();
+                    break;
+                case "Wallet":
+                    ItemLogic_Helper();
+                    ItemLogic_FireTemple();
+                    ItemLogic_WaterTemple();
+                    ItemLogic_ZoraDomain();
+                    break;
+                case "Goron Tunic":
+                    ItemLogic_Helper();
+                    ItemLogic_FireTemple();
+                    break;
+                case "Zora Tunic":
+                    ItemLogic_Helper();
+                    ItemLogic_WaterTemple();
+                    break;
+                case "Magic":
+                    ItemLogic_Helper();
+                    ItemLogic_SpiritTemple();
+                    ItemLogic_DesertColossus();
+                    ItemLogic_DodongosCavern();
+                    ItemLogic_Wasteland();
+                    ItemLogic_Market();
+                    ItemLogic_GoronCity();
+                    ItemLogic_Graveyard();
+                    ItemLogic_BotW();
+                    ItemLogic_ShadowTemple();
+                    break;
+                case "Iron Boots":
+                    ItemLogic_GTG();
+                    ItemLogic_WaterTemple();
+                    ItemLogic_ZoraFountain();
+                    ItemLogic_HyruleField();
+                    break;
+                case "HoverBoots":
+                    ItemLogic_Helper();
+                    ItemLogic_DMC();
+                    ItemLogic_FireTemple();
+                    ItemLogic_SpiritTemple();
+                    ItemLogic_DesertColossus();
+                    ItemLogic_Wasteland();
+                    ItemLogic_WaterTemple();
+                    ItemLogic_ForestTemple();
+                    ItemLogic_ShadowTemple();
+                    ItemLogic_GerudoFortress();
+                    break;
+                case "Kokiri Stone":
+                    ItemLogic_Helper();
+                    ItemLogic_HyruleField();
+                    ItemLogic_GanonsCastle();
+                    break;
+                case "Goron Stone":
+                    ItemLogic_Helper();
+                    ItemLogic_HyruleField();
+                    ItemLogic_GanonsCastle();
+                    break;
+                case "Zora Stone":
+                    ItemLogic_Helper();
+                    ItemLogic_HyruleField();
+                    ItemLogic_GanonsCastle();
                     break;
             }
         }
