@@ -22,7 +22,7 @@ namespace CeddysItemTracker
                 Pb("Goron City", "Darunias Joy", maptracker_Panel).ForeColor = red;
             }
             //Pot PoH
-            if (has_explosives && Has(ZeldasLullaby))
+            if (has_explosives && (Has(ZeldasLullaby) || Has(Dins) && Has(Magic)))
             {
                 Pb("Goron City", "Pot Freestanding PoH", maptracker_Panel).ForeColor = Available;
             }

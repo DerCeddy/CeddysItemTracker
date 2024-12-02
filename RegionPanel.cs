@@ -43,8 +43,7 @@ namespace CeddysItemTracker
                 panel.Controls.Add(cb);
                 GossipStone(new Point(cb.Size.Width, cb.Location.Y - 3), gossipstone);
                 panel.Controls.Add(gossipstone);
-                cb.MouseDown += (sender, e) => CheckBoxClick(cb);
-                cb.MouseClick += (sender, e) => UpdateAllCountersOnClick();
+                cb.MouseDown += (sender, e) => CheckBoxClick(cb);                
             }
         }
         public void CheckBoxClick(CheckBox Check)
@@ -58,7 +57,9 @@ namespace CeddysItemTracker
                 else
                 {
                     Check.Checked = true;
-                }               
+                }
+                Update_Rupee_Counter();
+                UpdateAllCountersOnClick();
             }
             if (MouseButtons == MouseButtons.Right)
             {

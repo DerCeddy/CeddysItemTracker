@@ -209,7 +209,8 @@ namespace CeddysItemTracker
             maptracker = new Panel();
             timer = new System.Windows.Forms.Timer(components);
             stat_panel = new Panel();
-            rupee_needed_picturebox = new PictureBox();
+            label7 = new Label();
+            label6 = new Label();
             label4 = new Label();
             token_available_label = new Label();
             label3 = new Label();
@@ -220,9 +221,6 @@ namespace CeddysItemTracker
             starttimer_button = new Button();
             cph_label = new Label();
             equip_panel = new Panel();
-            dungeon_item_count_panel = new FlowLayoutPanel();
-            label5 = new Label();
-            label6 = new Label();
             alwayshintsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)alwayshintStone8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)alwayshintSkull50Picture).BeginInit();
@@ -337,9 +335,7 @@ namespace CeddysItemTracker
             menuStrip1.SuspendLayout();
             maptracker.SuspendLayout();
             stat_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)rupee_needed_picturebox).BeginInit();
             equip_panel.SuspendLayout();
-            dungeon_item_count_panel.SuspendLayout();
             SuspendLayout();
             // 
             // LLR
@@ -2530,8 +2526,8 @@ namespace CeddysItemTracker
             // 
             // stat_panel
             // 
+            stat_panel.Controls.Add(label7);
             stat_panel.Controls.Add(label6);
-            stat_panel.Controls.Add(rupee_needed_picturebox);
             stat_panel.Controls.Add(label4);
             stat_panel.Controls.Add(token_available_label);
             stat_panel.Controls.Add(label3);
@@ -2548,15 +2544,25 @@ namespace CeddysItemTracker
             stat_panel.Size = new Size(402, 94);
             stat_panel.TabIndex = 157;
             // 
-            // rupee_needed_picturebox
+            // label7
             // 
-            rupee_needed_picturebox.Image = Properties.Resources.rupee;
-            rupee_needed_picturebox.Location = new Point(332, 24);
-            rupee_needed_picturebox.Name = "rupee_needed_picturebox";
-            rupee_needed_picturebox.Size = new Size(50, 50);
-            rupee_needed_picturebox.SizeMode = PictureBoxSizeMode.StretchImage;
-            rupee_needed_picturebox.TabIndex = 160;
-            rupee_needed_picturebox.TabStop = false;
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
+            label7.Image = Properties.Resources.rupee;
+            label7.Location = new Point(332, 24);
+            label7.Name = "label7";
+            label7.Size = new Size(50, 50);
+            label7.TabIndex = 160;
+            label7.Text = "0";
+            label7.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(333, 5);
+            label6.Name = "label6";
+            label6.Size = new Size(48, 15);
+            label6.TabIndex = 161;
+            label6.Text = "Needed";
             // 
             // label4
             // 
@@ -2726,40 +2732,11 @@ namespace CeddysItemTracker
             equip_panel.Size = new Size(384, 540);
             equip_panel.TabIndex = 158;
             // 
-            // dungeon_item_count_panel
-            // 
-            dungeon_item_count_panel.Controls.Add(label5);
-            dungeon_item_count_panel.FlowDirection = FlowDirection.TopDown;
-            dungeon_item_count_panel.Location = new Point(755, 621);
-            dungeon_item_count_panel.Name = "dungeon_item_count_panel";
-            dungeon_item_count_panel.Size = new Size(200, 151);
-            dungeon_item_count_panel.TabIndex = 159;
-            // 
-            // label5
-            // 
-            label5.Image = Properties.Resources.closed_chest;
-            label5.Location = new Point(3, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(64, 64);
-            label5.TabIndex = 2;
-            label5.Text = "label5";
-            label5.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(333, 5);
-            label6.Name = "label6";
-            label6.Size = new Size(48, 15);
-            label6.TabIndex = 161;
-            label6.Text = "Needed";
-            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.Black;
             ClientSize = new Size(1787, 917);
-            Controls.Add(dungeon_item_count_panel);
             Controls.Add(equip_panel);
             Controls.Add(stat_panel);
             Controls.Add(maptracker);
@@ -2890,9 +2867,7 @@ namespace CeddysItemTracker
             maptracker.ResumeLayout(false);
             stat_panel.ResumeLayout(false);
             stat_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)rupee_needed_picturebox).EndInit();
             equip_panel.ResumeLayout(false);
-            dungeon_item_count_panel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -3085,10 +3060,8 @@ namespace CeddysItemTracker
         private PictureBox fireBossKey_PictureBox;
         private Label token_available_label;
         private Label label4;
-        private FlowLayoutPanel dungeon_item_count_panel;
-        private Label label5;
-        private PictureBox rupee_needed_picturebox;
         private Label label6;
+        private Label label7;
     }
 }
 

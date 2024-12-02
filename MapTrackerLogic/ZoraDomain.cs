@@ -24,7 +24,7 @@ namespace CeddysItemTracker
                 Pb("Zora Domain", "Diving Game", maptracker_Panel).ForeColor = red;
             }
             //King Zora Thawed
-            if (Has(ZeldasLullaby) && ((Has(RutoLetter) && (Has(Bomb) || Has(Scales))) || (Wallet.State == 2 && has_bottle)))
+            if (Has(ZeldasLullaby) && ((Has(RutoLetter) && (Has(Bomb) || Has(Scales))) || ((Wallet.State == 2 || rainbowbridge) && has_bottle)))
             {
                 Pb("Zora Domain", "King Zora Thawed", maptracker_Panel).ForeColor = Available;
             }

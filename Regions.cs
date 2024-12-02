@@ -92,6 +92,7 @@ namespace CeddysItemTracker
                 }
             }
             UpdateAllCountersOnClick();
+            Update_Rupee_Counter();
         }
         private void LLR_Click(object sender, MouseEventArgs e)
         {

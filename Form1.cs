@@ -210,6 +210,7 @@ namespace CeddysItemTracker
             ItemLogic();
             UpdateAllCountersOnClick();
             AddPictureBoxesToItems();
+            Update_Rupee_Counter();
             stat_panel.Location = stats_location;
             if(!enableStats)
             {
